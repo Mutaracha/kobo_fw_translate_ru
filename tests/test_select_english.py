@@ -8,6 +8,7 @@ import xml.etree.ElementTree as ET
 
 SCRIPTS = Path(__file__).resolve().parents[1] / 'py_script'
 sys.path.insert(0, str(SCRIPTS))
+from qmtool import parse_qm
 from qmwrite import write_qm
 
 
@@ -50,8 +51,37 @@ class EnglishSelectionTests(unittest.TestCase):
             if n:
                 self.candidate('nickel_1.qm', b'en')
                 self.candidate('nickel_2.qm', b'en')
-            self.assertIn(f'TS/@language="en": {n}', self.step2())
+            self.assertIn(f'английских каталогов: {n}', self.step2())
             self.assertEqual(sorted(p.name for p in self.src.iterdir()), ['nickel_1.qm', 'nickel_2.qm'])
+
+    def test_untagged_firmware_matches_reference_across_versions(self):
+        sample = SCRIPTS.parent / 'src/trans_en_4.38.23852.qm'
+        lang, rows = parse_qm(sample)
+        self.assertIsNone(lang)
+        # Simulate a nearby firmware: most keys overlap, but not all.
+        rows = [m for m in rows[15:] if all(m['tr'])]
+        rows[0]['tr'] = ['New English wording']
+        source = self.src / 'nickel_1971124.qm'
+        write_qm(source, rows, b'', b'')
+        original = source.read_bytes()
+        # Same English source keys do not make this translation English.
+        for m in rows:
+            m['tr'] = ['Fremdsprache'] * len(m['tr'])
+        write_qm(self.src / 'nickel_1.qm', rows, b'', b'')
+        self.assertEqual(self.step2(), '')
+        self.assertEqual(self.en.read_bytes(), original)
+        root = ET.parse(self.en.with_suffix('.ts')).getroot()
+        self.assertEqual(root.get('language'), 'en')
+        self.assertTrue(any(tr.text == 'New English wording' for tr in root.iter('translation')))
+        self.assertFalse(list(self.src.glob('nickel_*.qm')))
+
+    def test_two_untagged_reference_matches_preserve_inputs(self):
+        sample = (SCRIPTS.parent / 'src/trans_en_4.38.23852.qm').read_bytes()
+        for name in ('nickel_1.qm', 'nickel_2.qm'):
+            (self.src / name).write_bytes(sample)
+        self.assertIn('английских каталогов: 2', self.step2())
+        self.assertFalse(self.en.exists())
+        self.assertEqual(len(list(self.src.glob('nickel_*.qm'))), 2)
 
     def test_missing_inputs_have_actionable_error(self):
         self.assertIn('Сначала выполните пункт 1', self.step2())

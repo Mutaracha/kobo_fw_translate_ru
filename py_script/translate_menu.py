@@ -8,6 +8,7 @@ from tempfile import TemporaryDirectory
 import xml.etree.ElementTree as ET
 import struct
 
+from check_lengths import messages
 from qm2ts import write_ts
 
 SCRIPTS = Path(__file__).resolve().parent
@@ -25,6 +26,23 @@ def allow_write(path):
     return not path.exists() or input(f'Перезаписать {path}? [y/N] ').strip().lower() == 'y'
 
 
+def reference_matches(untagged):
+    reference = messages(SCRIPTS.parent / 'src' / 'trans_en_4.38.23852.ts')
+    matches = []
+    for qm, trial in untagged:
+        candidate = messages(trial)
+        common = reference.keys() & candidate.keys()
+        equal = [key for key in common if candidate[key] == reference[key]]
+        # Names, placeholders and untranslated source strings alone are not
+        # evidence of English. Require actual singular/plural renderings too.
+        plurals = sum(len(set(reference[key])) > 1 for key in equal)
+        print(f'{qm.name}: совпало с образцом {len(equal)}/{len(common)}, '
+              f'в том числе с разными формами числа: {plurals}')
+        if len(common) >= 50 and len(equal) >= 0.90 * len(common) and plurals >= 3:
+            matches.append((qm, trial))
+    return matches
+
+
 def select_english(src, en):
     candidates = sorted(p for p in src.glob('nickel_*.qm')
                         if p.is_file() and re.fullmatch(r'nickel_[0-9a-fA-F]+\.qm', p.name))
@@ -40,6 +58,7 @@ def select_english(src, en):
     ts = target.with_suffix('.ts')
     with TemporaryDirectory(dir=src) as tmp:
         matches = []
+        untagged = []
         for qm in candidates:
             trial = Path(tmp) / qm.with_suffix('.ts').name
             try:
@@ -50,8 +69,16 @@ def select_english(src, en):
             print(f'{qm.name}: {language or "язык не указан"}')
             if language == 'en':
                 matches.append((qm, trial))
+            elif not language:
+                untagged.append((qm, trial))
+        if not matches and untagged:
+            matches = reference_matches(untagged)
+            if len(matches) == 1:
+                qm, trial = matches[0]
+                print(f'{qm.name}: английский определён по переводам из образца.')
+                write_ts(qm, qm, trial, 'en')
         if len(matches) != 1:
-            raise ValueError(f'Каталогов с TS/@language="en": {len(matches)} (нужен один). '
+            raise ValueError(f'Подходящих английских каталогов: {len(matches)} (нужен один). '
                              'Файлы QM сохранены. Язык не определяется по имени или порядку.')
         if not allow_write(target) or not allow_write(ts):
             return
