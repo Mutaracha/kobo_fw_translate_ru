@@ -5,6 +5,7 @@ on:
     paths:
       - 'translated/*/trans_ru.qm'
       - 'patch/fonts/*.ttf'
+      - 'patch/hyphenDicts/hyph_ru.dic'
       - 'scripts/build_patch.sh'
       - '.github/workflows/build-patch.yml'
   workflow_dispatch:
@@ -25,7 +26,7 @@ jobs:
             grep -Ex '[0-9]+(\.[0-9]+)+' | sort -V | tail -n 1)
           test -s "translated/$version/trans_ru.qm" || { echo "Missing trans_ru.qm for $version" >&2; exit 1; }
           echo "version=$version" >> "$GITHUB_OUTPUT"
-      - name: Package translation and fonts
+      - name: Package translation, hyphenation dictionary and fonts
         env:
           VERSION: ${{ steps.latest.outputs.version }}
         run: ./scripts/build_patch.sh "translated/$VERSION/trans_ru.qm" "$RUNNER_TEMP/KoboRoot.tgz"

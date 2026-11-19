@@ -111,7 +111,7 @@
     </message>
     <message>
         <source>I &lt;3 My Library </source>
-        <translation>Я &lt;3 свою библиотеку </translation>
+        <translation>Люблю свою библиотеку</translation>
     </message>
     <message>
         <source>I Eat Books for Lunch</source>
@@ -1089,7 +1089,7 @@ to go</source>
     <name>AwardDetailsView</name>
     <message>
         <source>%1% completed</source>
-        <translation>%1% завершено</translation>
+        <translation>Выполнено: %1%</translation>
     </message>
     <message>
         <source>&lt;p&gt;Page %1 &lt;span style=&apos;font-style:italic&apos;&gt;of&lt;/span&gt; %2&lt;/p&gt;</source>
@@ -5317,19 +5317,19 @@ Please check your connection and try again.</source>
     <name>InvertButtonsOptionWidget</name>
     <message>
         <source>Default</source>
-        <translation>По умолчанию</translation>
+        <translation>Обычный порядок</translation>
     </message>
     <message>
         <source>Inverted</source>
-        <translation>Обратный</translation>
+        <translation>Обратный порядок</translation>
     </message>
     <message>
         <source>NEXT</source>
-        <translation>СЛЕДУЮЩИЙ</translation>
+        <translation>ВПЕРЁД</translation>
     </message>
     <message>
         <source>PREVIOUS</source>
-        <translation>ПРЕДЫДУЩИЙ</translation>
+        <translation>НАЗАД</translation>
     </message>
 </context>
 <context>
@@ -6121,7 +6121,7 @@ Please check your connection and try again.</source>
     <name>MissingBooksAccountPage</name>
     <message>
         <source>Change account</source>
-        <translation>Изменить аккаунт</translation>
+        <translation>Сменить аккаунт</translation>
     </message>
     <message>
         <source>If syncing didn&apos;t help, you might have more than one account. Please confirm that %1 is the account you used to purchase the missing books.</source>
@@ -6225,7 +6225,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Beta Features</source>
-        <translation>Бета функции</translation>
+        <translation>Бета-функции</translation>
     </message>
     <message>
         <source>Help</source>
@@ -6647,7 +6647,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Edit known networks</source>
-        <translation>Править известные сети</translation>
+        <translation>Сохранённые сети</translation>
     </message>
     <message>
         <source>OK</source>
@@ -7312,7 +7312,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Bluetooth device alias: </source>
-        <translation>Псевдоним устройства Bluetooth: </translation>
+        <translation>Имя устройства: </translation>
     </message>
     <message>
         <source>Devices</source>
@@ -7320,7 +7320,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Редактировать</translation>
+        <translation>Изменить</translation>
     </message>
     <message>
         <source>OPTIONS</source>
@@ -7336,7 +7336,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Turn on Bluetooth to connect to nearby devices.</source>
-        <translation>Включите Bluetooth, чтобы подключиться к ближайшим устройствам.</translation>
+        <translation>Для подключения включите Bluetooth.</translation>
     </message>
 </context>
 <context>
@@ -7778,7 +7778,7 @@ Please check your connection and try again.</source>
     <name>N3SettingsExtrasController</name>
     <message>
         <source>Beta Features</source>
-        <translation>Бета функции</translation>
+        <translation>Бета-функции</translation>
     </message>
 </context>
 <context>
@@ -7793,7 +7793,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Discover your inner artist or make notes and then save your creation in your Library.</source>
-        <translation>Откройте в себе художника или создавайте заметки. И сохраняйте в вашей библиотеке.</translation>
+        <translation>Рисуйте, делайте заметки и сохраняйте их в библиотеке.</translation>
     </message>
     <message>
         <source>Expand your vocabulary by saving words you&apos;ve looked up in the dictionary. You&apos;ll find words you&apos;ve added in More &gt; Activity.</source>
@@ -7833,11 +7833,11 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Please note that these bonus features are not officially supported by %1</source>
-        <translation>Обратите внимание, что эти дополнительные бонусы официально не поддерживаются %1</translation>
+        <translation>%1 не предоставляет поддержку для этих функций.</translation>
     </message>
     <message>
         <source>Please note that these bonus features are not officially supported by Kobo.</source>
-        <translation>Обратите внимание, что эти дополнительные бонусы официально не поддерживаются Kobo.</translation>
+        <translation>Kobo не предоставляет поддержку для этих функций.</translation>
     </message>
     <message>
         <source>SANDBOX</source>
@@ -7861,7 +7861,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Start</source>
-        <translation>Старт</translation>
+        <translation>Открыть</translation>
     </message>
     <message>
         <source>Try something fun!</source>
@@ -7963,7 +7963,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Править</translation>
+        <translation>Изменить</translation>
     </message>
     <message>
         <source>LANGUAGE</source>
@@ -7975,7 +7975,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Select your Language:</source>
-        <translation>Выберите ваш язык:</translation>
+        <translation>Язык интерфейса:</translation>
     </message>
     <message>
         <source>Select your Region:</source>
@@ -8327,7 +8327,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Choose where you prefer to tap your screen in order to page forward, page back, and bring up the Reading Menu.</source>
-        <translation>Выберите тап-зоны экрана, чтобы перейти на страницу вперед, на страницу назад, и вывести меню.</translation>
+        <translation>Выберите, где касаться экрана, чтобы листать страницы и открывать меню чтения.</translation>
     </message>
     <message>
         <source>Dark Mode:</source>
@@ -8371,7 +8371,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Page forward and back by:</source>
-        <translation>Страницы вперед и назад:</translation>
+        <translation>Перелистывание:</translation>
     </message>
     <message>
         <source>Pages left in book</source>
@@ -8391,7 +8391,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Pinch to adjust font size:</source>
-        <translation>Изменение размера шрифта щипком:</translation>
+        <translation>Менять размер шрифта двумя пальцами:</translation>
     </message>
     <message>
         <source>Portrait</source>
@@ -8632,15 +8632,15 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Править</translation>
+        <translation>Изменить</translation>
     </message>
     <message>
         <source>Edit Wi Fi networks:</source>
-        <translation>Редактировать Wi-Fi сети:</translation>
+        <translation>Сохранённые сети:</translation>
     </message>
     <message>
         <source>Join a Wi Fi network:</source>
-        <translation>Подключиться к Wi-Fi сети:</translation>
+        <translation>Подключение к сети Wi-Fi:</translation>
     </message>
     <message>
         <source>NETWORKS</source>
@@ -12284,22 +12284,22 @@ to read</source>
     </message>
     <message>
         <source>%1% Read</source>
-        <translation>Прочитано %1%</translation>
+        <translation>%1%</translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s) to go</source>
         <translation>
-            <numerusform>%n час остался</numerusform>
-            <numerusform>%n часа осталось</numerusform>
-            <numerusform>%n часов осталось</numerusform>
+            <numerusform>Ещё %n ч</numerusform>
+            <numerusform>Ещё %n ч</numerusform>
+            <numerusform>Ещё %n ч</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n min(s) to go</source>
         <translation>
-            <numerusform>%n мин. до конца</numerusform>
-            <numerusform>%n мин. до конца</numerusform>
-            <numerusform>%n мин. до конца</numerusform>
+            <numerusform>Ещё %n мин</numerusform>
+            <numerusform>Ещё %n мин</numerusform>
+            <numerusform>Ещё %n мин</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -12669,15 +12669,15 @@ to read</source>
     </message>
     <message>
         <source>Avg. minutes per session</source>
-        <translation>В среднем минут на сессию</translation>
+        <translation>Минут за сеанс</translation>
     </message>
     <message>
         <source>Avg. pages per minute</source>
-        <translation>В среднем страниц в минуту</translation>
+        <translation>Страниц в минуту</translation>
     </message>
     <message>
         <source>Book progress: %1%</source>
-        <translation>Прогресс книги: %1%</translation>
+        <translation>Книга: %1%</translation>
     </message>
     <message numerus="yes">
         <source>Book(s) finished</source>
@@ -12689,7 +12689,7 @@ to read</source>
     </message>
     <message>
         <source>Current chapter: %1%</source>
-        <translation>Текущая глава: %1%</translation>
+        <translation>Глава: %1%</translation>
     </message>
     <message>
         <source>Extras</source>
@@ -13282,7 +13282,7 @@ to track progress!</source>
     </message>
     <message>
         <source>Let&apos;s take a quick tour</source>
-        <translation>Проведем беглый обзор</translation>
+        <translation>Знакомство с ридером</translation>
     </message>
 </context>
 <context>
@@ -13414,7 +13414,7 @@ to track progress!</source>
     </message>
     <message>
         <source>Sync to download new items and software updates.</source>
-        <translation>Синхронизируйте ридер, чтобы загрузить новые материалы и обновления ПО.</translation>
+        <translation>Загрузите новые материалы и обновления ПО.</translation>
     </message>
     <message>
         <source>Unable to connect to Kobo services.&lt;br&gt;&lt;br&gt;Sync may not currently be available in your region</source>
@@ -14133,7 +14133,7 @@ to track progress!</source>
     </message>
     <message>
         <source>Scanning for networks...</source>
-        <translation>Сканирование сетей…</translation>
+        <translation>Поиск сетей…</translation>
     </message>
 </context>
 <context>
@@ -14215,7 +14215,7 @@ to track progress!</source>
     <name>WirelessNetworksDialogController</name>
     <message>
         <source>Join a Wi Fi network</source>
-        <translation>Подключиться к Wi-Fi сети</translation>
+        <translation>Выбор сети Wi-Fi</translation>
     </message>
 </context>
 <context>
@@ -14234,7 +14234,7 @@ to track progress!</source>
     </message>
     <message>
         <source>Re-scan</source>
-        <translation>Сканировать</translation>
+        <translation>Искать снова</translation>
     </message>
     <message>
         <source>Scanning for networks...</source>
@@ -14280,7 +14280,7 @@ to track progress!</source>
     </message>
     <message>
         <source>Connect</source>
-        <translation>Подключить</translation>
+        <translation>Подключиться</translation>
     </message>
     <message>
         <source>Continue</source>
@@ -14336,11 +14336,11 @@ Would you like to continue?</source>
     </message>
     <message>
         <source>Wi Fi is currently disabled</source>
-        <translation>Wi-Fi сейчас отключен</translation>
+        <translation>Wi-Fi выключен</translation>
     </message>
     <message>
         <source>Would you like to enable Wi Fi and connect to the Internet?</source>
-        <translation>Вы хотите включить Wi-Fi и подключиться к интернету?</translation>
+        <translation>Включить Wi-Fi и подключиться к интернету?</translation>
     </message>
     <message>
         <source>Yes</source>
@@ -14408,7 +14408,7 @@ Would you like to continue?</source>
     <name>WishlistStorefrontWidget</name>
     <message>
         <source>My Wishlist</source>
-        <translation>Мой Список желаний</translation>
+        <translation>Мой список желаний</translation>
     </message>
 </context>
 <context>
@@ -14435,7 +14435,7 @@ Would you like to continue?</source>
     </message>
     <message>
         <source>My Wishlist</source>
-        <translation>Мой Список желаний</translation>
+        <translation>Мой список желаний</translation>
     </message>
     <message>
         <source>OK</source>
@@ -14479,7 +14479,7 @@ Would you like to continue?</source>
     </message>
     <message>
         <source>Your Wishlist is empty</source>
-        <translation>Ваш &apos;Список желаний&apos; пуст</translation>
+        <translation>Список желаний пуст</translation>
     </message>
 </context>
 <context>

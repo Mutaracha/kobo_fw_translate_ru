@@ -10,10 +10,12 @@ stage=$(mktemp -d)
 trap 'rm -rf "$stage"' EXIT
 
 qm=usr/local/Kobo/translations/trans_ru.qm
+hyph=usr/local/Kobo/hyphenDicts/hyph_ru.dic
 fonts=usr/local/Trolltech/QtEmbedded-4.6.2-arm/lib/fonts
 install -Dm644 "$1" "$stage/$qm"
+install -Dm644 "$repo/patch/hyphenDicts/hyph_ru.dic" "$stage/$hyph"
 mkdir -p "$stage/$fonts"
 install -m644 "$repo"/patch/fonts/{Avenir,Avenir-Bold,Avenir-Italic,Avenir-BoldItalic,georgia,georgiab,georgiai,georgiaz}.ttf "$stage/$fonts/"
 
 # Only package the payload files, not parent directories on the device.
-(cd "$stage" && tar --owner=0 --group=0 --mtime=@0 -czf - "./$qm" "./$fonts/"*.ttf) > "$2"
+(cd "$stage" && tar --owner=0 --group=0 --mtime=@0 -czf - "./$qm" "./$hyph" "./$fonts/"*.ttf) > "$2"
