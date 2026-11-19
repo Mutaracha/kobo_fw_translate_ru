@@ -42,7 +42,7 @@ class FirmwareTests(unittest.TestCase):
         result = self.run_cli()
         self.assertEqual(result.returncode, 0, result.stderr)
         out = self.cwd / 'src/4.38.23697'
-        self.assertEqual((out / 'nickel').read_bytes(), nickel)
+        self.assertFalse((out / 'nickel').exists())
         self.assertEqual([f.read_bytes() for f in out.glob('*.qm')], [QM, QM])
         self.assertNotEqual(self.run_cli().returncode, 0)  # no overwrite
 
@@ -65,8 +65,9 @@ class FirmwareTests(unittest.TestCase):
         self.archive(QM)
         archive = self.zip.rename(self.cwd / 'kobo-update-12.123.456789.zip')
         self.assertEqual(self.run_cli(archive).returncode, 0)
-        self.assertTrue((self.cwd / 'src/12.123.456789/nickel').is_file())
+        self.assertFalse((self.cwd / 'src/12.123.456789/nickel').exists())
+        self.assertTrue((self.cwd / 'src/12.123.456789/nickel_0.qm').is_file())
         archive = archive.rename(self.cwd / 'custom.zip')
         self.assertNotEqual(self.run_cli(archive).returncode, 0)
         self.assertEqual(self.run_cli(archive, '-o', 'custom output').returncode, 0)
-        self.assertTrue((self.cwd / 'custom output/nickel').is_file())
+        self.assertTrue((self.cwd / 'custom output/nickel_0.qm').is_file())

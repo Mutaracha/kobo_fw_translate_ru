@@ -60,7 +60,7 @@ def main():
         with TemporaryDirectory(dir=args.output.parent) as tmp:
             stage = Path(tmp) / 'result'
             stage.mkdir()
-            nickel = stage / 'nickel'
+            nickel = Path(tmp) / 'nickel'
             if source.suffix.lower() == '.zip':
                 extract_nickel(source, nickel)
             else:

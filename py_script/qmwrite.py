@@ -39,5 +39,6 @@ def write_qm(path, messages, language: bytes, numerus: bytes):
     hashes.sort()
     hb = b"".join(struct.pack(">II", h, o) for h, o in hashes)
     out = QM_MAGIC + blk(0xA7, language) + blk(0x42, hb) + blk(0x69, bytes(mb)) + blk(0x88, numerus)
-    open(path, "wb").write(out)
+    with open(path, "wb") as f:
+        f.write(out)
     return len(out)

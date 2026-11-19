@@ -4,6 +4,11 @@ import re
 import shutil
 import subprocess
 import sys
+from tempfile import TemporaryDirectory
+import xml.etree.ElementTree as ET
+import struct
+
+from qm2ts import write_ts
 
 SCRIPTS = Path(__file__).resolve().parent
 
@@ -18,6 +23,50 @@ def path_input(prompt):
 
 def allow_write(path):
     return not path.exists() or input(f'Перезаписать {path}? [y/N] ').strip().lower() == 'y'
+
+
+def select_english(src, en):
+    candidates = sorted(p for p in src.glob('nickel_*.qm')
+                        if p.is_file() and re.fullmatch(r'nickel_[0-9a-fA-F]+\.qm', p.name))
+    if not candidates:
+        if not en.is_file():
+            raise ValueError(f'В {src} нет извлечённых nickel_*.qm. Сначала выполните пункт 1.')
+        if not en.with_suffix('.ts').is_file():
+            write_ts(en, en, en.with_suffix('.ts'), 'en')
+        print(f'Английский каталог уже выбран: {en}')
+        return
+
+    target = src / en.name  # Never overwrite the legacy catalog in the parent directory.
+    ts = target.with_suffix('.ts')
+    with TemporaryDirectory(dir=src) as tmp:
+        matches = []
+        for qm in candidates:
+            trial = Path(tmp) / qm.with_suffix('.ts').name
+            try:
+                write_ts(qm, qm, trial)  # Use the QM language, not the intended target language.
+                language = ET.parse(trial).getroot().get('language')
+            except (ValueError, IndexError, KeyError, struct.error, ET.ParseError) as exc:
+                raise ValueError(f'Не удалось преобразовать {qm.name}. Исходные QM сохранены.') from exc
+            print(f'{qm.name}: {language or "язык не указан"}')
+            if language == 'en':
+                matches.append((qm, trial))
+        if len(matches) != 1:
+            raise ValueError(f'Каталогов с TS/@language="en": {len(matches)} (нужен один). '
+                             'Файлы QM сохранены. Язык не определяется по имени или порядку.')
+        if not allow_write(target) or not allow_write(ts):
+            return
+        qm, trial = matches[0]
+        staged = Path(tmp) / target.name
+        shutil.copyfile(qm, staged)
+        staged.replace(target)
+        trial.replace(ts)
+    for qm in candidates:
+        qm.unlink()
+    # Earlier versions of step 1 also published the extracted binary here.
+    old_nickel = src / 'nickel'
+    if old_nickel.is_file():
+        old_nickel.unlink()
+    print(f'Сохранены {target} и {ts}.')
 
 
 def action(choice):
@@ -36,21 +85,7 @@ def action(choice):
         en = legacy
     ru = Path('translated') / version / 'trans_ru.ts'
     if choice == '2':
-        for candidate in sorted(src.glob('nickel_*.qm')):
-            print(candidate)
-        selected = path_input(f'Путь к английскому .qm (Enter — {en}): ')
-        selected = Path(selected) if selected else en
-        run('qmtool.py', 'qm', selected)
-        if input('Это английский каталог? [y/N] ').strip().lower() != 'y':
-            return
-        if not allow_write(en.with_suffix('.ts')):
-            return
-        if selected.resolve() != en.resolve():
-            if not allow_write(en):
-                return
-            en.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(selected, en)
-        run('qm2ts.py', en, en, en.with_suffix('.ts'), 'en')
+        select_english(src, en)
     elif choice == '3':
         if not en.is_file():
             raise ValueError('Сначала выберите английский каталог в пункте 2.')
@@ -68,7 +103,7 @@ def action(choice):
 
 def main():
     while True:
-        print('\n1. Извлечь nickel и .qm из прошивки\n2. Выбрать английский .qm → .ts'
+        print('\n1. Извлечь nickel и .qm из прошивки\n2. Автоматически найти английский .qm → .ts'
               '\n3. Подготовить русский .ts\n4. Сравнить длины EN/RU\n5. Собрать trans_ru.qm\n0. Выход')
         try:
             choice = input('> ').strip()

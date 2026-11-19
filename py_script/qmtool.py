@@ -55,8 +55,10 @@ def find_qms(path, outdir):
 
 
 def parse_qm(path):
-    b = open(path, "rb").read()
-    assert b[:16] == QM_MAGIC
+    with open(path, "rb") as f:
+        b = f.read()
+    if b[:16] != QM_MAGIC:
+        raise ValueError("Invalid QM signature")
     p = 16
     msgs_blk = None
     lang = None
