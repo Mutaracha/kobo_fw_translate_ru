@@ -1,4 +1,5 @@
 """Interactive front end for the repository's translation tools."""
+import filecmp
 from pathlib import Path
 import re
 import shutil
@@ -8,7 +9,8 @@ from tempfile import TemporaryDirectory
 import xml.etree.ElementTree as ET
 import struct
 
-from check_lengths import messages
+from catalog_review import write_untranslated
+from check_lengths import length_report, messages
 from qm2ts import write_ts
 
 SCRIPTS = Path(__file__).resolve().parent
@@ -26,8 +28,8 @@ def allow_write(path):
     return not path.exists() or input(f'Перезаписать {path}? [y/N] ').strip().lower() == 'y'
 
 
-def reference_matches(untagged):
-    reference = messages(SCRIPTS.parent / 'src' / 'trans_en_4.38.23852.ts')
+def reference_matches(untagged, reference_ts):
+    reference = messages(reference_ts)
     matches = []
     for qm, trial in untagged:
         candidate = messages(trial)
@@ -46,9 +48,20 @@ def reference_matches(untagged):
 def select_english(src, en):
     candidates = sorted(p for p in src.glob('nickel_*.qm')
                         if p.is_file() and re.fullmatch(r'nickel_[0-9a-fA-F]+\.qm', p.name))
+    if not candidates and not en.is_file():
+        raise ValueError(f'В {src} нет извлечённых nickel_*.qm. Сначала выполните пункт 1.')
+    root = src.parent
+    refs = sorted(p for p in [*root.glob('trans_en_*.qm'),
+                              *(d / f'trans_en_{d.name}.qm' for d in version_folders(root))]
+                  if p.is_file() and p != en)
+    reference = None
+    if refs:
+        reference = choose_folder(refs, 'Английский QM прежней прошивки для сверки:')
+        if reference is None:
+            return
     if not candidates:
-        if not en.is_file():
-            raise ValueError(f'В {src} нет извлечённых nickel_*.qm. Сначала выполните пункт 1.')
+        if reference and filecmp.cmp(en, reference, shallow=False):
+            print('Английские QM идентичны. Новый перевод не требуется.')
         if not en.with_suffix('.ts').is_file():
             write_ts(en, en, en.with_suffix('.ts'), 'en')
         print(f'Английский каталог уже выбран: {en}')
@@ -59,24 +72,36 @@ def select_english(src, en):
     with TemporaryDirectory(dir=src) as tmp:
         matches = []
         untagged = []
-        for qm in candidates:
-            trial = Path(tmp) / qm.with_suffix('.ts').name
-            try:
-                write_ts(qm, qm, trial)  # Use the QM language, not the intended target language.
-                language = ET.parse(trial).getroot().get('language')
-            except (ValueError, IndexError, KeyError, struct.error, ET.ParseError) as exc:
-                raise ValueError(f'Не удалось преобразовать {qm.name}. Исходные QM сохранены.') from exc
-            print(f'{qm.name}: {language or "язык не указан"}')
-            if language == 'en':
-                matches.append((qm, trial))
-            elif not language:
-                untagged.append((qm, trial))
-        if not matches and untagged:
-            matches = reference_matches(untagged)
-            if len(matches) == 1:
-                qm, trial = matches[0]
-                print(f'{qm.name}: английский определён по переводам из образца.')
-                write_ts(qm, qm, trial, 'en')
+        identical = [p for p in candidates if reference and filecmp.cmp(p, reference, shallow=False)]
+        if len(identical) == 1:
+            qm = identical[0]
+            print(f'{qm.name} и {reference} идентичны. Новый перевод не требуется.')
+            trial = Path(tmp) / 'selected.ts'
+            write_ts(qm, qm, trial, 'en')
+            matches.append((qm, trial))
+        elif identical:
+            raise ValueError(f'Подходящих английских каталогов: {len(identical)}. Файлы QM сохранены.')
+        else:
+            for qm in candidates:
+                trial = Path(tmp) / qm.with_suffix('.ts').name
+                try:
+                    write_ts(qm, qm, trial)  # Use the QM language, not the intended target language.
+                    language = ET.parse(trial).getroot().get('language')
+                except (ValueError, IndexError, KeyError, struct.error, ET.ParseError) as exc:
+                    raise ValueError(f'Не удалось преобразовать {qm.name}. Исходные QM сохранены.') from exc
+                print(f'{qm.name}: {language or "язык не указан"}')
+                if language == 'en':
+                    matches.append((qm, trial))
+                elif not language:
+                    untagged.append((qm, trial))
+            if not matches and untagged and reference:
+                reference_ts = Path(tmp) / "reference.ts"
+                write_ts(reference, reference, reference_ts, "en")
+                matches = reference_matches(untagged, reference_ts)
+                if len(matches) == 1:
+                    qm, trial = matches[0]
+                    print(f'{qm.name}: английский определён по переводам из образца.')
+                    write_ts(qm, qm, trial, 'en')
         if len(matches) != 1:
             raise ValueError(f'Подходящих английских каталогов: {len(matches)} (нужен один). '
                              'Файлы QM сохранены. Язык не определяется по имени или порядку.')
@@ -120,6 +145,12 @@ def choose_folder(folders, title, allow_blank=False):
         print(f'Введите число от 0 до {len(folders)}.')
 
 
+def english_ts(version):
+    name = f'trans_en_{version}.ts'
+    path = Path('src') / version / name
+    return path if path.is_file() else Path('src') / name
+
+
 def action(choice):
     if choice == '1':
         archive = path_input('Путь к ZIP (Enter — найти автоматически): ')
@@ -130,19 +161,21 @@ def action(choice):
         folders = version_folders(Path('src'))
         if not folders:
             raise ValueError('В src нет исходников в папках версий. Сначала выполните пункт 1.')
-        folder = choose_folder(folders, 'Исходники прошивок:')
-        if folder is None:
-            return
-        version = folder.name
+        title = 'Исходники прошивок:'
     else:
-        version = input('Версия прошивки (например, 4.38.23697): ').strip()
-    if not re.fullmatch(r'[0-9]+\.[0-9]+\.[0-9]+', version):
-        raise ValueError('Ожидается версия в формате X.Y.Z.')
+        folders = version_folders(Path('translated'), 'trans_ru.ts')
+        if choice == '5':
+            folders = [d for d in folders if english_ts(d.name).is_file()]
+        if not folders:
+            raise ValueError('Нет версий с нужными TS для этого пункта.')
+        title = 'Версия перевода:'
+    folder = choose_folder(folders, title)
+    if folder is None:
+        return
+    version = folder.name
     src = Path('src') / version
     en = src / f'trans_en_{version}.qm'
-    legacy = Path('src') / en.name
-    if choice == '4' and not en.exists() and legacy.is_file():
-        en = legacy
+    reports = Path('reports') / version
     ru = Path('translated') / version / 'trans_ru.ts'
     if choice == '2':
         select_english(src, en)
@@ -159,18 +192,23 @@ def action(choice):
         if allow_write(ru):
             ru.parent.mkdir(parents=True, exist_ok=True)
             run('qm2ts.py', prev, en, ru, 'ru_RU')
-            print(f'Отредактируйте {ru}, затем выполните пункты 4 и 5.')
-    elif choice == '4':
-        run('check_lengths.py', en.with_suffix('.ts'), ru)
-    elif choice == '5' and allow_write(ru.with_suffix('.qm')):
+            write_untranslated(ru, reports / 'untranslated.txt')
+            print(f'Отредактируйте {ru}, затем соберите QM в пункте 4.')
+    elif choice == '4' and allow_write(ru.with_suffix('.qm')):
         run('ts2qm.py', ru, ru.with_suffix('.qm'))
         print('После проверки отправьте trans_ru.ts и trans_ru.qm в Git. Патч соберёт Actions.')
+    elif choice == '5':
+        lines = list(length_report(english_ts(version), ru))
+        reports.mkdir(parents=True, exist_ok=True)
+        report = reports / 'lengths.txt'
+        report.write_text('\n'.join(lines) + '\n', encoding='utf-8')
+        print(f'{lines[-1]}\nОтчёт: {report}')
 
 
 def main():
     while True:
         print('\n1. Извлечь nickel и .qm из прошивки\n2. Автоматически найти английский .qm → .ts'
-              '\n3. Подготовить русский .ts\n4. Сравнить длины EN/RU\n5. Собрать trans_ru.qm\n0. Выход')
+              '\n3. Подготовить русский .ts\n4. Собрать trans_ru.qm\n5. Диагностика длин EN/RU (необязательно)\n0. Выход')
         try:
             choice = input('> ').strip()
             if choice == '0':

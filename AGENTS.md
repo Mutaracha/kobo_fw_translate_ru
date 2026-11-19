@@ -10,6 +10,7 @@ Follow the [firmware translation guidelines](TRANSLATION.md) when editing or rev
 ## Repository layout and note placement
 - `src/<version>/` holds the English source catalogs for that firmware. Extract `nickel` in temporary storage. Remove offset-named QM candidates only after the English QM/TS pair has been saved. The original 4.38.23852 English catalogs are directly under `src/`.
 - `translated/<version>/` is for `trans_ru.ts` and `trans_ru.qm` only. Do not create notes, screenshots, archives, backups, or temporary build outputs anywhere in `translated/`.
+- Keep generated untranslated-string and length reports in the ignored `reports/<version>/` directory, outside the catalogs.
 - `py_script/` contains catalog tools and the Windows launcher; `tests/` contains offline tests. `scripts/` and `.github/workflows/` handle packaging. `patch/` holds installable fonts and hyphenation data. Publish `KoboRoot.tgz` as an Actions artifact, not a repository file.
 - Keep the font-removal script and its udev rule in `reference/legacy-scripts/` for reference only. Do not run or package them. Document their purpose in that directory's README.
 - Put user-facing setup, build, and installation instructions in `README.md`. Put reusable terminology and translation QA rules in `TRANSLATION.md`. Keep `AGENTS.md` in English and limit it to durable workflow instructions and verified environment caveats.

@@ -5,6 +5,7 @@ Use - for translated.qm to start an empty translation. Only firmware keys are em
 """
 import sys
 from xml.sax.saxutils import escape, quoteattr
+from catalog_review import is_license
 from qmtool import parse_qm
 
 
@@ -30,7 +31,7 @@ def write_ts(tr_qm, src_qm, out, lang=None):
     for c, keys in ctxs.items():
         lines += ["<context>", f"    <name>{x(c)}</name>"]
         for k in keys:
-            forms = trans.get(k)
+            forms = None if lang.startswith("ru") and is_license(c, k[1]) else trans.get(k)
             numerus = len(allkeys[k]["tr"]) > 1
             if lang.startswith("ru") and len(forms or []) != (3 if numerus else 1):
                 forms = [""] * 3 if numerus else []

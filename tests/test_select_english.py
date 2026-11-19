@@ -56,6 +56,7 @@ class EnglishSelectionTests(unittest.TestCase):
 
     def test_untagged_firmware_matches_reference_across_versions(self):
         sample = SCRIPTS.parent / 'src/trans_en_4.38.23852.qm'
+        (self.src.parent / sample.name).write_bytes(sample.read_bytes())
         lang, rows = parse_qm(sample)
         self.assertIsNone(lang)
         # Simulate a nearby firmware: most keys overlap, but not all.
@@ -68,7 +69,7 @@ class EnglishSelectionTests(unittest.TestCase):
         for m in rows:
             m['tr'] = ['Fremdsprache'] * len(m['tr'])
         write_qm(self.src / 'nickel_1.qm', rows, b'', b'')
-        self.assertEqual(self.step2(), '')
+        self.assertEqual(self.step2('1\n1'), '')
         self.assertEqual(self.en.read_bytes(), original)
         root = ET.parse(self.en.with_suffix('.ts')).getroot()
         self.assertEqual(root.get('language'), 'en')
@@ -77,9 +78,10 @@ class EnglishSelectionTests(unittest.TestCase):
 
     def test_two_untagged_reference_matches_preserve_inputs(self):
         sample = (SCRIPTS.parent / 'src/trans_en_4.38.23852.qm').read_bytes()
+        (self.src.parent / 'trans_en_4.38.23852.qm').write_bytes(sample)
         for name in ('nickel_1.qm', 'nickel_2.qm'):
             (self.src / name).write_bytes(sample)
-        self.assertIn('английских каталогов: 2', self.step2())
+        self.assertIn('английских каталогов: 2', self.step2('1\n1'))
         self.assertFalse(self.en.exists())
         self.assertEqual(len(list(self.src.glob('nickel_*.qm'))), 2)
 
@@ -121,6 +123,43 @@ class EnglishSelectionTests(unittest.TestCase):
             else:
                 self.assertEqual(ET.parse(target).findtext('.//translation'), expected)
                 target.unlink()
+
+    def test_selected_reference_exact_match_skips_other_candidates(self):
+        original = self.candidate('nickel_a.qm', b'').read_bytes()
+        (self.src / 'nickel_b.qm').write_bytes(b'not a catalog')
+        (self.src.parent / 'trans_en_2.0.0.qm').write_bytes(original)
+        (self.src.parent / 'trans_en_1.0.0.qm').write_bytes(b'other reference')
+        run = subprocess.run([sys.executable, SCRIPTS / 'translate_menu.py'], cwd=self.cwd,
+                             input='2\n1\n2\n0\n', capture_output=True, text=True, check=True)
+        self.assertEqual(run.stderr, '')
+        self.assertIn('Новый перевод не требуется', run.stdout)
+        self.assertEqual(self.en.read_bytes(), original)
+
+    def test_preparation_compilation_and_reports(self):
+        license_source = '<h1><span>Attributions</span></h1><p>License text</p>'
+        rows = [dict(ctx='AchievementText', src='Pressed for Details', cmt='', tr=['Pressed for Details']),
+                dict(ctx='Home', src='Done', cmt='', tr=['Done']),
+                dict(ctx='N3SettingsDeviceInformationController', src=license_source, cmt='', tr=[license_source])]
+        write_qm(self.en, rows, b'en', b'')
+        subprocess.run([sys.executable, SCRIPTS / 'qm2ts.py', self.en, self.en, self.en.with_suffix('.ts'), 'en'],
+                       capture_output=True, check=True)
+        previous = self.cwd / 'translated/4.1.1'
+        previous.mkdir(parents=True)
+        rows[0]['tr'] = ['Подробности']
+        rows[2]['tr'] = ['Лицензия']
+        write_qm(previous / 'trans_ru.qm', [rows[0], rows[2]], b'ru_RU', b'')
+        run = subprocess.run([sys.executable, SCRIPTS / 'translate_menu.py'], cwd=self.cwd,
+                             input='3\n1\n1\n4\n1\n5\n1\n0\n', capture_output=True, text=True, check=True)
+        self.assertEqual(run.stderr, '')
+        reports = self.cwd / 'reports' / self.src.name
+        missing = (reports / 'untranslated.txt').read_text(encoding='utf-8')
+        self.assertIn('Home | Done', missing)
+        self.assertNotIn('Attributions', missing)
+        lengths = (reports / 'lengths.txt').read_text(encoding='utf-8')
+        self.assertIn('EN 19 → RU 11 | AchievementText [1]: Pressed for Details → Подробности', lengths)
+        self.assertNotIn('Attributions', lengths)
+        self.assertEqual([m['src'] for m in parse_qm(previous.parent / self.src.name / 'trans_ru.qm')[1]],
+                         ['Pressed for Details'])
 
     def test_missing_inputs_have_actionable_error(self):
         self.assertIn('Сначала выполните пункт 1', self.step2())

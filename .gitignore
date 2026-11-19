@@ -10,3 +10,6 @@ extracted-qm/
 !/translated/*/
 !/translated/*/trans_ru.ts
 !/translated/*/trans_ru.qm
+
+# Per-version local translation diagnostics.
+/reports/

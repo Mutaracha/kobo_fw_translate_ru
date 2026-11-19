@@ -1,4 +1,5 @@
 """List EN/RU display-length outliers in two matching firmware TS catalogs."""
+from catalog_review import is_license
 import argparse
 import html
 import re
@@ -24,14 +25,12 @@ def visible(text):
     return ' '.join(html.unescape(text).split())
 
 
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('english_ts')
-    parser.add_argument('russian_ts')
-    args = parser.parse_args()
-    en, ru = messages(args.english_ts), messages(args.russian_ts)
+def length_report(english_ts, russian_ts):
+    en, ru = messages(english_ts), messages(russian_ts)
     checked = flagged = keys = 0
     for key in sorted(en.keys() & ru.keys()):
+        if is_license(key[0], key[1]):
+            continue
         english, russian = en[key], ru[key]
         if (len(english), len(russian)) not in {(1, 1), (2, 3)}:
             continue  # Resolve differences in numerus structure before measuring.
@@ -42,12 +41,17 @@ def main():
                 continue
             checked += 1
             if abs(len(b) - len(a)) >= 8 and 100 * abs(len(b) - len(a)) > 30 * len(a):
-                print(f'{key[0]} [{i + 1}]: EN {len(a)} → RU {len(b)} | {a} → {b}')
+                yield f'EN {len(a)} → RU {len(b)} | {key[0]} [{i + 1}]: {a} → {b}'
                 hits += 1
         flagged += hits
         keys += bool(hits)
-    print(f'Compared forms: {checked}; flagged forms: {flagged}; flagged keys: {keys}')
+    yield f'Compared forms: {checked}; flagged forms: {flagged}; flagged keys: {keys}'
 
 
 if __name__ == '__main__':
-    main()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('english_ts')
+    parser.add_argument('russian_ts')
+    args = parser.parse_args()
+    for line in length_report(args.english_ts, args.russian_ts):
+        print(line)
