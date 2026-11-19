@@ -1,4 +1,5 @@
 """Interactive front end for the repository's translation tools."""
+from datetime import datetime
 import filecmp
 from pathlib import Path
 import re
@@ -20,12 +21,14 @@ def run(script, *args):
     subprocess.run([sys.executable, SCRIPTS / script, *args], check=True)
 
 
-def path_input(prompt):
-    return input(prompt).strip().strip('"')
+def read_answer(prompt):
+    answer = input(prompt).strip()
+    print(flush=True)  # Separate the echoed answer from the next console output.
+    return answer
 
 
 def allow_write(path):
-    return not path.exists() or input(f'Перезаписать {path}? [y/N] ').strip().lower() == 'y'
+    return not path.exists() or read_answer(f'Перезаписать {path}? [y/N] ').lower() == 'y'
 
 
 def reference_matches(untagged, reference_ts):
@@ -45,6 +48,11 @@ def reference_matches(untagged, reference_ts):
     return matches
 
 
+def report_identical(catalog, reference):
+    print('\n=== Новый перевод не требуется ===')
+    print(f'Английские QM идентичны:\n  {catalog}\n  {reference}')
+
+
 def select_english(src, en):
     candidates = sorted(p for p in src.glob('nickel_*.qm')
                         if p.is_file() and re.fullmatch(r'nickel_[0-9a-fA-F]+\.qm', p.name))
@@ -57,11 +65,11 @@ def select_english(src, en):
         if reference is None:
             return
     if not candidates:
-        if reference and filecmp.cmp(en, reference, shallow=False):
-            print('Английские QM идентичны. Новый перевод не требуется.')
         if not en.with_suffix('.ts').is_file():
             write_ts(en, en, en.with_suffix('.ts'), 'en')
         print(f'Английский каталог уже выбран: {en}')
+        if reference and filecmp.cmp(en, reference, shallow=False):
+            report_identical(en, reference)
         return
 
     ts = en.with_suffix('.ts')
@@ -71,7 +79,6 @@ def select_english(src, en):
         identical = [p for p in candidates if reference and filecmp.cmp(p, reference, shallow=False)]
         if len(identical) == 1:
             qm = identical[0]
-            print(f'{qm.name} и {reference} идентичны. Новый перевод не требуется.')
             trial = Path(tmp) / 'selected.ts'
             write_ts(qm, qm, trial, 'en')
             matches.append((qm, trial))
@@ -115,6 +122,8 @@ def select_english(src, en):
     if old_nickel.is_file():
         old_nickel.unlink()
     print(f'Сохранены {en} и {ts}.')
+    if identical:
+        report_identical(identical[0], reference)
 
 
 def version_folders(root, required_file=None):
@@ -127,11 +136,13 @@ def version_folders(root, required_file=None):
 def choose_folder(folders, title, allow_blank=False):
     print(title)
     for number, folder in enumerate(folders, 1):
-        print(f'{number}. {folder}')
+        version_dir = folder if folder.is_dir() else folder.parent
+        modified = datetime.fromtimestamp(version_dir.stat().st_mtime)
+        print(f'{number}. {folder}    Папка изменена: {modified:%d.%m.%Y %H:%M}')
     if allow_blank:
         print('Enter — начать без прежнего перевода.')
     while True:
-        answer = input('Номер в списке (0 — назад): ').strip()
+        answer = read_answer('Номер в списке (0 — назад): ')
         if answer == '0':
             return None
         if not answer and allow_blank:
@@ -147,7 +158,7 @@ def english_ts(version):
 
 def action(choice):
     if choice == '1':
-        archive = path_input('Путь к ZIP (Enter — найти автоматически): ')
+        archive = read_answer('Путь к ZIP (Enter — найти автоматически): ').strip('"')
         run('bin2qm.py', *([archive] if archive else []))
         return
 
@@ -204,7 +215,7 @@ def main():
         print('\n1. Извлечь nickel и .qm из прошивки\n2. Автоматически найти английский .qm → .ts'
               '\n3. Подготовить русский .ts\n4. Собрать trans_ru.qm\n5. Диагностика длин EN/RU (необязательно)\n0. Выход')
         try:
-            choice = input('> ').strip()
+            choice = read_answer('> ')
             if choice == '0':
                 return
             if choice in {'1', '2', '3', '4', '5'}:

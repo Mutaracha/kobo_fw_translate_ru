@@ -1,4 +1,6 @@
 """Exercise menu step 2 with offset-named catalogs, as produced by step 1."""
+from datetime import datetime
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -134,10 +136,18 @@ class EnglishSelectionTests(unittest.TestCase):
         (self.src / 'nickel_b.qm').write_bytes(b'not a catalog')
         self.reference('1.0.0', original)
         self.reference('2.0.0', b'other reference')
-        run = subprocess.run([sys.executable, SCRIPTS / 'translate_menu.py'], cwd=self.cwd,
-                             input='2\n1\n2\n0\n', capture_output=True, text=True, check=True)
-        self.assertEqual(run.stderr, '')
-        self.assertIn('Новый перевод не требуется', run.stdout)
+        reference = Path('src/1.0.0/trans_en.qm')
+        stamp = datetime(2024, 2, 3, 15, 45).timestamp()
+        os.utime(self.cwd / reference.parent, (stamp, stamp))
+        for status, matched in [('Сохранены', self.src / 'nickel_a.qm'),
+                                ('Английский каталог уже выбран', self.en)]:
+            run = subprocess.run([sys.executable, SCRIPTS / 'translate_menu.py'], cwd=self.cwd,
+                                 input='2\n1\n2\n0\n', capture_output=True, text=True, check=True)
+            self.assertEqual(run.stderr, '')
+            self.assertIn(f'{reference}    Папка изменена: 03.02.2024 15:45', run.stdout)
+            self.assertIn('Номер в списке (0 — назад): \nАнглийский QM', run.stdout)
+            self.assertIn('=== Новый перевод не требуется ===', run.stdout.split(status)[1])
+            self.assertIn(f'{matched.relative_to(self.cwd)}\n  {reference}\n\n1.', run.stdout)
         self.assertEqual(self.en.read_bytes(), original)
 
     def test_preparation_compilation_and_reports(self):
