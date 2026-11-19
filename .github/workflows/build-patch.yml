@@ -1,0 +1,36 @@
+name: Build KoboRoot.tgz
+
+on:
+  push:
+    paths:
+      - 'translated/*/trans_ru.qm'
+      - 'patch/fonts/*.ttf'
+      - 'scripts/build_patch.sh'
+      - '.github/workflows/build-patch.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Select latest firmware
+        id: latest
+        shell: bash
+        run: |
+          version=$(find translated -mindepth 1 -maxdepth 1 -type d -printf '%f\n' |
+            grep -Ex '[0-9]+(\.[0-9]+)+' | sort -V | tail -n 1)
+          test -s "translated/$version/trans_ru.qm" || { echo "Missing trans_ru.qm for $version" >&2; exit 1; }
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+      - name: Package translation and fonts
+        env:
+          VERSION: ${{ steps.latest.outputs.version }}
+        run: ./scripts/build_patch.sh "translated/$VERSION/trans_ru.qm" "$RUNNER_TEMP/KoboRoot.tgz"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: KoboRoot-${{ steps.latest.outputs.version }}
+          path: ${{ runner.temp }}/KoboRoot.tgz
+          if-no-files-found: error

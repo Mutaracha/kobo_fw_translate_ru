@@ -2,13 +2,20 @@
 
 Готовый перевод для прошивки **4.38.23852** устанавливается как патч `KoboRoot.tgz`.
 
-## Локальная сборка патча
+## Обновление перевода и сборка в Actions
 
-Для локальной сборки на Linux (GNU tar и coreutils) из корня репозитория:
+1. Обновите `translated/<версия>/trans_ru.qm`. Если редактировали `.ts`, сначала скомпилируйте его, например:
+   ```sh
+   python3 py_script/ts2qm.py translated/4.38.23852/trans_ru.ts translated/4.38.23852/trans_ru.qm
+   ```
+2. Отправьте изменения (`git push`). При изменении `.qm`, шрифтов или файлов сборки workflow **Build KoboRoot.tgz** соберёт **один патч** для самого большого номера версии в `translated/`. Компоненты номера сравниваются как числа (`4.40.10` новее `4.40.9`); если у новейшей версии нет готового `.qm`, сборка завершится ошибкой, а не выпустит старую версию. Сборку можно также запустить вручную через **Actions → Build KoboRoot.tgz → Run workflow**.
+3. Откройте завершённый запуск и в разделе **Artifacts** скачайте `KoboRoot-<версия>` для своей прошивки. Распакуйте скачанный ZIP и скопируйте **сам `KoboRoot.tgz`**, не распаковывая его, в каталог `.kobo` на устройстве. Безопасно извлеките устройство для установки.
+
+Патч доступен как артефакт Actions: его не коммитят и не собирают в `translated/`. Для проверки упаковки на Linux (GNU tar и coreutils) можно использовать временный каталог:
 
 ```sh
-./scripts/build_patch.sh translated/4.38.23852/trans_ru.qm KoboRoot.tgz
-tar -tzf KoboRoot.tgz
+./scripts/build_patch.sh translated/4.38.23852/trans_ru.qm /tmp/KoboRoot.tgz
+tar -tzf /tmp/KoboRoot.tgz
 ```
 
 ## Состав патча
@@ -16,10 +23,12 @@ tar -tzf KoboRoot.tgz
 - `usr/local/Kobo/translations/trans_ru.qm` — перевод выбранной версии.
 - `usr/local/Trolltech/QtEmbedded-4.6.2-arm/lib/fonts/` — восемь файлов Avenir и Georgia из исходного патча 4.38.23852. Для сборки они хранятся в `patch/fonts/`.
 
+[Сравнение примера и альтернативного патча](docs/patch-comparison.md).
+
 ## Файлы репозитория
 
 - `src/trans_en_4.38.23852.qm` — английский исходник, извлечённый из `usr/local/Kobo/nickel` прошивки 4.38.23852.
-- `translated/<версия>/` — переведённые строки (`trans_ru.ts`, `trans_ru.qm`); в `translated/4.38.23852/` также находится готовый патч `KoboRoot.tgz`.
+- `translated/<версия>/` — переведённые строки (`trans_ru.ts`, `trans_ru.qm`).
 - `py_script/` — инструменты на Python 3, не требующие Qt:
   - `ts2qm.py` — компиляция `.ts` → `.qm`;
   - `qm2ts.py` — преобразование `.qm` → `.ts` с полным списком строк прошивки;
