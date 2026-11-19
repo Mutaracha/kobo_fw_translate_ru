@@ -96,13 +96,44 @@ def select_english(src, en):
     print(f'Сохранены {target} и {ts}.')
 
 
+def choose_source_version():
+    root = Path('src')
+    pattern = r'[0-9]+\.[0-9]+\.[0-9]+'
+    locations = {}
+    for path in root.glob('trans_en_*.qm'):
+        match = re.fullmatch(rf'trans_en_({pattern})\.qm', path.name)
+        if match and path.is_file():
+            locations[match[1]] = path  # Legacy flat layout.
+    for path in root.glob('*'):
+        if path.is_dir() and re.fullmatch(pattern, path.name):
+            locations[path.name] = path
+    versions = sorted(locations, key=lambda v: tuple(map(int, v.split('.'))), reverse=True)
+    if not versions:
+        raise ValueError('В src нет исходников прошивок. Сначала выполните пункт 1.')
+    print('Исходники прошивок:')
+    for number, version in enumerate(versions, 1):
+        print(f'{number}. {locations[version]}')
+    while True:
+        answer = input('Номер в списке (0 — назад): ').strip()
+        if answer == '0':
+            return None
+        if answer.isascii() and answer.isdecimal() and 1 <= int(answer) <= len(versions):
+            return versions[int(answer) - 1]
+        print(f'Введите число от 0 до {len(versions)}.')
+
+
 def action(choice):
     if choice == '1':
         archive = path_input('Путь к ZIP (Enter — найти автоматически): ')
         run('bin2qm.py', *([archive] if archive else []))
         return
 
-    version = input('Версия прошивки (например, 4.38.23697): ').strip()
+    if choice == '2':
+        version = choose_source_version()
+        if version is None:
+            return
+    else:
+        version = input('Версия прошивки (например, 4.38.23697): ').strip()
     if not re.fullmatch(r'[0-9]+\.[0-9]+\.[0-9]+', version):
         raise ValueError('Ожидается версия в формате X.Y.Z.')
     src = Path('src') / version

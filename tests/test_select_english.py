@@ -26,9 +26,9 @@ class EnglishSelectionTests(unittest.TestCase):
         write_qm(path, [{'ctx': 'Home', 'src': 'Done', 'cmt': '', 'tr': ['Done']}], language, b'')
         return path
 
-    def step2(self):
+    def step2(self, selection="1"):
         run = subprocess.run([sys.executable, SCRIPTS / 'translate_menu.py'], cwd=self.cwd,
-                             input='2\n4.38.23828\n0\n', capture_output=True, text=True, check=True)
+                             input=f'2\n{selection}\n0\n', capture_output=True, text=True, check=True)
         self.assertNotIn('Traceback', run.stderr)
         return run.stderr
 
@@ -82,6 +82,24 @@ class EnglishSelectionTests(unittest.TestCase):
         self.assertIn('английских каталогов: 2', self.step2())
         self.assertFalse(self.en.exists())
         self.assertEqual(len(list(self.src.glob('nickel_*.qm'))), 2)
+
+    def test_pick_second_version_after_invalid_choice(self):
+        other = self.src.parent / '4.100.1'
+        other.mkdir()
+        (self.src.parent / 'notes').mkdir()
+        original = self.candidate('nickel_1.qm', b'en').read_bytes()
+        (other / 'nickel_1.qm').write_bytes(original)
+        self.assertEqual(self.step2('3\n2'), '')
+        self.assertEqual(self.en.read_bytes(), original)
+        self.assertEqual(list(other.iterdir()), [other / 'nickel_1.qm'])
+
+    def test_cancel_or_no_folders(self):
+        candidate = self.candidate('nickel_1.qm', b'en')
+        self.assertEqual(self.step2('0'), '')
+        self.assertTrue(candidate.is_file())
+        candidate.unlink()
+        self.src.rmdir()
+        self.assertIn('В src нет исходников', self.step2('0'))
 
     def test_missing_inputs_have_actionable_error(self):
         self.assertIn('Сначала выполните пункт 1', self.step2())
