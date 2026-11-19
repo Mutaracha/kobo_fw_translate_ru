@@ -1,21 +1,21 @@
 # Kobo 4.38.23852: сравнение русских формулировок
 
-Первоначальный перевод — `be4e4fd`. На ридере на последних снимках — редакция `e386b46`. В черновике `.ts` изменены ещё две подписи; `.qm` не пересобирался.
+Первоначальный перевод — `be4e4fd`. На ридере на последних снимках — редакция `e386b46`. В проверочную сборку включены согласованные правки.
 
-## На согласование
+## Согласованные подписи
 
-| Где | Первоначально | На снимке | Черновик |
+| Где | Первоначально | На снимке | В сборке |
 |---|---|---|---|
 | `SearchKeyboardController` · `Go` | Ввод | Ввод | **ENTER** |
 | `SingleBookHomeWidget` · `%1% Read` | Прочитано %1% | %1% | **%1% книги** |
 
-Для карточки предлагается «4% книги», «99% книги», «100% книги»: значение стоит первым и не пропадёт, если ридер сократит конец подписи. Вариант касается только книг на главном экране; отдельная строка с оставшимся временем не меняется. `ENTER` относится к клавише поиска, а не к кнопке перехода по адресу в браузере.
+На карточке отображается «4% книги», «99% книги», «100% книги»: значение стоит первым и не пропадёт, если ридер сократит конец подписи. Вариант касается только книг на главном экране; отдельная строка с оставшимся временем не меняется. `ENTER` относится к клавише поиска, а не к кнопке перехода по адресу в браузере.
 
 ## Все изменённые формулировки
 
 260 общих ключей, у которых русский текст или формы числа отличаются от первоначальных. Формы числа перечислены в порядке Qt. Ещё 21 ключ удалён из каталога как отсутствующий в английском исходнике; это не замены формулировок.
 
-| Контекст · английский ключ | Первоначальный перевод | Новый перевод (включая черновик) |
+| Контекст · английский ключ | Первоначальный перевод | Перевод в проверочной сборке |
 |---|---|---|
 | `AbstractPowerView` · Please charge your eReader | Пожалуйста, зарядите ваше устройство | Зарядите устройство |
 | `AchievementText` · 10 shares to Facebook will earn you the social butterfly award! | 10 раз поделитесь на Facebook и заработайте социальный приз бабочку! | Поделитесь записями в Facebook 10 раз, чтобы получить награду «Бабочка»! |
@@ -50,7 +50,7 @@
 | `ArticleLibraryView` · Add articles to your Instapaper account and sync your eReader to start reading. | Добавляйте статьи в свою учетную запись Instapaper и синхронизируйте свой ридер, чтобы начать чтение. | Сохраните статьи в Instapaper и синхронизируйте ридер, чтобы начать читать. |
 | `AwardDetailsView` · %1% completed | %1% завершено | Выполнено: %1% |
 | `BatteryMenuView` · Connect your eReader to a power source with the PowerCover attached | Подключите ваш ридер к источнику питания с прикрепленной крышкой PowerCover | Не снимая чехол PowerCover, подключите устройство к источнику питания |
-| `BatteryMenuView` · Stylus: Battery Low | Стилус: низкий уровень заряда | Стилус разряжается |
+| `BatteryMenuView` · Stylus: Battery Low | Стилус: низкий уровень заряда | Стилус почти разряжен |
 | `BluetoothAgent` · "%0" wants to pair with your eReader. | «%0» хочет выполнить сопряжение с вашим ридером. | «%0» запрашивает сопряжение с устройством. |
 | `BluetoothAliasView` · Your %1 eReader will be discoverable over Bluetooth using this name: | Ваша электронная книга %1 будет доступна под этим именем по Bluetooth: | При поиске по Bluetooth ридер %1 будет виден под этим именем: |
 | `BluetoothAliasView` · Your Kobo eReader will be discoverable over Bluetooth using this name: | Ваш ридер будет доступен для обнаружения через Bluetooth под этим именем: | При поиске по Bluetooth ридер Kobo будет виден под этим именем: |
@@ -61,10 +61,10 @@
 | `ChooseSetupTypeView` · &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Let's begin by setting up your eReader. The first thing we need to do is connect to your Wi&amp;nbsp;Fi network.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; | &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Начнем с настройки ридера. Во-первых, нам нужно подключиться к вашей Wi-Fi сети.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; | &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Начнём с настройки ридера. Сначала подключитесь к сети Wi-Fi.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; |
 | `ConvertToPreviewActionProxyWorker` · Please try again. Error: | Пожалуйста, попробуйте еще раз. Ошибка: | Повторите попытку. Ошибка: |
 | `DemoModeManager` · The slideshow images for demo mode have been removed from the eReader. Please factory reset to restore them. Warning: this will erase your books, documents, and custom settings. | Демонстрационное слайд-шоу удалено с устройства. Сделайте сброс до заводских настроек для восстановления. Внимание: при этом будут удалены все ваши книги и настройки. | С устройства удалены изображения для демонстрационного слайд-шоу. Чтобы вернуть их, восстановите заводские настройки. Внимание: при сбросе будут удалены книги, документы и пользовательские настройки. |
-| `DesktopSetupView` · Connect your eReader | Подключите ваше устройство | Подключите ридер |
-| `DesktopSetupView` · Use the USB cable, that was included in the box, to connect your eReader to your computer. | Используйте USB-кабель, входящий в комплект поставки, чтобы подключить ваш ридер к компьютеру. | Подключите ридер к компьютеру USB-кабелем из комплекта. |
+| `DesktopSetupView` · Connect your eReader | Подключите ваше устройство | Подключите устройство |
+| `DesktopSetupView` · Use the USB cable, that was included in the box, to connect your eReader to your computer. | Используйте USB-кабель, входящий в комплект поставки, чтобы подключить ваш ридер к компьютеру. | Подключите устройство к компьютеру USB-кабелем из комплекта. |
 | `DictionaryEmptyState` · You don't have the %1 dictionary installed. To add one to your eReader, tap Manage Dictionaries. | Словарь %1 не установлен. Чтобы добавить его, нажмите «Управление словарями». | Словарь %1 не установлен. Чтобы добавить его на ридер, нажмите «Управление словарями». |
-| `DictionarySearchItem` · You don't have the %1 dictionary installed. To add one to your eReader, tap Manage Dictionaries. | Словарь %1 не установлен. Перейдите в 'Управление словарями'. | Словарь %1 не установлен. Чтобы добавить его на ридер, нажмите «Управление словарями». |
+| `DictionarySearchItem` · You don't have the %1 dictionary installed. To add one to your eReader, tap Manage Dictionaries. | Словарь %1 не установлен. Перейдите в 'Управление словарями'. | Словарь %1 не установлен. Чтобы добавить его, нажмите «Управление словарями». |
 | `DragonAnnotationView` · Sort: Recent | Сортировка: Последние | Сначала недавние |
 | `DragonLibraryView` · Sort: Recent | Сортировка: Последние | Сначала недавние |
 | `DragonQuiltedView` · Please charge your eReader | Пожалуйста, зарядите ваше устройство | Зарядите устройство |

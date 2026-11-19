@@ -1360,7 +1360,7 @@ to go</source>
     </message>
     <message>
         <source>Stylus: Battery Low</source>
-        <translation>Стилус разряжается</translation>
+        <translation>Стилус почти разряжен</translation>
     </message>
     <message>
         <source>Stylus: Battery OK</source>
@@ -2533,11 +2533,11 @@ to go</source>
     <name>DesktopSetupView</name>
     <message>
         <source>Connect your eReader</source>
-        <translation>Подключите ридер</translation>
+        <translation>Подключите устройство</translation>
     </message>
     <message>
         <source>Use the USB cable, that was included in the box, to connect your eReader to your computer.</source>
-        <translation>Подключите ридер к компьютеру USB-кабелем из комплекта.</translation>
+        <translation>Подключите устройство к компьютеру USB-кабелем из комплекта.</translation>
     </message>
 </context>
 <context>
@@ -2707,7 +2707,7 @@ to go</source>
     </message>
     <message>
         <source>You don&apos;t have the %1 dictionary installed. To add one to your eReader, tap Manage Dictionaries.</source>
-        <translation>Словарь %1 не установлен. Чтобы добавить его на ридер, нажмите «Управление словарями».</translation>
+        <translation>Словарь %1 не установлен. Чтобы добавить его, нажмите «Управление словарями».</translation>
     </message>
 </context>
 <context>
