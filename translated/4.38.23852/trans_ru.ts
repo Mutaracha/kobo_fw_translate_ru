@@ -12284,14 +12284,14 @@ to read</source>
     </message>
     <message>
         <source>%1% Read</source>
-        <translation>%1% книги</translation>
+        <translation>%1% прочли</translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s) to go</source>
         <translation>
-            <numerusform>Ещё %n ч</numerusform>
-            <numerusform>Ещё %n ч</numerusform>
-            <numerusform>Ещё %n ч</numerusform>
+            <numerusform>%n час остался</numerusform>
+            <numerusform>%n часа осталось</numerusform>
+            <numerusform>%n часов осталось</numerusform>
         </translation>
     </message>
     <message numerus="yes">
