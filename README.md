@@ -46,12 +46,12 @@ tar -tzf /tmp/KoboRoot.tgz
 - `usr/local/Kobo/hyphenDicts/hyph_ru.dic` — правила русских переносов из альтернативного патча; исходный файл хранится в `patch/hyphenDicts/`.
 - `usr/local/Trolltech/QtEmbedded-4.6.2-arm/lib/fonts/` — восемь файлов Avenir и Georgia из исходного патча 4.38.23852. Для сборки они хранятся в `patch/fonts/`.
 
-[Сравнение примера и альтернативного патча](docs/patch-comparison.md).
+[Скрипт удаления шрифтов и правило udev](reference/legacy-scripts/README.md) сохранены отдельно для справки и в патч не входят.
 
 ## Файлы репозитория
 
 - `src/trans_en_4.38.23852.qm` — английский исходник, извлечённый из `usr/local/Kobo/nickel` прошивки 4.38.23852.
-- `translated/<версия>/` — переведённые строки (`trans_ru.ts`, `trans_ru.qm`).
+- `translated/<версия>/` — только `trans_ru.ts` и `trans_ru.qm`. Заметки по конкретной версии и скриншоты оставляйте в обсуждении задачи или pull request.
 - `py_script/` — инструменты на Python 3, не требующие Qt:
   - `ts2qm.py` — компиляция `.ts` → `.qm`;
   - `qm2ts.py` — преобразование `.qm` → `.ts` с полным списком строк прошивки;
@@ -66,4 +66,4 @@ tar -tzf /tmp/KoboRoot.tgz
 python3 py_script/qm2ts.py src/trans_en_4.38.23852.qm src/trans_en_4.38.23852.qm src/trans_en_4.38.23852.ts en
 ```
 
-[Результаты редактуры и проверки перевода](translated/4.38.23852/review.md).
+Порядок проверки каталогов описан в [правилах перевода](TRANSLATION.md).

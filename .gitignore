@@ -4,3 +4,9 @@ kobo-update*.zip
 extracted-qm/
 /src/*/nickel
 /src/*/nickel_*.qm
+
+# Russian firmware directories contain only the two final Qt catalogs.
+/translated/**
+!/translated/*/
+!/translated/*/trans_ru.ts
+!/translated/*/trans_ru.qm
