@@ -33,11 +33,11 @@ for c, keys in ctxs.items():
         lines.append(f"        <source>{x(k[1])}</source>")
         if k[2]:
             lines.append(f"        <comment>{x(k[2])}</comment>")
-        if not forms:
+        if not forms or (not numerus and not forms[0]):
             lines.append('        <translation type="unfinished"></translation>')
         elif numerus:
-            lines.append("        <translation>")
-            lines += [f"            <numerusform>{x(f)}</numerusform>" for f in forms]
+            lines.append('        <translation type="unfinished">' if not all(forms) else "        <translation>")
+            lines += [f"            <numerusform>{x(f or '')}</numerusform>" for f in forms]
             lines.append("        </translation>")
         else:
             lines.append(f"        <translation>{x(forms[0])}</translation>")
@@ -45,4 +45,4 @@ for c, keys in ctxs.items():
     lines.append("</context>")
 lines.append("</TS>")
 open(out, "w", encoding="utf-8", newline="\n").write("\n".join(lines) + "\n")
-print("contexts", len(ctxs), "messages", len(allkeys), "translated", sum(1 for k in allkeys if k in trans))
+print("contexts", len(ctxs), "messages", len(allkeys), "translated", sum(bool(forms) and all(forms) for forms in trans.values()))
