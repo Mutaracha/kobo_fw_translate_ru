@@ -1,5 +1,6 @@
 """Extract nickel and its Qt translation catalogs from a Kobo firmware ZIP."""
 import argparse
+import re
 from pathlib import Path, PurePosixPath
 import shutil
 import tarfile
@@ -18,6 +19,15 @@ def firmware_input():
     if Path('nickel').is_file():
         return Path('nickel')
     raise ValueError('В текущей папке нет kobo-update*.zip или nickel.')
+
+
+def default_output(source):
+    if source.suffix.lower() != '.zip':
+        return Path('extracted-qm')  # A standalone nickel has no firmware version.
+    match = re.match(r'kobo-update-([0-9]+\.[0-9]+\.[0-9]+)(?![0-9.])', source.stem, re.I)
+    if not match:
+        raise ValueError('В имени ZIP нет версии kobo-update-X.Y.Z. Укажите папку с -o.')
+    return Path('src') / match[1]
 
 
 def extract_nickel(archive, dest):
@@ -39,10 +49,11 @@ def extract_nickel(archive, dest):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('input', type=Path, nargs='?', help='архив прошивки ZIP или файл nickel')
-    parser.add_argument('-o', '--output', type=Path, default=Path('extracted-qm'), help='новая папка для результатов')
+    parser.add_argument('-o', '--output', type=Path, help='новая папка для результатов')
     args = parser.parse_args()
     try:
         source = args.input or firmware_input()
+        args.output = args.output or default_output(source)
         if args.output.exists():
             raise ValueError(f'{args.output} уже существует. Выберите новую папку с -o.')
         args.output.parent.mkdir(parents=True, exist_ok=True)

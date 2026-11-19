@@ -41,7 +41,7 @@ class FirmwareTests(unittest.TestCase):
         (self.cwd / 'nickel').write_bytes(b'ignored when ZIP present')
         result = self.run_cli()
         self.assertEqual(result.returncode, 0, result.stderr)
-        out = self.cwd / 'extracted-qm'
+        out = self.cwd / 'src/4.38.23697'
         self.assertEqual((out / 'nickel').read_bytes(), nickel)
         self.assertEqual([f.read_bytes() for f in out.glob('*.qm')], [QM, QM])
         self.assertNotEqual(self.run_cli().returncode, 0)  # no overwrite
@@ -59,4 +59,14 @@ class FirmwareTests(unittest.TestCase):
         self.assertIn('нет usr/local/Kobo/nickel', self.run_cli(self.zip).stderr)
         self.archive(b'no translations')
         self.assertIn('не найдены каталоги QM', self.run_cli(self.zip).stderr)
-        self.assertFalse((self.cwd / 'extracted-qm').exists())
+        self.assertFalse((self.cwd / 'src/4.38.23697').exists())
+
+    def test_version_and_output_override(self):
+        self.archive(QM)
+        archive = self.zip.rename(self.cwd / 'kobo-update-12.123.456789.zip')
+        self.assertEqual(self.run_cli(archive).returncode, 0)
+        self.assertTrue((self.cwd / 'src/12.123.456789/nickel').is_file())
+        archive = archive.rename(self.cwd / 'custom.zip')
+        self.assertNotEqual(self.run_cli(archive).returncode, 0)
+        self.assertEqual(self.run_cli(archive, '-o', 'custom output').returncode, 0)
+        self.assertTrue((self.cwd / 'custom output/nickel').is_file())

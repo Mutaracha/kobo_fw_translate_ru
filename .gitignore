@@ -2,3 +2,5 @@
 KoboRoot.tgz
 kobo-update*.zip
 extracted-qm/
+/src/*/nickel
+/src/*/nickel_*.qm
