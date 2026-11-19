@@ -11795,7 +11795,7 @@ to read</source>
     <name>SearchKeyboardController</name>
     <message>
         <source>Go</source>
-        <translation>Ввод</translation>
+        <translation>ENTER</translation>
     </message>
 </context>
 <context>
@@ -12284,7 +12284,7 @@ to read</source>
     </message>
     <message>
         <source>%1% Read</source>
-        <translation>%1%</translation>
+        <translation>%1% книги</translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s) to go</source>
