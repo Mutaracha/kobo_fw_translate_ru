@@ -1,2 +1,4 @@
 # Installation packages are produced by Actions.
 KoboRoot.tgz
+kobo-update*.zip
+extracted-qm/

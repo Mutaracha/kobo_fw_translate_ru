@@ -4,37 +4,53 @@ from xml.etree import ElementTree as ET
 QM_MAGIC = bytes.fromhex("3cb86418caef9c95cd211cbf60a1bddd")
 
 
+def raw_qm_end(data, start):
+    """Find the end of a Qt5 QM's tagged blocks, not the end of nickel."""
+    pos = start + len(QM_MAGIC)
+    tags = set()
+    while pos + 5 <= len(data):
+        tag, size = struct.unpack_from(">BI", data, pos)
+        if tag not in (0x2F, 0x42, 0x69, 0x88, 0x96, 0xA7) or tag in tags:
+            break
+        if not size or pos + 5 + size > len(data):
+            break
+        tags.add(tag)
+        pos += 5 + size
+    if {0x42, 0x69} <= tags:  # Offsets and messages; ignore stray magic constants.
+        return pos
+
+
 def find_qms(path, outdir):
-    data = open(path, "rb").read()
-    found = []
-    # uncompressed qm
-    for m in re.finditer(re.escape(QM_MAGIC), data):
-        found.append(("raw", m.start(), None))
-    # zlib-compressed rcc entries: 4-byte BE size + zlib stream
-    for m in re.finditer(rb"\x78[\x01\x5e\x9c\xda]", data):
-        off = m.start()
-        try:
-            d = zlib.decompressobj()
-            chunk = d.decompress(data[off:off + 64], 16)
-            if not chunk.startswith(QM_MAGIC[:len(chunk)]) or len(chunk) < 16:
-                continue
-            full = zlib.decompress(data[off:off + 20_000_000]) if False else None
-        except Exception:
-            continue
-        d = zlib.decompressobj()
-        try:
-            full = d.decompress(data[off:])
-        except Exception:
-            continue
-        found.append(("zlib", off, full))
-    res = []
-    for i, (kind, off, blob) in enumerate(found):
-        if kind == "raw":
-            continue  # handled below only if needed
+    with open(path, "rb") as f:
+        data = f.read()
+    res, raws = [], []
+
+    def save(off, blob):
         fn = os.path.join(outdir, f"{os.path.basename(path)}_{off:x}.qm")
-        open(fn, "wb").write(blob)
+        with open(fn, "wb") as f:
+            f.write(blob)
         res.append((fn, len(blob)))
-    raws = [o for k, o, _ in found if k == "raw"]
+
+    for match in re.finditer(re.escape(QM_MAGIC), data):
+        off = match.start()
+        raws.append(off)
+        end = raw_qm_end(data, off)
+        if end is not None:
+            save(off, memoryview(data)[off:end])
+
+    # Qt resources can also be zlib streams. Probe the signature before
+    # inflating the full resource, and don't accept partial streams.
+    for match in re.finditer(rb"\x78[\x01\x5e\x9c\xda]", data):
+        off = match.start()
+        try:
+            if zlib.decompressobj().decompress(data[off:off + 1024], 16) != QM_MAGIC:
+                continue
+            stream = zlib.decompressobj()
+            blob = stream.decompress(memoryview(data)[off:])
+        except zlib.error:
+            continue
+        if stream.eof and raw_qm_end(blob, 0) == len(blob):
+            save(off, blob)
     return res, raws
 
 
