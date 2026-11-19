@@ -99,7 +99,28 @@ class EnglishSelectionTests(unittest.TestCase):
         self.assertTrue(candidate.is_file())
         candidate.unlink()
         self.src.rmdir()
+        (self.src.parent / 'trans_en_4.38.23852.qm').touch()  # not a folder
         self.assertIn('В src нет исходников', self.step2('0'))
+
+    def test_step3_selects_source_and_previous_translation_folders(self):
+        self.candidate('nickel_1.qm', b'en').rename(self.en)
+        (self.src.parent / 'trans_en_9.9.9.qm').touch()
+        previous = self.cwd / 'translated/4.37.1'
+        previous.mkdir(parents=True)
+        (previous.parent / '9.9.9').mkdir()  # not selectable without trans_ru.qm
+        write_qm(previous / 'trans_ru.qm', [{'ctx': 'Home', 'src': 'Done', 'cmt': '',
+                                              'tr': ['Готово']}], b'ru_RU', b'')
+        target = previous.parent / self.src.name / 'trans_ru.ts'
+        for selection, expected in [('0', None), ('2\n1', 'Готово'), ('', '')]:
+            run = subprocess.run([sys.executable, SCRIPTS / 'translate_menu.py'], cwd=self.cwd,
+                                 input=f'3\n1\n{selection}\n0\n', capture_output=True, text=True, check=True)
+            self.assertEqual(run.stderr, '')
+            self.assertNotIn('9.9.9', run.stdout)
+            if expected is None:
+                self.assertFalse(target.exists())
+            else:
+                self.assertEqual(ET.parse(target).findtext('.//translation'), expected)
+                target.unlink()
 
     def test_missing_inputs_have_actionable_error(self):
         self.assertIn('Сначала выполните пункт 1', self.step2())

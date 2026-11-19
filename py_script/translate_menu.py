@@ -96,30 +96,28 @@ def select_english(src, en):
     print(f'Сохранены {target} и {ts}.')
 
 
-def choose_source_version():
-    root = Path('src')
-    pattern = r'[0-9]+\.[0-9]+\.[0-9]+'
-    locations = {}
-    for path in root.glob('trans_en_*.qm'):
-        match = re.fullmatch(rf'trans_en_({pattern})\.qm', path.name)
-        if match and path.is_file():
-            locations[match[1]] = path  # Legacy flat layout.
-    for path in root.glob('*'):
-        if path.is_dir() and re.fullmatch(pattern, path.name):
-            locations[path.name] = path
-    versions = sorted(locations, key=lambda v: tuple(map(int, v.split('.'))), reverse=True)
-    if not versions:
-        raise ValueError('В src нет исходников прошивок. Сначала выполните пункт 1.')
-    print('Исходники прошивок:')
-    for number, version in enumerate(versions, 1):
-        print(f'{number}. {locations[version]}')
+def version_folders(root, required_file=None):
+    folders = (path for path in root.glob('*') if path.is_dir()
+               and re.fullmatch(r'[0-9]+\.[0-9]+\.[0-9]+', path.name)
+               and (required_file is None or (path / required_file).is_file()))
+    return sorted(folders, key=lambda path: tuple(map(int, path.name.split('.'))), reverse=True)
+
+
+def choose_folder(folders, title, allow_blank=False):
+    print(title)
+    for number, folder in enumerate(folders, 1):
+        print(f'{number}. {folder}')
+    if allow_blank:
+        print('Enter — начать без прежнего перевода.')
     while True:
         answer = input('Номер в списке (0 — назад): ').strip()
         if answer == '0':
             return None
-        if answer.isascii() and answer.isdecimal() and 1 <= int(answer) <= len(versions):
-            return versions[int(answer) - 1]
-        print(f'Введите число от 0 до {len(versions)}.')
+        if not answer and allow_blank:
+            return ''
+        if answer.isascii() and answer.isdecimal() and 1 <= int(answer) <= len(folders):
+            return folders[int(answer) - 1]
+        print(f'Введите число от 0 до {len(folders)}.')
 
 
 def action(choice):
@@ -128,10 +126,14 @@ def action(choice):
         run('bin2qm.py', *([archive] if archive else []))
         return
 
-    if choice == '2':
-        version = choose_source_version()
-        if version is None:
+    if choice in ('2', '3'):
+        folders = version_folders(Path('src'))
+        if not folders:
+            raise ValueError('В src нет исходников в папках версий. Сначала выполните пункт 1.')
+        folder = choose_folder(folders, 'Исходники прошивок:')
+        if folder is None:
             return
+        version = folder.name
     else:
         version = input('Версия прошивки (например, 4.38.23697): ').strip()
     if not re.fullmatch(r'[0-9]+\.[0-9]+\.[0-9]+', version):
@@ -139,7 +141,7 @@ def action(choice):
     src = Path('src') / version
     en = src / f'trans_en_{version}.qm'
     legacy = Path('src') / en.name
-    if not en.exists() and legacy.is_file():
+    if choice == '4' and not en.exists() and legacy.is_file():
         en = legacy
     ru = Path('translated') / version / 'trans_ru.ts'
     if choice == '2':
@@ -147,10 +149,16 @@ def action(choice):
     elif choice == '3':
         if not en.is_file():
             raise ValueError('Сначала выберите английский каталог в пункте 2.')
-        prev = path_input('Путь к прежнему trans_ru.qm (Enter — начать без перевода): ')
+        folders = version_folders(Path('translated'), 'trans_ru.qm')
+        if not folders:
+            print('В translated нет папок с trans_ru.qm.')
+        folder = choose_folder(folders, 'Папка прежнего перевода:', allow_blank=True)
+        if folder is None:
+            return
+        prev = folder / 'trans_ru.qm' if folder else '-'
         if allow_write(ru):
             ru.parent.mkdir(parents=True, exist_ok=True)
-            run('qm2ts.py', prev or '-', en, ru, 'ru_RU')
+            run('qm2ts.py', prev, en, ru, 'ru_RU')
             print(f'Отредактируйте {ru}, затем выполните пункты 4 и 5.')
     elif choice == '4':
         run('check_lengths.py', en.with_suffix('.ts'), ru)
