@@ -50,10 +50,7 @@ def select_english(src, en):
                         if p.is_file() and re.fullmatch(r'nickel_[0-9a-fA-F]+\.qm', p.name))
     if not candidates and not en.is_file():
         raise ValueError(f'В {src} нет извлечённых nickel_*.qm. Сначала выполните пункт 1.')
-    root = src.parent
-    refs = sorted(p for p in [*root.glob('trans_en_*.qm'),
-                              *(d / f'trans_en_{d.name}.qm' for d in version_folders(root))]
-                  if p.is_file() and p != en)
+    refs = [d / 'trans_en.qm' for d in version_folders(src.parent, 'trans_en.qm') if d != src]
     reference = None
     if refs:
         reference = choose_folder(refs, 'Английский QM прежней прошивки для сверки:')
@@ -67,8 +64,7 @@ def select_english(src, en):
         print(f'Английский каталог уже выбран: {en}')
         return
 
-    target = src / en.name  # Never overwrite the legacy catalog in the parent directory.
-    ts = target.with_suffix('.ts')
+    ts = en.with_suffix('.ts')
     with TemporaryDirectory(dir=src) as tmp:
         matches = []
         untagged = []
@@ -105,12 +101,12 @@ def select_english(src, en):
         if len(matches) != 1:
             raise ValueError(f'Подходящих английских каталогов: {len(matches)} (нужен один). '
                              'Файлы QM сохранены. Язык не определяется по имени или порядку.')
-        if not allow_write(target) or not allow_write(ts):
+        if not allow_write(en) or not allow_write(ts):
             return
         qm, trial = matches[0]
-        staged = Path(tmp) / target.name
+        staged = Path(tmp) / en.name
         shutil.copyfile(qm, staged)
-        staged.replace(target)
+        staged.replace(en)
         trial.replace(ts)
     for qm in candidates:
         qm.unlink()
@@ -118,7 +114,7 @@ def select_english(src, en):
     old_nickel = src / 'nickel'
     if old_nickel.is_file():
         old_nickel.unlink()
-    print(f'Сохранены {target} и {ts}.')
+    print(f'Сохранены {en} и {ts}.')
 
 
 def version_folders(root, required_file=None):
@@ -146,9 +142,7 @@ def choose_folder(folders, title, allow_blank=False):
 
 
 def english_ts(version):
-    name = f'trans_en_{version}.ts'
-    path = Path('src') / version / name
-    return path if path.is_file() else Path('src') / name
+    return Path('src') / version / 'trans_en.ts'
 
 
 def action(choice):
@@ -174,7 +168,7 @@ def action(choice):
         return
     version = folder.name
     src = Path('src') / version
-    en = src / f'trans_en_{version}.qm'
+    en = src / 'trans_en.qm'
     reports = Path('reports') / version
     ru = Path('translated') / version / 'trans_ru.ts'
     if choice == '2':

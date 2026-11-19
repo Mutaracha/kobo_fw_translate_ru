@@ -8,7 +8,7 @@ Scratch files, `/tmp` uploads and excluded directories such as `.arena`/`.cache`
 Follow the [firmware translation guidelines](TRANSLATION.md) when editing or reviewing catalogs.
 
 ## Repository layout and note placement
-- `src/<version>/` holds the English source catalogs for that firmware. Extract `nickel` in temporary storage. Remove offset-named QM candidates only after the English QM/TS pair has been saved. The original 4.38.23852 English catalogs are directly under `src/`.
+- `src/<version>/` holds `trans_en.qm` and `trans_en.ts`; the version belongs in the directory name only. Extract `nickel` in temporary storage. Remove offset-named QM candidates only after the English QM/TS pair has been saved.
 - `translated/<version>/` is for `trans_ru.ts` and `trans_ru.qm` only. Do not create notes, screenshots, archives, backups, or temporary build outputs anywhere in `translated/`.
 - Keep generated untranslated-string and length reports in the ignored `reports/<version>/` directory, outside the catalogs.
 - `py_script/` contains catalog tools and the Windows launcher; `tests/` contains offline tests. `scripts/` and `.github/workflows/` handle packaging. `patch/` holds installable fonts and hyphenation data. Publish `KoboRoot.tgz` as an Actions artifact, not a repository file.

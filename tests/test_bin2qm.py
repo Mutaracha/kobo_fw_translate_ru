@@ -12,7 +12,7 @@ import zlib
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / 'py_script' / 'bin2qm.py'
-QM = (ROOT / 'src' / 'trans_en_4.38.23852.qm').read_bytes()
+QM = (ROOT / 'src' / '4.38.23852' / 'trans_en.qm').read_bytes()
 
 
 class FirmwareTests(unittest.TestCase):

@@ -19,7 +19,12 @@ class EnglishSelectionTests(unittest.TestCase):
         self.cwd = Path(tmp.name)
         self.src = self.cwd / 'src/4.38.23828'
         self.src.mkdir(parents=True)
-        self.en = self.src / 'trans_en_4.38.23828.qm'
+        self.en = self.src / 'trans_en.qm'
+
+    def reference(self, version, data):
+        folder = self.src.parent / version
+        folder.mkdir()
+        (folder / 'trans_en.qm').write_bytes(data)
 
     def candidate(self, name, language):
         path = self.src / name
@@ -55,8 +60,8 @@ class EnglishSelectionTests(unittest.TestCase):
             self.assertEqual(sorted(p.name for p in self.src.iterdir()), ['nickel_1.qm', 'nickel_2.qm'])
 
     def test_untagged_firmware_matches_reference_across_versions(self):
-        sample = SCRIPTS.parent / 'src/trans_en_4.38.23852.qm'
-        (self.src.parent / sample.name).write_bytes(sample.read_bytes())
+        sample = SCRIPTS.parent / 'src/4.38.23852/trans_en.qm'
+        self.reference('4.38.23852', sample.read_bytes())
         lang, rows = parse_qm(sample)
         self.assertIsNone(lang)
         # Simulate a nearby firmware: most keys overlap, but not all.
@@ -69,7 +74,7 @@ class EnglishSelectionTests(unittest.TestCase):
         for m in rows:
             m['tr'] = ['Fremdsprache'] * len(m['tr'])
         write_qm(self.src / 'nickel_1.qm', rows, b'', b'')
-        self.assertEqual(self.step2('1\n1'), '')
+        self.assertEqual(self.step2('2\n1'), '')
         self.assertEqual(self.en.read_bytes(), original)
         root = ET.parse(self.en.with_suffix('.ts')).getroot()
         self.assertEqual(root.get('language'), 'en')
@@ -77,11 +82,11 @@ class EnglishSelectionTests(unittest.TestCase):
         self.assertFalse(list(self.src.glob('nickel_*.qm')))
 
     def test_two_untagged_reference_matches_preserve_inputs(self):
-        sample = (SCRIPTS.parent / 'src/trans_en_4.38.23852.qm').read_bytes()
-        (self.src.parent / 'trans_en_4.38.23852.qm').write_bytes(sample)
+        sample = (SCRIPTS.parent / 'src/4.38.23852/trans_en.qm').read_bytes()
+        self.reference('4.38.23852', sample)
         for name in ('nickel_1.qm', 'nickel_2.qm'):
             (self.src / name).write_bytes(sample)
-        self.assertIn('английских каталогов: 2', self.step2('1\n1'))
+        self.assertIn('английских каталогов: 2', self.step2('2\n1'))
         self.assertFalse(self.en.exists())
         self.assertEqual(len(list(self.src.glob('nickel_*.qm'))), 2)
 
@@ -127,8 +132,8 @@ class EnglishSelectionTests(unittest.TestCase):
     def test_selected_reference_exact_match_skips_other_candidates(self):
         original = self.candidate('nickel_a.qm', b'').read_bytes()
         (self.src / 'nickel_b.qm').write_bytes(b'not a catalog')
-        (self.src.parent / 'trans_en_2.0.0.qm').write_bytes(original)
-        (self.src.parent / 'trans_en_1.0.0.qm').write_bytes(b'other reference')
+        self.reference('1.0.0', original)
+        self.reference('2.0.0', b'other reference')
         run = subprocess.run([sys.executable, SCRIPTS / 'translate_menu.py'], cwd=self.cwd,
                              input='2\n1\n2\n0\n', capture_output=True, text=True, check=True)
         self.assertEqual(run.stderr, '')
