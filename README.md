@@ -19,7 +19,7 @@ tar -tzf KoboRoot.tgz
 ## Файлы репозитория
 
 - `src/trans_en_4.38.23852.qm` — английский исходник, извлечённый из `usr/local/Kobo/nickel` прошивки 4.38.23852.
-- `translated/<версия>/` — переведённые строки (`trans_ru.ts`, `trans_ru.qm`); в `translated/4.38.23852/` также находится исходный готовый патч `KoboRoot.tgz`.
+- `translated/<версия>/` — переведённые строки (`trans_ru.ts`, `trans_ru.qm`); в `translated/4.38.23852/` также находится готовый патч `KoboRoot.tgz`.
 - `py_script/` — инструменты на Python 3, не требующие Qt:
   - `ts2qm.py` — компиляция `.ts` → `.qm`;
   - `qm2ts.py` — преобразование `.qm` → `.ts` с полным списком строк прошивки;
@@ -34,4 +34,4 @@ tar -tzf KoboRoot.tgz
 python3 py_script/qm2ts.py src/trans_en_4.38.23852.qm src/trans_en_4.38.23852.qm src/trans_en_4.38.23852.ts en
 ```
 
-[Результаты сверки и предложенные исправления](translated/4.38.23852/review.md).
+[Результаты редактуры и проверки перевода](translated/4.38.23852/review.md).

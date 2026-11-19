@@ -13,7 +13,7 @@
     </message>
     <message>
         <source>Please charge your eReader</source>
-        <translation>Пожалуйста, зарядите ваше устройство</translation>
+        <translation>Зарядите устройство</translation>
     </message>
 </context>
 <context>
@@ -35,15 +35,15 @@
     </message>
     <message>
         <source>10 shares to Facebook will earn you the social butterfly award!</source>
-        <translation>10 раз поделитесь на Facebook и заработайте социальный приз бабочку!</translation>
+        <translation>Поделитесь записями в Facebook 10 раз, чтобы получить награду «Бабочка»!</translation>
     </message>
     <message>
         <source>Afternoon Rush Hour</source>
-        <translation>Час пик во второй половине дня</translation>
+        <translation>Вечерний час пик</translation>
     </message>
     <message>
         <source>All You Can Eat</source>
-        <translation>Все, что вы можете съесть</translation>
+        <translation>Шведский стол</translation>
     </message>
     <message>
         <source>Better in Bed</source>
@@ -55,11 +55,11 @@
     </message>
     <message>
         <source>Bottoms up! You read five times during the cocktail hour: 6pm - 8pm.</source>
-        <translation>Поднимите чашки! Вы читали пять раз за час коктейля: с 6 до 8 вечера.</translation>
+        <translation>За чтение! Вы пять раз читали в час коктейлей — с шести до восьми вечера.</translation>
     </message>
     <message>
         <source>Clearly you couldn&apos;t put that book down! You read for two hours straight!</source>
-        <translation>Невозможно оторваться от этой книги! Вы читаете в течение двух часов подряд!</translation>
+        <translation>Вот это книга — не оторваться! Вы читали два часа подряд.</translation>
     </message>
     <message>
         <source>Connect Facebook to your Reading Life to unlock the Facebook award.</source>
@@ -75,7 +75,7 @@
     </message>
     <message>
         <source>Either you love zombies or you have insomnia - you just read five times during the Graveyard Shift: 1am - 5am.</source>
-        <translation>Либо вы любите зомби, либо у вас бессонница – вы просто читали пять раз во время смены на кладбище: с 1 утра до 5 утра.</translation>
+        <translation>Вы любите зомби или вам просто не спится? Вы пять раз читали в ночную смену — с часу до пяти утра.</translation>
     </message>
     <message>
         <source>Everything is better in bed, including reading. You read five times during bedtime: 10pm - 12am.</source>
@@ -87,11 +87,11 @@
     </message>
     <message>
         <source>Finished reading? Close a book to earn this award. (No cheating please, real Booklovers read to the very end)</source>
-        <translation>Дочитали? Закройте книгу и заработайте награду. (Только настоящие книголюбы читают до самого конца)</translation>
+        <translation>Дочитали? Закройте книгу, чтобы получить награду. Только честно: настоящие книголюбы читают до конца!</translation>
     </message>
     <message>
         <source>Go big or go home! You&apos;ve turned 10,000 pages with %1.</source>
-        <translation>Добивайтесь успеха или возвращайтесь домой! Вы перелистали 10 000 страниц с %1.</translation>
+        <translation>Вот это размах! Вы перелистнули 10 000 страниц с %1.</translation>
     </message>
     <message>
         <source>Graveyard Shift</source>
@@ -103,15 +103,15 @@
     </message>
     <message>
         <source>Highly Decorated</source>
-        <translation>Лучшее оформление</translation>
+        <translation>За заслуги</translation>
     </message>
     <message>
         <source>How do you get to be a Juggernaut? Hint: go big, or go home. Try War &amp; Peace. Or maybe a couple of volumes of Proust.</source>
-        <translation>Как стать Джаггернаутом? Подсказка: Читайте что-то большое. Одолейте &apos;Войну и Мир&apos;. Или, возможно, пару томов Пруста.</translation>
+        <translation>Как стать Джаггернаутом? Возьмитесь за книгу потолще: за «Войну и мир» или за пару томов Пруста.</translation>
     </message>
     <message>
         <source>I &lt;3 My Library </source>
-        <translation>Я &lt;3 «Мою библиотеку» </translation>
+        <translation>Я &lt;3 свою библиотеку </translation>
     </message>
     <message>
         <source>I Eat Books for Lunch</source>
@@ -135,7 +135,7 @@
     </message>
     <message>
         <source>Love your library - add a book or newspaper and we&apos;ll give you some loving with our Heart Award!</source>
-        <translation>Любите свою библиотеку – добавьте книгу или газету, и мы дадим вам Награду Сердца!</translation>
+        <translation>Покажите, как вы любите свою библиотеку: добавьте книгу или газету и получите награду «Сердце»!</translation>
     </message>
     <message>
         <source>Make eReading more fun, social and meaningful by building your Reading Life with %1.&lt;br/&gt;&lt;br/&gt;You can track your reading life with interesting statistics and celebrate reading milestones with fun and surprising awards.</source>
@@ -179,11 +179,11 @@
     </message>
     <message>
         <source>Primetime</source>
-        <translation>ПРАЙМ-тайм</translation>
+        <translation>Прайм-тайм</translation>
     </message>
     <message>
         <source>Read at the same time on 5 different days to unlock the award for your favourite reading time.</source>
-        <translation>Читайте в одно и то же время 5 различных дней, чтобы разблокировать награды для вашего любимого времени для чтения.</translation>
+        <translation>Читайте в один и тот же час в пять разных дней и получите награду за верность любимому времени чтения.</translation>
     </message>
     <message>
         <source>Scout Leader</source>
@@ -207,7 +207,7 @@
     </message>
     <message>
         <source>Use your built-in %1 dictionary to get the Word Up! Award!</source>
-        <translation>Используйте свой встроенный словарь %1, чтобы найти нужное слово! Награда!</translation>
+        <translation>Загляните во встроенный словарь %1 и получите награду «Знаток слов»!</translation>
     </message>
     <message>
         <source>Want some coffee with that? You read five times during breakfast: 5am - 7am.</source>
@@ -215,7 +215,7 @@
     </message>
     <message>
         <source>Want the Inverted Comma award? Select your favourite passages using our highlighting feature.</source>
-        <translation>Хотите награду «Апостроф»? Выделяйте любимые отрывки с помощью функции цитат.</translation>
+        <translation>Хотите награду «Апостроф»? Выделяйте любимые отрывки в книгах.</translation>
     </message>
     <message>
         <source>Want to become a %1 BookLover? Sign in to your account, or create a new one today.</source>
@@ -227,11 +227,11 @@
     </message>
     <message>
         <source>Welcome to Reading Life</source>
-        <translation>Добро пожаловать в жизнь Читателя</translation>
+        <translation>Добро пожаловать в «Жизнь читателя»</translation>
     </message>
     <message>
         <source>Well, you&apos;re quite the social butterfly! You&apos;ve shared on Facebook 10 times.</source>
-        <translation>Ну, вы реально социальная бабочка! Вы делились на Facebook 10 раз.</translation>
+        <translation>Вы умеете делиться находками: уже 10 публикаций в Facebook!</translation>
     </message>
     <message>
         <source>Witching Hour</source>
@@ -239,7 +239,7 @@
     </message>
     <message>
         <source>Word Up!</source>
-        <translation>Верно!</translation>
+        <translation>Знаток слов</translation>
     </message>
     <message>
         <source>You crushed the morning commute! You read five times between 7am and 9am.</source>
@@ -259,7 +259,7 @@
     </message>
     <message>
         <source>You highlighted your first passage.</source>
-        <translation>Вы процитировали свой первый отрывок.</translation>
+        <translation>Вы впервые выделили отрывок в книге.</translation>
     </message>
     <message>
         <source>You just satisfied two cravings at once - you read during lunchtime: 12pm - 2pm.</source>
@@ -295,7 +295,7 @@
     </message>
     <message>
         <source>You&apos;ve finished a book. Is it true that &quot;the good ended happily, and the bad unhappily&quot;? (Thanks to Oscar Wilde for the quote!)</source>
-        <translation>Вы закончили книгу. Правда ли, что &apos;добро победило зло&apos;? (народная мудрость)</translation>
+        <translation>Вы дочитали книгу. Как там у Оскара Уайльда: «Хорошие кончили хорошо, а плохие — плохо»?</translation>
     </message>
     <message>
         <source>You&apos;ve mastered the art of the long press - the best way to manage your library and dive into the details of a book.</source>
@@ -368,7 +368,7 @@
     </message>
     <message>
         <source>To borrow books from %1 on your eReader, sign in with a valid library card.</source>
-        <translation>Чтобы брать книги из %1 на устройстве, войдите с действующим читательским билетом.</translation>
+        <translation>Чтобы брать книги в библиотеке %1 прямо с ридера, войдите по действующему читательскому билету.</translation>
     </message>
 </context>
 <context>
@@ -462,7 +462,7 @@
     </message>
     <message>
         <source>Sort: Recent</source>
-        <translation>Сортировка: Последние</translation>
+        <translation>Сначала недавние</translation>
     </message>
 </context>
 <context>
@@ -564,11 +564,11 @@
     </message>
     <message>
         <source>Sort: Highest rated</source>
-        <translation>Сортировка: Самый высокий рейтинг</translation>
+        <translation>Сначала лучшие оценки</translation>
     </message>
     <message>
         <source>Sort: Lowest rated</source>
-        <translation>Сортировка: Самый низкий рейтинг</translation>
+        <translation>Сначала низкие оценки</translation>
     </message>
     <message>
         <source>Sort: Most helpful</source>
@@ -576,7 +576,7 @@
     </message>
     <message>
         <source>Sort: Recent</source>
-        <translation>Сортировка: Последние</translation>
+        <translation>Сначала недавние</translation>
     </message>
 </context>
 <context>
@@ -666,7 +666,7 @@
     </message>
     <message>
         <source>Sort: Recent</source>
-        <translation>Сортировка: Последние</translation>
+        <translation>Сначала недавние</translation>
     </message>
 </context>
 <context>
@@ -764,11 +764,11 @@
     </message>
     <message>
         <source>If you cancel downloading &quot;%1&quot;, you won&apos;t be able to listen to it on your eReader.</source>
-        <translation>Если вы отмените загрузку &quot;%1&quot;, вы не сможете прослушать ее на своем ридере.</translation>
+        <translation>Если отменить загрузку, слушать «%1» на ридере не получится.</translation>
     </message>
     <message>
         <source>If you cancel downloading &quot;%1&quot;, you won&apos;t be able to read it on your eReader.</source>
-        <translation>Если вы отмените загрузку &quot;%1&quot;, вы не сможете прочитать ее на своем ридере.</translation>
+        <translation>Если отменить загрузку, читать «%1» на ридере не получится.</translation>
     </message>
     <message>
         <source>No</source>
@@ -783,7 +783,7 @@
     <name>ArticleLibraryView</name>
     <message>
         <source>Add articles to your Instapaper account and sync your eReader to start reading.</source>
-        <translation>Добавляйте статьи в свою учетную запись Instapaper и синхронизируйте свой ридер, чтобы начать чтение.</translation>
+        <translation>Сохраните статьи в Instapaper и синхронизируйте ридер, чтобы начать читать.</translation>
     </message>
     <message>
         <source>Articles from Instapaper</source>
@@ -1336,7 +1336,7 @@ to go</source>
     </message>
     <message>
         <source>Connect your eReader to a power source with the PowerCover attached</source>
-        <translation>Подключите ваш ридер к источнику питания с прикрепленной крышкой PowerCover</translation>
+        <translation>Не снимая чехол PowerCover, подключите устройство к источнику питания</translation>
     </message>
     <message>
         <source>Energy saving settings</source>
@@ -1360,7 +1360,7 @@ to go</source>
     </message>
     <message>
         <source>Stylus: Battery Low</source>
-        <translation>Стилус: низкий уровень заряда</translation>
+        <translation>Стилус разряжается</translation>
     </message>
     <message>
         <source>Stylus: Battery OK</source>
@@ -1375,7 +1375,7 @@ to go</source>
     <name>BluetoothAgent</name>
     <message>
         <source>&quot;%0&quot; wants to pair with your eReader.</source>
-        <translation>«%0» хочет выполнить сопряжение с вашим ридером.</translation>
+        <translation>«%0» запрашивает сопряжение с устройством.</translation>
     </message>
     <message>
         <source>%0 wants to authorize a service (%1)</source>
@@ -1425,11 +1425,11 @@ to go</source>
     <name>BluetoothAliasView</name>
     <message>
         <source>Your %1 eReader will be discoverable over Bluetooth using this name:</source>
-        <translation>Ваша электронная книга %1 будет доступна под этим именем по Bluetooth:</translation>
+        <translation>При поиске по Bluetooth ридер %1 будет виден под этим именем:</translation>
     </message>
     <message>
         <source>Your Kobo eReader will be discoverable over Bluetooth using this name:</source>
-        <translation>Ваш ридер будет доступен для обнаружения через Bluetooth под этим именем:</translation>
+        <translation>При поиске по Bluetooth ридер Kobo будет виден под этим именем:</translation>
     </message>
     <message>
         <source>Your device name</source>
@@ -1545,7 +1545,7 @@ to go</source>
     </message>
     <message>
         <source>Authentication Failed</source>
-        <translation>Не удалось выполнить аутентификацию</translation>
+        <translation>Ошибка аутентификации</translation>
     </message>
     <message>
         <source>Connected</source>
@@ -1624,7 +1624,7 @@ to go</source>
     </message>
     <message>
         <source>Make sure Wi Fi is enabled on your eReader under Settings &gt; Wi Fi connection.</source>
-        <translation>Убедитесь, что на вашем устройстве eReader включен Wi-Fi в разделе &apos;Настройки&apos; &gt; &apos;Wi-Fi соединение&apos;.</translation>
+        <translation>Откройте «Настройки» → «Подключение Wi-Fi» и проверьте, включён ли Wi-Fi на ридере.</translation>
     </message>
     <message>
         <source>Put your device into pairing mode. For support on how to set your device to pairing mode, follow the instructions that came with that device.</source>
@@ -2014,7 +2014,7 @@ to go</source>
     <name>BookstoreListViewBase</name>
     <message>
         <source>Please wait...</source>
-        <translation>Пожалуйста, подождите…</translation>
+        <translation>Подождите…</translation>
     </message>
     <message>
         <source>Shop Kobo</source>
@@ -2026,7 +2026,7 @@ to go</source>
     </message>
     <message>
         <source>Sort: Most popular</source>
-        <translation>Сортировка: Самые популярные</translation>
+        <translation>По популярности</translation>
     </message>
     <message>
         <source>Sort: What&apos;s new</source>
@@ -2249,7 +2249,7 @@ to go</source>
     <name>ChooseSetupTypeView</name>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Let&apos;s begin by setting up your eReader. The first thing we need to do is connect to your Wi&amp;nbsp;Fi network.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Начнем с настройки ридера. Во-первых, нам нужно подключиться к вашей Wi-Fi сети.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Начнём с настройки ридера. Сначала подключитесь к сети Wi-Fi.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Don&apos;t have a Wi Fi network?</source>
@@ -2410,7 +2410,7 @@ to go</source>
     </message>
     <message>
         <source>Please try again. Error:</source>
-        <translation>Пожалуйста, попробуйте еще раз. Ошибка:</translation>
+        <translation>Повторите попытку. Ошибка:</translation>
     </message>
     <message>
         <source>Something went wrong...</source>
@@ -2482,7 +2482,7 @@ to go</source>
     </message>
     <message>
         <source>The slideshow images for demo mode have been removed from the eReader. Please factory reset to restore them. Warning: this will erase your books, documents, and custom settings.</source>
-        <translation>Демонстрационное слайд-шоу удалено с устройства. Сделайте сброс до заводских настроек для восстановления. Внимание: при этом будут удалены все ваши книги и настройки.</translation>
+        <translation>С устройства удалены изображения для демонстрационного слайд-шоу. Чтобы вернуть их, восстановите заводские настройки. Внимание: при сбросе будут удалены книги, документы и пользовательские настройки.</translation>
     </message>
 </context>
 <context>
@@ -2533,11 +2533,11 @@ to go</source>
     <name>DesktopSetupView</name>
     <message>
         <source>Connect your eReader</source>
-        <translation>Подключите ваше устройство</translation>
+        <translation>Подключите ридер</translation>
     </message>
     <message>
         <source>Use the USB cable, that was included in the box, to connect your eReader to your computer.</source>
-        <translation>Используйте USB-кабель, входящий в комплект поставки, чтобы подключить ваш ридер к компьютеру.</translation>
+        <translation>Подключите ридер к компьютеру USB-кабелем из комплекта.</translation>
     </message>
 </context>
 <context>
@@ -2652,7 +2652,7 @@ to go</source>
     </message>
     <message>
         <source>You don&apos;t have the %1 dictionary installed. To add one to your eReader, tap Manage Dictionaries.</source>
-        <translation>Словарь %1 не установлен. Чтобы добавить его, нажмите «Управление словарями».</translation>
+        <translation>Словарь %1 не установлен. Чтобы добавить его на ридер, нажмите «Управление словарями».</translation>
     </message>
 </context>
 <context>
@@ -2707,7 +2707,7 @@ to go</source>
     </message>
     <message>
         <source>You don&apos;t have the %1 dictionary installed. To add one to your eReader, tap Manage Dictionaries.</source>
-        <translation>Словарь %1 не установлен. Перейдите в &apos;Управление словарями&apos;.</translation>
+        <translation>Словарь %1 не установлен. Чтобы добавить его на ридер, нажмите «Управление словарями».</translation>
     </message>
 </context>
 <context>
@@ -2810,7 +2810,7 @@ to go</source>
     </message>
     <message>
         <source>Sort: Recent</source>
-        <translation>Сортировка: Последние</translation>
+        <translation>Сначала недавние</translation>
     </message>
     <message>
         <source>You don&apos;t have any annotations in this book. When you add highlights, notes, and bookmarks, they will appear here.</source>
@@ -2893,7 +2893,7 @@ to go</source>
     </message>
     <message>
         <source>Sort: Recent</source>
-        <translation>Сортировка: Последние</translation>
+        <translation>Сначала недавние</translation>
     </message>
     <message numerus="yes">
         <source>We found %n previews for titles included with your Kobo Plus subscription. You have full access to these books now.</source>
@@ -3061,19 +3061,19 @@ to go</source>
     </message>
     <message>
         <source>Please charge your eReader</source>
-        <translation>Пожалуйста, зарядите ваше устройство</translation>
+        <translation>Зарядите устройство</translation>
     </message>
     <message>
         <source>Please don&apos;t forget to eject your eReader before unplugging the USB cable.</source>
-        <translation>Не забудьте извлечь ридер перед отключением кабеля USB.</translation>
+        <translation>Перед отключением USB-кабеля выберите на компьютере безопасное извлечение устройства.</translation>
     </message>
     <message>
         <source>To recharge your eReader, connect it to a power source.</source>
-        <translation>Чтобы зарядить ваше устройство, подключите его к источнику питания.</translation>
+        <translation>Чтобы зарядить устройство, подключите его к источнику питания.</translation>
     </message>
     <message>
         <source>Use the USB cable, that was included in the box, to connect your eReader to your computer.</source>
-        <translation>Используйте USB-кабель, входящий в комплект поставки, чтобы подключить ваш ридер к компьютеру.</translation>
+        <translation>Подключите ридер к компьютеру USB-кабелем из комплекта.</translation>
     </message>
 </context>
 <context>
@@ -3175,11 +3175,11 @@ to go</source>
     <name>DropboxLoginCompleteView</name>
     <message>
         <source>&lt;h2&gt;Your %1 eReader is now linked with Dropbox&lt;/h2&gt;</source>
-        <translation>&lt;h2&gt;Ваша электронная книга %1 теперь подключена к Dropbox&lt;/h2&gt;</translation>
+        <translation>&lt;h2&gt;Ридер %1 подключён к Dropbox&lt;/h2&gt;</translation>
     </message>
     <message>
         <source>&lt;p style=&quot;font-family: Georgia;&quot;&gt;You can now export notebooks from your eReader to Dropbox.&lt;/p&gt;</source>
-        <translation>&lt;p style=&quot;font-family: Georgia;&quot;&gt;Теперь вы можете экспортировать блокноты из своей электронной книги в Dropbox.&lt;/p&gt;</translation>
+        <translation>&lt;p style=&quot;font-family: Georgia;&quot;&gt;Теперь блокноты можно сохранять с ридера в Dropbox.&lt;/p&gt;</translation>
     </message>
     <message>
         <source>&lt;p style=&quot;font-family: Georgia;&quot;&gt;eBooks and documents in your Dropbox folder will also now appear on your eReader under More &gt; My Dropbox. Once you download an item from My Dropbox, you&apos;ll find it under My Books. </source>
@@ -3213,7 +3213,7 @@ to go</source>
     <name>DropboxView</name>
     <message>
         <source>Add eBooks and documents to your eReader with a free Dropbox account.</source>
-        <translation>Добавьте электронные книги и документы в ваш ридер с помощью бесплатной учетной записи Dropbox.</translation>
+        <translation>Добавляйте книги и документы на ридер через бесплатную учётную запись Dropbox.</translation>
     </message>
     <message>
         <source>Date added</source>
@@ -3257,7 +3257,7 @@ to go</source>
     </message>
     <message>
         <source>Sync eBooks and documents to your eReader with a free Dropbox account.</source>
-        <translation>Синхронизируйте электронные книги и документы с вашим ридером с помощью бесплатной учетной записи Dropbox.</translation>
+        <translation>Синхронизируйте книги и документы на ридере через бесплатную учётную запись Dropbox.</translation>
     </message>
     <message>
         <source>There are currently no files in your Dropbox folder.</source>
@@ -3369,9 +3369,9 @@ Please check your connection and try again.</source>
     <message numerus="yes">
         <source>Adding: %n</source>
         <translation>
-            <numerusform>Добавлено: %n</numerusform>
-            <numerusform>Добавлено: %n</numerusform>
-            <numerusform>Добавлено: %n</numerusform>
+            <numerusform>Добавление: %n</numerusform>
+            <numerusform>Добавление: %n</numerusform>
+            <numerusform>Добавление: %n</numerusform>
         </translation>
     </message>
     <message>
@@ -3389,9 +3389,9 @@ Please check your connection and try again.</source>
     <message numerus="yes">
         <source>Removing: %n</source>
         <translation>
-            <numerusform>Удалено: %n</numerusform>
-            <numerusform>Удалено: %n</numerusform>
-            <numerusform>Удалено: %n</numerusform>
+            <numerusform>Удаление: %n</numerusform>
+            <numerusform>Удаление: %n</numerusform>
+            <numerusform>Удаление: %n</numerusform>
         </translation>
     </message>
     <message>
@@ -3431,11 +3431,11 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Sort: Date Added</source>
-        <translation>Сортировка: Дата добавления</translation>
+        <translation>По дате добавления</translation>
     </message>
     <message>
         <source>Sort: File size</source>
-        <translation>Сортировка: Размер файла</translation>
+        <translation>По размеру файла</translation>
     </message>
     <message>
         <source>Sort: File type</source>
@@ -3443,7 +3443,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Sort: Recent</source>
-        <translation>Сортировка: Последние</translation>
+        <translation>Сначала недавние</translation>
     </message>
     <message>
         <source>Sort: Series</source>
@@ -3451,7 +3451,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Sort: Title</source>
-        <translation>Сортировка: Название</translation>
+        <translation>По названию</translation>
     </message>
 </context>
 <context>
@@ -3505,7 +3505,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Text</source>
-        <translation>Text</translation>
+        <translation>Текст</translation>
     </message>
     <message>
         <source>Word (.docx)</source>
@@ -3531,7 +3531,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Please specify the file that you would like to save your highlights to.</source>
-        <translation>Пожалуйста, укажите имя файла.</translation>
+        <translation>Укажите файл, в который хотите сохранить выделенные фрагменты.</translation>
     </message>
 </context>
 <context>
@@ -3562,7 +3562,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>You can access this file by connecting your eReader to your computer with a USB cable.</source>
-        <translation>Вы можете получить доступ к этому файлу, подключив ридер к компьютеру с помощью кабеля USB.</translation>
+        <translation>Чтобы открыть файл на компьютере, подключите к нему ридер по USB.</translation>
     </message>
     <message>
         <source>You can access this file in the Rakuten Kobo folder of your Dropbox account.</source>
@@ -3636,18 +3636,18 @@ Please check your connection and try again.</source>
     <message numerus="yes">
         <source>Please be patient. About %n minute(s) remaining.</source>
         <translation>
-            <numerusform>Будьте терпеливы. Примерно %n минута осталась.</numerusform>
-            <numerusform>Будьте терпеливы. Примерно %n минуты осталось.</numerusform>
-            <numerusform>Будьте терпеливы. Примерно %n минут осталось.</numerusform>
+            <numerusform>Подождите ещё примерно %n минуту.</numerusform>
+            <numerusform>Подождите ещё примерно %n минуты.</numerusform>
+            <numerusform>Подождите ещё примерно %n минут.</numerusform>
         </translation>
     </message>
     <message>
         <source>Please be patient. Less than a minute remaining.</source>
-        <translation>Будьте терпеливы. Меньше минуты осталось.</translation>
+        <translation>Подождите ещё немного: осталось меньше минуты.</translation>
     </message>
     <message>
         <source>Please be patient. This may take a moment.</source>
-        <translation>Пожалуйста, подождите. Это может занять некоторое время.</translation>
+        <translation>Подождите, это займёт некоторое время.</translation>
     </message>
     <message>
         <source>Preparing update</source>
@@ -3663,11 +3663,11 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Your eReader is up to date!</source>
-        <translation>Ваше устройство не нуждается в обновлении!</translation>
+        <translation>Установлена последняя версия ПО.</translation>
     </message>
     <message>
         <source>Your eReader will restart momentarily.</source>
-        <translation>Ваше устройство будет перезагружено.</translation>
+        <translation>Устройство скоро перезагрузится.</translation>
     </message>
 </context>
 <context>
@@ -3788,15 +3788,15 @@ being updated right now. Please try again later.</source>
     <name>FindABookPage</name>
     <message>
         <source>&lt;img src=&quot;:/images/fte/quicktour_texticon_search.png&quot; /&gt; Search or browse our eBook catalogue from your eReader. Purchase books right away with a credit card or add them to your Wishlist. You can also browse and purchase books on kobo.com, bol.com, or in one of our apps.</source>
-        <translation>&lt;img src=&quot;:/images/fte/quicktour_texticon_search.png&quot; /&gt; Поиск или просмотр нашего каталога электронных книг из вашего устройства. Купите книги сразу с помощью кредитной карты или добавьте их в свой &apos;Список желаний&apos;. Вы также можете просматривать и покупать книги на kobo.com, bol.com или в одном из наших приложений.</translation>
+        <translation>&lt;img src=&quot;:/images/fte/quicktour_texticon_search.png&quot; /&gt; Выбирайте книги в каталоге прямо на ридере. Оплатите книгу картой или добавьте её в список желаний. Искать и покупать книги можно также на kobo.com, bol.com и в наших приложениях.</translation>
     </message>
     <message>
         <source>&lt;img src=&quot;:/images/fte/quicktour_texticon_search.png&quot; /&gt; Search or browse our eBook catalogue from your eReader. Purchase books right away with a credit card or add them to your Wishlist. You can also browse and purchase books on walmart.com or in one of our apps.</source>
-        <translation>&lt;img src=&quot;:/images/fte/quicktour_texticon_search.png&quot; /&gt;Просмотрите наш каталог электронных книг из вашего ридера. Купите книги сразу с помощью кредитной карты или добавьте их в свой список пожеланий. Вы также можете просматривать и приобретать книги на walmart.com или в одном из наших приложений.</translation>
+        <translation>&lt;img src=&quot;:/images/fte/quicktour_texticon_search.png&quot; /&gt; Выбирайте книги в каталоге прямо на ридере. Оплатите книгу картой или добавьте её в список желаний. Искать и покупать книги можно также на walmart.com и в наших приложениях.</translation>
     </message>
     <message>
         <source>&lt;img src=&quot;:/images/fte/quicktour_texticon_search.png&quot; /&gt; Search or browse the Kobo catalogue from your eReader. Purchase books right away with a credit card or add them to your Wishlist. You can also browse and purchase books on kobo.com or in one of our apps.</source>
-        <translation>&lt;img src=&quot;:/images/fte/quicktour_texticon_search.png&quot; /&gt; Найдите или просмотрите каталог Kobo с вашего ридера. Купите книги сразу с помощью кредитной карты или добавьте их в свой &apos;Список желаний&apos;. Вы также можете просматривать и покупать книги на kobo.com или в одном из наших приложений.</translation>
+        <translation>&lt;img src=&quot;:/images/fte/quicktour_texticon_search.png&quot; /&gt; Выбирайте книги в каталоге Kobo прямо на ридере. Оплатите книгу картой или добавьте её в список желаний. Искать и покупать книги можно также на kobo.com и в наших приложениях.</translation>
     </message>
     <message>
         <source>Find your next great read</source>
@@ -3897,7 +3897,7 @@ You can check version history and download previous versions on Google Drive.</s
     </message>
     <message>
         <source>Footnote preview</source>
-        <translation>Предварительный просмотр сноски</translation>
+        <translation>Просмотр сноски</translation>
     </message>
     <message>
         <source>See more</source>
@@ -3919,19 +3919,19 @@ You can check version history and download previous versions on Google Drive.</s
     <name>FoxitReader</name>
     <message>
         <source>This book is protected by Adobe Digital Rights Management (DRM). Because you previously deauthorized your eReader, you need to re-import the book using Adobe Digital Editions (ADE). Please visit %1 for more information.</source>
-        <translation>Эта книга защищена Adobe Digital Rights Management (DRM). Поскольку вы ранее деавторизовали ридер, вам необходимо повторно импортировать книгу с помощью Adobe Digital Editions (ADE). Посетите %1 для получения дополнительной информации.</translation>
+        <translation>Эта книга защищена системой управления цифровыми правами Adobe (DRM). Авторизация устройства была отменена. Снова импортируйте книгу через Adobe Digital Editions (ADE). Подробнее: %1.</translation>
     </message>
     <message>
         <source>This book is protected by Adobe Digital Rights Management (DRM). To continue reading, you need to renew your access to the book and re-import it using Adobe Digital Editions (ADE). Please visit %1 for more information.</source>
-        <translation>Эта книга защищена Adobe Digital Rights Management (DRM). Чтобы продолжить чтение, вам необходимо продлить доступ к книге и повторно импортировать ее с помощью Adobe Digital Editions (ADE). Посетите %1 для получения дополнительной информации.</translation>
+        <translation>Эта книга защищена системой управления цифровыми правами Adobe (DRM). Чтобы продолжить чтение, продлите доступ и снова импортируйте книгу через Adobe Digital Editions (ADE). Подробнее: %1.</translation>
     </message>
     <message>
         <source>This book is protected by Adobe Digital Rights Management (DRM). You need to re-authorize your eReader with your Adobe ID and re-import the book using Adobe Digital Editions (ADE). Please visit %1 for more information.</source>
-        <translation>Эта книга защищена Adobe Digital Rights Management (DRM). Вам необходимо повторно авторизовать ридер, используя свой Adobe ID, и повторно импортировать книгу с помощью Adobe Digital Editions (ADE). Посетите %1 для получения дополнительной информации.</translation>
+        <translation>Эта книга защищена системой управления цифровыми правами Adobe (DRM). Заново авторизуйте устройство с помощью Adobe ID и снова импортируйте книгу через Adobe Digital Editions (ADE). Подробнее: %1.</translation>
     </message>
     <message>
         <source>This book is protected by Adobe Digital Rights Management (DRM). You need to re-authorize your eReader with your Adobe ID using Adobe Digital Editions (ADE). Please visit %1 for more information.</source>
-        <translation>Эта книга защищена Adobe Digital Rights Management (DRM). Вам необходимо повторно авторизовать ридер с вашим Adobe ID с помощью Adobe Digital Editions (ADE). Посетите %1 для получения дополнительной информации.</translation>
+        <translation>Эта книга защищена системой управления цифровыми правами Adobe (DRM). Откройте Adobe Digital Editions (ADE) и заново авторизуйте устройство с помощью Adobe ID. Подробнее: %1.</translation>
     </message>
     <message>
         <source>Your access to this book has expired</source>
@@ -3939,7 +3939,7 @@ You can check version history and download previous versions on Google Drive.</s
     </message>
     <message>
         <source>Your eReader is not authorized to open this book</source>
-        <translation>Ваш ридер не авторизован для открытия этой книги</translation>
+        <translation>Устройство не авторизовано для чтения этой книги</translation>
     </message>
 </context>
 <context>
@@ -4017,15 +4017,15 @@ You can check version history and download previous versions on Google Drive.</s
     </message>
     <message>
         <source>You can now export notebooks from your eReader to Google Drive.</source>
-        <translation>Теперь вы можете экспортировать блокноты из своей электронной книги на Google Диск.</translation>
+        <translation>Теперь блокноты можно сохранять с ридера на Google Диск.</translation>
     </message>
     <message>
         <source>Your Kobo eReader is now linked with Google Drive</source>
-        <translation>Теперь ваша электронная книга Kobo подключена к Google Диску</translation>
+        <translation>Ридер Kobo подключён к Google Диску</translation>
     </message>
     <message>
         <source>eBooks and documents in your Google Drive folder will also now appear on your eReader under More &gt; My Google Drive. Once you download an item from My Google Drive, you&apos;ll find it under My Books.</source>
-        <translation>Электронные книги и документы в папке на Google Диске появятся на ридере в разделе &apos;Еще&apos; &gt; &apos;Мой Google Диск&apos;. После того, как вы загрузите элемент с &apos;Мой Google Диск&apos;, вы найдете его в разделе &apos;Мои книги&apos;.</translation>
+        <translation>Книги и документы из папки Google Диска теперь доступны на ридере в разделе «Ещё» → «Мой Google Диск». После загрузки они появятся в разделе «Мои книги».</translation>
     </message>
 </context>
 <context>
@@ -4051,7 +4051,7 @@ You can check version history and download previous versions on Google Drive.</s
     <name>GDriveView</name>
     <message>
         <source>Add eBooks and documents to your eReader with a free Google Drive account.</source>
-        <translation>Добавьте электронные книги и документы в ваш ридер с помощью бесплатной учетной записи Google Диска.</translation>
+        <translation>Добавляйте книги и документы на ридер через бесплатную учётную запись Google Диска.</translation>
     </message>
     <message>
         <source>Date added</source>
@@ -4095,7 +4095,7 @@ You can check version history and download previous versions on Google Drive.</s
     </message>
     <message>
         <source>Sync eBooks and documents to your eReader with a free Google Drive account.</source>
-        <translation>Синхронизируйте электронные книги и документы с вашим ридером с помощью бесплатной учетной записи Google Диск.</translation>
+        <translation>Синхронизируйте книги и документы на ридере через бесплатную учётную запись Google Диска.</translation>
     </message>
     <message>
         <source>There are currently no files in your Google Drive folder.</source>
@@ -4235,7 +4235,7 @@ Please check your connection and try again.</source>
     <name>GoodNightPage</name>
     <message>
         <source>Keep your battery charged</source>
-        <translation>Убедитесь, что аккумулятор всегда заряжен</translation>
+        <translation>Не забывайте заряжать ридер</translation>
     </message>
     <message>
         <source>Sleep and power off</source>
@@ -4243,15 +4243,15 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>To put your eReader to sleep temporarily, press the power button. To power off for a longer period, press and hold for a few seconds.</source>
-        <translation>Чтобы перевести устройство в сон, нажмите кнопку питания. Для выключения нажмите и удерживайте кнопку питания в течение нескольких секунд.</translation>
+        <translation>Нажмите кнопку питания, чтобы перевести ридер в спящий режим. Чтобы выключить его, удерживайте кнопку несколько секунд.</translation>
     </message>
     <message>
         <source>To put your eReader to sleep temporarily, pull the power slider to the right and release it quickly. To power off for a longer period, slide and hold for a few seconds.</source>
-        <translation>Чтобы перевести устройство в сон, сдвиньте рычаг питания и быстро отпустите. Для выключения, сдвиньте его и удерживайте в течение нескольких секунд.</translation>
+        <translation>Чтобы перевести ридер в спящий режим, сдвиньте ползунок питания вправо и сразу отпустите. Чтобы выключить ридер, сдвиньте ползунок и удерживайте несколько секунд.</translation>
     </message>
     <message>
         <source>While you&apos;re not using your eReader, press the power button to put it to sleep. To turn it off completely, press and hold the button until you see &quot;Powered off&quot; on the screen. To charge the battery, insert your USB cable and connect to a power source.</source>
-        <translation>Если вы не используете свой ридер, нажмите кнопку питания, чтобы перевести его в режим сна. Чтобы полностью отключить его, нажмите и удерживайте кнопку, пока не увидите &apos;Выключено&apos;. Чтобы зарядить аккумулятор, вставьте USB-кабель и подключите его к источнику питания.</translation>
+        <translation>Когда закончите читать, нажмите кнопку питания: ридер перейдёт в спящий режим. Чтобы выключить его, удерживайте кнопку до появления надписи «Выключено». Для зарядки подключите ридер к источнику питания через USB-кабель.</translation>
     </message>
 </context>
 <context>
@@ -4269,7 +4269,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Find articles about your eReader here.</source>
-        <translation>Здесь вы найдете статьи о вашем устройстве.</translation>
+        <translation>Здесь собраны справочные статьи о ридере.</translation>
     </message>
     <message>
         <source>Getting started</source>
@@ -4309,7 +4309,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>User Guide</source>
-        <translation>Руководство пользователя</translation>
+        <translation>Руководство</translation>
     </message>
     <message>
         <source>Using the Advanced Notebook</source>
@@ -4513,7 +4513,7 @@ Please check your connection and try again.</source>
     <name>HtmlArticleFormatter</name>
     <message>
         <source>&lt;p&gt;&lt;i&gt;Video content is not supported on your eReader&lt;/i&gt;&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;i&gt;Видео-контент не поддерживается вашим устройством&lt;/i&gt;&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;i&gt;Ридер не воспроизводит видео&lt;/i&gt;&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -4620,7 +4620,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Not enough space.</source>
-        <translation>Не хватает места на диске.</translation>
+        <translation>Недостаточно места.</translation>
     </message>
     <message>
         <source>Notebook exported.</source>
@@ -4648,7 +4648,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>You can access this file by connecting your eReader to your computer with a USB cable.</source>
-        <translation>Вы можете получить доступ к этому файлу, подключив ридер к компьютеру с помощью кабеля USB.</translation>
+        <translation>Чтобы открыть файл на компьютере, подключите к нему ридер по USB.</translation>
     </message>
     <message>
         <source>You can access this file in the Rakuten Kobo folder of your Dropbox account</source>
@@ -4730,7 +4730,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Insert Math Equation</source>
-        <translation>Вставить математическое уравнение</translation>
+        <translation>Вставить уравнение</translation>
     </message>
     <message>
         <source>Line Spacing</source>
@@ -4920,7 +4920,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Invalid IInk certificate. Please upgrade your device software to use this feature.</source>
-        <translation>Недействительный сертификат Interactive Ink. Пожалуйста, обновите программное обеспечение вашего устройства, чтобы использовать эту функцию.</translation>
+        <translation>Сертификат IInk недействителен. Чтобы пользоваться этой функцией, обновите ПО устройства.</translation>
     </message>
     <message>
         <source>OK</source>
@@ -5189,7 +5189,7 @@ Please check your connection and try again.</source>
     <name>InstapaperAboutJit</name>
     <message>
         <source>Catch up with online articles you&apos;ve saved directly on your Kobo eReader. Go to More &gt; My Articles to get started.</source>
-        <translation>Читайте сохраненные вами онлайн-статьи прямо на Kobo eReader. Чтобы начать, перейдите в раздел &apos;Еще&apos; &gt; &apos;Мои статьи&apos;.</translation>
+        <translation>Читайте сохранённые статьи прямо на ридере Kobo. Для этого откройте «Ещё» → «Мои статьи».</translation>
     </message>
     <message>
         <source>Read your saved articles with Instapaper</source>
@@ -5207,7 +5207,7 @@ Please check your connection and try again.</source>
     <name>InstapaperEmptyState</name>
     <message>
         <source>Find something you want to view later? Save it in Instapaper and enjoy it on your Kobo eReader, phone, tablet and computer whenever you&apos;re ready - even offline.</source>
-        <translation>Вы нашли что-нибудь, что хотели бы посмотреть позже? Сохраните в Instapaper и наслаждайтесь на своем ридере, планшете и компьютере в любое удобное для вас время – даже офлайн.</translation>
+        <translation>Нашли статью, которую хочется прочитать позже? Сохраните её в Instapaper и читайте на ридере Kobo, телефоне, планшете или компьютере — даже без интернета.</translation>
     </message>
     <message>
         <source>Learn more</source>
@@ -5230,7 +5230,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Re-added to list</source>
-        <translation>Повторно добавлено в список</translation>
+        <translation>Возвращено в список</translation>
     </message>
 </context>
 <context>
@@ -5253,7 +5253,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Re-add to list</source>
-        <translation>Повторно добавить в список</translation>
+        <translation>Вернуть в список</translation>
     </message>
     <message>
         <source>Return to Articles</source>
@@ -5272,7 +5272,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Save articles you find on the web to your Instapaper account and read them directly on your eReader – even when you’re offline. We’ll automatically sync your articles over your Wi Fi network. Need an Instapaper account? It’s free to sign up.</source>
-        <translation>Сохраняйте статьи, найденные в интернете, в свой аккаунт Instapaper и читайте их прямо на электронной книге – даже без подключения к Интернету. Мы автоматически синхронизируем ваши статьи по Wi-Fi. Нужен аккаунт Instapaper? Регистрация бесплатна.</translation>
+        <translation>Сохраняйте статьи из интернета в Instapaper и читайте их на ридере даже без сети. Статьи синхронизируются автоматически по Wi-Fi. Ещё нет учётной записи Instapaper? Регистрация бесплатна.</translation>
     </message>
 </context>
 <context>
@@ -5745,7 +5745,7 @@ Please check your connection and try again.</source>
     <name>LowPowerDialogController</name>
     <message>
         <source>%1% remaining. To recharge your eReader, connect it to a power source.</source>
-        <translation>%1% осталось. Для зарядки устройства подключите его к источнику питания.</translation>
+        <translation>Осталось %1% заряда. Подключите устройство к источнику питания.</translation>
     </message>
     <message>
         <source>Your battery is low</source>
@@ -5790,7 +5790,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>More</source>
-        <translation>Еще</translation>
+        <translation>Ещё</translation>
     </message>
     <message>
         <source>My Books</source>
@@ -5838,9 +5838,9 @@ Please check your connection and try again.</source>
     <message numerus="yes">
         <source>%n download(s) removed.</source>
         <translation>
-            <numerusform>%n объект удален.</numerusform>
-            <numerusform>%n объекта удалено.</numerusform>
-            <numerusform>%n объектов удалено.</numerusform>
+            <numerusform>Удалена %n загруженная копия.</numerusform>
+            <numerusform>Удалены %n загруженные копии.</numerusform>
+            <numerusform>Удалено %n загруженных копий.</numerusform>
         </translation>
     </message>
     <message>
@@ -6082,53 +6082,39 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Meet your eReader</source>
-        <translation>Знакомство с устройством</translation>
+        <translation>Знакомство с ридером</translation>
     </message>
     <message>
         <source>Welcome to %1! We&apos;d like to show you the basics of your new eReader so that you can get the most out of your reading experience. Let&apos;s get started...</source>
-        <translation>Добро пожаловать в %1! Мы покажем вам основы работы с новым устройством, чтобы чтение доставляло максимум удовольствия. Давайте начнём…</translation>
+        <translation>Добро пожаловать в %1! Покажем, как пользоваться новым ридером, чтобы читать было удобнее. Начнём?</translation>
     </message>
     <message>
         <source>You&apos;ll find a home button on the front of your eReader. The power slider is on the top, and slots for the USB cable and a Micro SD card are at the bottom and left.</source>
-        <translation>Кнопка &apos;Домой&apos; находится на передней панели устройства. Ползунок питания находится сверху, а слоты для USB-кабеля и карты Micro SD – внизу и слева.</translation>
+        <translation>Кнопка «Домой» находится на передней панели ридера, ползунок питания — сверху. Разъём USB расположен снизу, а слот для карты microSD — слева.</translation>
     </message>
     <message>
         <source>You&apos;ll find controls for the light and power at the top of your eReader. Slots for the USB cable and a Micro SD card can be found along the bottom and left edges.</source>
-        <translation>Элементы управления подсветкой и питанием находятся на верхнем торце вашего устройства. Гнезда для кабеля USB и карты памяти – на нижнем и левом.</translation>
+        <translation>Подсветкой и питанием можно управлять с верхней панели ридера. Разъём USB находится снизу, а слот для карты microSD — слева.</translation>
     </message>
     <message>
         <source>You&apos;ll find controls for the light and power at the top of your eReader. Slots for the USB cable and a Micro SD card can be found along the bottom edge.</source>
-        <translation>Элементы управления подсветкой и питанием находятся на верхнем торце вашего устройства. Гнезда для кабеля USB и карты памяти – на нижнем.</translation>
+        <translation>Подсветкой и питанием можно управлять с верхней панели ридера. Разъём USB и слот для карты microSD находятся снизу.</translation>
     </message>
     <message>
         <source>You&apos;ll find the power button at the top of your eReader. Slots for the USB cable and a Micro SD card can be found at the bottom, behind the port cover.</source>
-        <translation>Клавиша питания находится на верхнем торце устройства. Гнезда для кабеля USB и карты памяти – на нижнем, под крышкой.</translation>
+        <translation>Кнопка питания находится сверху. Разъём USB и слот для карты microSD — снизу, под крышкой.</translation>
     </message>
     <message>
         <source>You&apos;ll find the power slider at the top of your eReader. The slot for the USB cable can be found along the bottom edge.</source>
-        <translation>Вы найдете кнопку включения / выключения в верхнем торце вашего устройства. Порт USB расположен внизу.</translation>
+        <translation>Ползунок питания находится на верхнем торце ридера, а разъём USB — на нижнем.</translation>
     </message>
     <message>
         <source>You’ll find the power button at the back of your eReader. The port for the USB cable can be found along the bottom edge.</source>
-        <translation>Вы найдете кнопку питания на задней панели устройства. Порт для кабеля USB можно найти вдоль нижнего края.</translation>
+        <translation>Кнопка питания находится на задней панели ридера, а разъём USB — снизу.</translation>
     </message>
     <message>
         <source>You’ll find the power button at the top of your eReader. The port for the USB cable can be found along the bottom edge.</source>
-        <translation>Кнопка питания находится на верхнем торце устройства. Порт для кабеля USB — на нижнем.</translation>
-    </message>
-</context>
-<context>
-    <name>Migration41_MoveFavouritesToShelf</name>
-    <message>
-        <source>Shortlist</source>
-        <translation>Избранное</translation>
-    </message>
-</context>
-<context>
-    <name>Migration51_NewShelves</name>
-    <message>
-        <source>Shortlist</source>
-        <translation>Избранное</translation>
+        <translation>Кнопка питания находится на верхнем торце ридера, а разъём USB — на нижнем.</translation>
     </message>
 </context>
 <context>
@@ -6154,11 +6140,11 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>If syncing and repairing your account don&apos;t help, try resetting your eReader to its factory default state. After resetting, set up your eReader and sign in again for a fresh start.</source>
-        <translation>Если синхронизация и восстановление вашей учетной записи не помогли, попробуйте сбросить настройки до заводских по умолчанию. После сброса настройте ваш ридер и войдите снова чтобы начать с чистого листа.</translation>
+        <translation>Если синхронизация и восстановление учётной записи не помогли, попробуйте восстановить заводские настройки. После сброса заново настройте ридер и войдите в учётную запись.</translation>
     </message>
     <message>
         <source>Step 4. Factory reset your eReader</source>
-        <translation>Шаг 4. Сброс настроек вашего устройства</translation>
+        <translation>Шаг 4. Восстановите заводские настройки</translation>
     </message>
 </context>
 <context>
@@ -6247,7 +6233,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>More</source>
-        <translation>Еще</translation>
+        <translation>Ещё</translation>
     </message>
     <message>
         <source>My Articles</source>
@@ -6339,7 +6325,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Sort: Recently added</source>
-        <translation>Сортировка: Недавно добавленные</translation>
+        <translation>Сначала новые</translation>
     </message>
     <message>
         <source>While reading, you can press and hold on unfamiliar words to read their definitions and add them to this list (so you don&apos;t forget them).</source>
@@ -6350,19 +6336,19 @@ Please check your connection and try again.</source>
     <name>N3AdobeReader</name>
     <message>
         <source>This book is protected by Adobe Digital Rights Management (DRM). Because you previously deauthorized your eReader, you need to re-import the book using Adobe Digital Editions (ADE). Please visit %1 for more information.</source>
-        <translation>Эта книга защищена Adobe Digital Rights Management (DRM). Поскольку вы ранее деавторизовали ваш ридер, вам необходимо повторно импортировать книгу с помощью Adobe Digital Editions (ADE). Пожалуйста, посетите %1 для получения дополнительной информации.</translation>
+        <translation>Эта книга защищена системой управления цифровыми правами Adobe (DRM). Авторизация устройства была отменена. Снова импортируйте книгу через Adobe Digital Editions (ADE). Подробнее: %1.</translation>
     </message>
     <message>
         <source>This book is protected by Adobe Digital Rights Management (DRM). To continue reading, you need to renew your access to the book and re-import it using Adobe Digital Editions (ADE). Please visit %1 for more information.</source>
-        <translation>Эта книга защищена Adobe Digital Rights Management (DRM). Чтобы продолжить чтение, вам необходимо обновить свой доступ к книге и повторно импортировать ее с помощью Adobe Digital Editions (ADE). Пожалуйста, посетите %1 для получения дополнительной информации.</translation>
+        <translation>Эта книга защищена системой управления цифровыми правами Adobe (DRM). Чтобы продолжить чтение, продлите доступ и снова импортируйте книгу через Adobe Digital Editions (ADE). Подробнее: %1.</translation>
     </message>
     <message>
         <source>This book is protected by Adobe Digital Rights Management (DRM). You need to re-authorize your eReader with your Adobe ID and re-import the book using Adobe Digital Editions (ADE). Please visit %1 for more information.</source>
-        <translation>Эта книга защищена Adobe Digital Rights Management (DRM). Вам необходимо повторно авторизировать ридер с вашим Adobe ID, и еще раз импортировать книгу с помощью Adobe Digital Editions (ADE). Пожалуйста, посетите %1 для получения дополнительной информации.</translation>
+        <translation>Эта книга защищена системой управления цифровыми правами Adobe (DRM). Заново авторизуйте устройство с помощью Adobe ID и снова импортируйте книгу через Adobe Digital Editions (ADE). Подробнее: %1.</translation>
     </message>
     <message>
         <source>This book is protected by Adobe Digital Rights Management (DRM). You need to re-authorize your eReader with your Adobe ID using Adobe Digital Editions (ADE). Please visit %1 for more information.</source>
-        <translation>Эта книга защищена Adobe Digital Rights Management (DRM). Вам необходимо повторно авторизировать ридер с помощью вашего Adobe ID, используя Adobe Digital Editions (ADE). Пожалуйста, посетите %1 для получения дополнительной информации.</translation>
+        <translation>Эта книга защищена системой управления цифровыми правами Adobe (DRM). Откройте Adobe Digital Editions (ADE) и заново авторизуйте устройство с помощью Adobe ID. Подробнее: %1.</translation>
     </message>
     <message>
         <source>Your access to this book has expired</source>
@@ -6370,7 +6356,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Your eReader is not authorized to open this book</source>
-        <translation>У вашего устройства нет прав открывать эту книгу</translation>
+        <translation>Устройство не авторизовано для чтения этой книги</translation>
     </message>
 </context>
 <context>
@@ -6404,7 +6390,7 @@ Please check your connection and try again.</source>
     <name>N3BionicSettingsView</name>
     <message>
         <source>Try out this experimental reading feature for a limited time on your %1 eReader.</source>
-        <translation>Протестируйте эту экспериментальную функцию чтения в течение ограниченного времени на вашем устройстве для чтения электронных книг %1.</translation>
+        <translation>Попробуйте новую экспериментальную функцию чтения на ридере %1. Она доступна ограниченное время.</translation>
     </message>
 </context>
 <context>
@@ -6674,9 +6660,9 @@ Please check your connection and try again.</source>
     <message numerus="yes">
         <source>This will delete all %n known network(s) in your list.</source>
         <translation>
-            <numerusform>Будут удалены все %n известная сеть из списка.</numerusform>
-            <numerusform>Будут удалены все %n известные сети из списка.</numerusform>
-            <numerusform>Будут удалены все %n известных сетей из списка.</numerusform>
+            <numerusform>Из списка будут удалены все сохранённые сети (%n).</numerusform>
+            <numerusform>Из списка будут удалены все сохранённые сети (%n).</numerusform>
+            <numerusform>Из списка будут удалены все сохранённые сети (%n).</numerusform>
         </translation>
     </message>
 </context>
@@ -6692,11 +6678,11 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Your %1 eReader has no known networks</source>
-        <translation>На вашем устройстве %1 нет известных сетей</translation>
+        <translation>На устройстве %1 нет сохранённых сетей</translation>
     </message>
     <message>
         <source>Your Kobo eReader has no known networks.</source>
-        <translation>На вашем устройстве нет зарегистрированных сетей.</translation>
+        <translation>На устройстве Kobo нет сохранённых сетей.</translation>
     </message>
 </context>
 <context>
@@ -6759,7 +6745,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>You&apos;ll need to re-import this item to your eReader to read it again.</source>
-        <translation>Чтобы снова прочитать этот объект, его нужно будет повторно импортировать на устройство.</translation>
+        <translation>Чтобы снова прочитать этот материал, ещё раз импортируйте его на ридер.</translation>
     </message>
     <message>
         <source>You&apos;ll no longer see this item anywhere you use Instapaper.</source>
@@ -6886,11 +6872,11 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>You&apos;ll free up %1 on your eReader, and articles in the cloud can be easily re-downloaded.</source>
-        <translation>Вы освободите %1 на устройстве, а статьи из облака можно будет легко загрузить снова.</translation>
+        <translation>На ридере освободится %1. Статьи из облака можно будет скачать снова.</translation>
     </message>
     <message>
         <source>You&apos;ll free up %1 on your eReader, and books in the cloud can be easily re-downloaded.</source>
-        <translation>Вы освободите %1 на устройстве, а книги в облаке могут быть повторно загружены.</translation>
+        <translation>На ридере освободится %1. Книги из облака можно будет скачать снова.</translation>
     </message>
     <message>
         <source>You&apos;ll free up %1 on your eReader.</source>
@@ -6994,7 +6980,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Please try again.</source>
-        <translation>Пожалуйста, попробуйте еще раз.</translation>
+        <translation>Повторите попытку.</translation>
     </message>
     <message>
         <source>Sync failed</source>
@@ -7018,40 +7004,10 @@ Please check your connection and try again.</source>
     </message>
 </context>
 <context>
-    <name>N3SettingsAccessibilityController</name>
-    <message>
-        <source>Accessibility</source>
-        <translation>Специальные возможности</translation>
-    </message>
-</context>
-<context>
-    <name>N3SettingsAccessibilityView</name>
-    <message>
-        <source>A system update is required for early access to optional features like Read Aloud (text-to-speech), Display &amp; Text Size (large print), and Screen Reader.</source>
-        <translation>Для быстрого доступа к дополнительным функциям, таким как преобразование текста в речь, отображение и размер текста (крупный шрифт), а также программа чтения с экрана, требуется обновление системы.</translation>
-    </message>
-    <message>
-        <source>Enable</source>
-        <translation>Включить</translation>
-    </message>
-    <message>
-        <source>SETTINGS</source>
-        <translation>НАСТРОЙКИ</translation>
-    </message>
-    <message>
-        <source>SYSTEM UPDATE REQUIRED</source>
-        <translation>ТРЕБУЕТСЯ ОБНОВЛЕНИЕ СИСТЕМЫ</translation>
-    </message>
-    <message>
-        <source>Update to enable accessibility features</source>
-        <translation>Обновите систему, чтобы включить специальные возможности</translation>
-    </message>
-</context>
-<context>
     <name>N3SettingsAccountController</name>
     <message>
         <source>%1 eReader</source>
-        <translation>%1 ридер</translation>
+        <translation>Ридер %1</translation>
     </message>
     <message>
         <source>Accounts</source>
@@ -7067,7 +7023,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>All of your Instapaper articles will be removed from your eReader, but they’ll remain in your Instapaper account.</source>
-        <translation>Все ваши статьи Instapaper будут удалены из вашего ридера, но останутся в вашей учетной записи Instapaper.</translation>
+        <translation>Статьи Instapaper будут удалены с ридера, но останутся в вашей учётной записи Instapaper.</translation>
     </message>
     <message>
         <source>Any reading progress, highlights, or notes since your last sync on %1 will be lost.</source>
@@ -7091,7 +7047,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Factory reset your eReader?</source>
-        <translation>Сброс к заводским настройкам?</translation>
+        <translation>Восстановить заводские настройки устройства?</translation>
     </message>
     <message>
         <source>Factory resetting...</source>
@@ -7151,7 +7107,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Resetting your eReader to its factory default state erases your books, documents and custom settings.</source>
-        <translation>Восстановление заводских настроек по умолчанию удаляет ваши книги, документы и пользовательские настройки.</translation>
+        <translation>При сбросе до заводских настроек будут удалены книги, документы и пользовательские настройки.</translation>
     </message>
     <message>
         <source>Sign out</source>
@@ -7179,7 +7135,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>You haven&apos;t synced your eReader. Any reading progress, highlights, or notes you&apos;ve made will be lost.</source>
-        <translation>Вы не синхронизировали ваше устройство. Прогресс прочитанного, цитаты или заметки будут потеряны.</translation>
+        <translation>Устройство не синхронизировано. Данные о том, до какого места вы дочитали, а также выделенные фрагменты и заметки будут потеряны.</translation>
     </message>
     <message>
         <source>You will no longer be able to read any books protected by Adobe Digital Rights Management (DRM) that you imported using Adobe Digital Editions (ADE). Please visit %1 for more information.</source>
@@ -7187,15 +7143,15 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Your downloaded Dropbox items will remain on your eReader.</source>
-        <translation>Ваш загруженный контент Dropbox останется на вашем ридере.</translation>
+        <translation>Файлы, загруженные из Dropbox, останутся на ридере.</translation>
     </message>
     <message>
         <source>Your downloaded Google Drive items will remain on your eReader.</source>
-        <translation>Ваш загруженный контент Google Диска останется на вашем ридере.</translation>
+        <translation>Файлы, загруженные с Google Диска, останутся на ридере.</translation>
     </message>
     <message>
         <source>Your eReader has been deauthorized</source>
-        <translation>Устройство деавторизовано</translation>
+        <translation>Авторизация устройства отменена</translation>
     </message>
     <message>
         <source>unlimited reading</source>
@@ -7206,7 +7162,7 @@ Please check your connection and try again.</source>
     <name>N3SettingsAccountView</name>
     <message>
         <source>%1 eReader</source>
-        <translation>%1 ридер</translation>
+        <translation>Ридер %1</translation>
     </message>
     <message>
         <source>%1 pts</source>
@@ -7294,11 +7250,11 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Sync eBooks and documents to your eReader with a free Dropbox account.</source>
-        <translation>Синхронизируйте электронные книги и документы на ридере с бесплатной учетной записью Dropbox.</translation>
+        <translation>Синхронизируйте книги и документы на ридере через бесплатную учётную запись Dropbox.</translation>
     </message>
     <message>
         <source>Sync eBooks and documents to your eReader with a free Google Drive account.</source>
-        <translation>Синхронизируйте электронные книги и документы с вашим ридером с помощью бесплатной учетной записи Google Диска.</translation>
+        <translation>Синхронизируйте книги и документы на ридере через бесплатную учётную запись Google Диска.</translation>
     </message>
     <message>
         <source>To view or change your account settings or payment info, please sign in to www.kobo.com and select My Account.</source>
@@ -7833,7 +7789,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Browse the internet directly from your eReader.</source>
-        <translation>Просматривайте интернет прямо с вашего устройства.</translation>
+        <translation>Открывайте сайты прямо на ридере.</translation>
     </message>
     <message>
         <source>Discover your inner artist or make notes and then save your creation in your Library.</source>
@@ -7893,7 +7849,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>SKETCH PAD</source>
-        <translation>АЛЬБОМ ДЛЯ ЗАРИСОВОК</translation>
+        <translation>АЛЬБОМ ДЛЯ ЭСКИЗОВ</translation>
     </message>
     <message>
         <source>SOLITAIRE</source>
@@ -7909,7 +7865,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Try something fun!</source>
-        <translation>Попробуйте что-нибудь прикольное!</translation>
+        <translation>Попробуйте что-то новое!</translation>
     </message>
     <message>
         <source>Try your wits with this logic-based number puzzle.</source>
@@ -8093,11 +8049,11 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Once you’ve marked a %1 book as finished, remove the download from your eReader to free up space:</source>
-        <translation>Когда вы отметите книгу %1 как прочитанную, удалять её загрузку с устройства, чтобы освободить место:</translation>
+        <translation>Удалять загруженную копию книги %1, когда вы отмечаете её как прочитанную, чтобы освободить место на ридере:</translation>
     </message>
     <message>
         <source>Once you’ve marked a Kobo book as finished, remove the download from your eReader to free up space:</source>
-        <translation>После того как вы отметили книгу прочитанной, удалите ее с вашего устройства, чтобы освободить место:</translation>
+        <translation>Удалять загруженную копию книги Kobo, когда вы отмечаете её как прочитанную, чтобы освободить место на ридере:</translation>
     </message>
     <message>
         <source>Remove Instapaper articles from this eReader when you archive them:</source>
@@ -8269,7 +8225,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Enabling PIN lock helps protect your content and information by requiring a 4-digit PIN to use your eReader.</source>
-        <translation>Включение блокировки ПИН-кодом помогает защитить содержимое и информацию, требуя ввести 4-значный код для использования вашего устройства.</translation>
+        <translation>Защитите свои данные: включите блокировку, и для доступа к устройству понадобится четырёхзначный ПИН-код.</translation>
     </message>
     <message>
         <source>HELP IMPROVE OUR APP</source>
@@ -8321,15 +8277,15 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Show list of recently viewed ebooks:</source>
-        <translation>Показать список недавно просмотренных электронных книг:</translation>
+        <translation>Показывать недавно открытые книги:</translation>
     </message>
     <message>
         <source>The &quot;intelligent&quot; protection case (sold separately) automatically puts your eReader to sleep when you close it and wakes it up when you open it.</source>
-        <translation>&apos;Интеллектуальный&apos; защитный чехол-обложка (продается отдельно) автоматически переводит вашу электронную книгу в спящий режим, когда вы ее закрываете, и выводит ее из спящего режима, когда вы ее открываете.</translation>
+        <translation>Умный чехол (продаётся отдельно) переводит ридер в спящий режим, когда вы его закрываете. Откройте чехол, чтобы продолжить чтение.</translation>
     </message>
     <message>
         <source>The Kobo SleepCover (sold separately) automatically puts your eReader to sleep when you close it and wakes it up when you open it.</source>
-        <translation>Kobo SleepCover (продается отдельно) автоматически переводит устройство в режим сна при закрытии чехла-обложки, и пробуждает при открытии.</translation>
+        <translation>Чехол Kobo SleepCover (продаётся отдельно) переводит ридер в спящий режим, когда вы его закрываете. Откройте чехол, чтобы продолжить чтение.</translation>
     </message>
     <message>
         <source>To access your privacy settings, please visit: %1</source>
@@ -8509,7 +8465,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Automatic sync:</source>
-        <translation>Автоматическая синхронизация:</translation>
+        <translation>Автосинхронизация:</translation>
     </message>
     <message>
         <source>Automatically backup your notes to %1 during sync so you don&apos;t lose them if your device gets lost.</source>
@@ -8571,10 +8527,6 @@ Please check your connection and try again.</source>
         <translation>О %1</translation>
     </message>
     <message>
-        <source>Accessibility</source>
-        <translation>Специальные возможности</translation>
-    </message>
-    <message>
         <source>Accounts</source>
         <translation>Аккаунты</translation>
     </message>
@@ -8612,7 +8564,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Wi Fi connection</source>
-        <translation>Wi-Fi соединение</translation>
+        <translation>Подключение Wi-Fi</translation>
     </message>
 </context>
 <context>
@@ -8653,11 +8605,11 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Wi Fi Connection</source>
-        <translation>Wi-Fi соединение</translation>
+        <translation>Подключение Wi-Fi</translation>
     </message>
     <message>
         <source>Wi Fi connection</source>
-        <translation>Wi-Fi соединение</translation>
+        <translation>Подключение Wi-Fi</translation>
     </message>
     <message>
         <source>Wi Fi is disabled. Would you like to enable it and connect to the internet?</source>
@@ -8731,7 +8683,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Low Battery</source>
-        <translation>Низкий заряд батареи</translation>
+        <translation>Низкий заряд</translation>
     </message>
     <message>
         <source>Manage books</source>
@@ -8763,7 +8715,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>When your eReader gets full, we will store content on your Micro SD card.</source>
-        <translation>Когда основная память закончится, контент будет сохраняться на карте памяти.</translation>
+        <translation>Когда память устройства заполнится, новые материалы будут сохраняться на карте microSD.</translation>
     </message>
     <message>
         <source>YES</source>
@@ -8779,15 +8731,15 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>You&apos;ve used up all of your eReader&apos;s storage space. You&apos;ll need to remove some downloads or imported books to add more.</source>
-        <translation>Вы исчерпали все пространство вашего хранилища ридера. Чтобы создать больше места, вам нужно удалить некоторые загруженные или импортированные книги.</translation>
+        <translation>Память устройства заполнена. Чтобы добавить новые книги, удалите часть загруженных или импортированных книг.</translation>
     </message>
     <message>
         <source>Your eReader is Full</source>
-        <translation>Устройство переполнено</translation>
+        <translation>Память устройства заполнена</translation>
     </message>
     <message>
         <source>Your eReader is low on power and can&apos;t finish updating. Please try again after you&apos;ve recharged your eReader.</source>
-        <translation>Ваше устройство разряжено, невозможно закончить обновление. Пожалуйста, зарядите и попробуйте еще раз.</translation>
+        <translation>Не удалось завершить обновление: заряда батареи недостаточно. Зарядите устройство и повторите попытку.</translation>
     </message>
     <message>
         <source>Your eReader is low on power. If you start an update it may not be able to finish. Do you want to try anyway?</source>
@@ -8869,7 +8821,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Please replace the stylus battery soon.</source>
-        <translation>Пожалуйста, замените аккумулятор стилуса в ближайшее время.</translation>
+        <translation>Пора заменить батарейку в стилусе.</translation>
     </message>
     <message>
         <source>Replace your stylus tip</source>
@@ -8888,7 +8840,7 @@ Please check your connection and try again.</source>
     <name>NickelOnDemandLibraryController</name>
     <message>
         <source>Please wait...</source>
-        <translation>Пожалуйста, подождите…</translation>
+        <translation>Подождите…</translation>
     </message>
     <message>
         <source>We&apos;re currently loading this list.</source>
@@ -8942,7 +8894,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Your eReader senses how much light is available, and will automatically adjust the brightness level for you. %1 also adjusts the screen&apos;s light colour according to the time of day, which can help you fall asleep more easily if you read before bed.</source>
-        <translation>Ваш ридер измеряет уровень освещенности, и автоматически регулирует яркость для вас. %1 также изменяет цвет подсветки в зависимости от времени суток, что может помочь вам уснуть легче, если вы читаете перед сном.</translation>
+        <translation>Ридер сам подбирает яркость подсветки по освещённости. А %1 меняет и оттенок подсветки в зависимости от времени суток: если вы читаете перед сном, вам будет легче уснуть.</translation>
     </message>
 </context>
 <context>
@@ -9044,7 +8996,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>LAST EDITED: </source>
-        <translation>ПОСЛЕДНЕЕ ИЗМЕНЕНИЕ: </translation>
+        <translation>ИЗМЕНЕНО: </translation>
     </message>
     <message>
         <source>Open anyway</source>
@@ -9176,7 +9128,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Double tap to edit text</source>
-        <translation>Нажмите дважды, чтобы отредактировать текст</translation>
+        <translation>Коснитесь дважды для правки текста</translation>
     </message>
     <message>
         <source>Draw shapes, arrows, and text, then double tap to convert into diagram blocks that you can resize and arrange.</source>
@@ -9229,7 +9181,7 @@ Please check your connection and try again.</source>
     <name>NotebookResponsivePage</name>
     <message>
         <source>Add, move, or resize content as needed. Even your handwritten notes reflow automatically.</source>
-        <translation>При необходимости добавляйте, перемещайте или изменяйте размер содержимого. Даже ваши рукописные заметки переформатируются автоматически.</translation>
+        <translation>Добавляйте, перемещайте и масштабируйте элементы. Даже рукописные заметки сами подстроятся под новую разметку.</translation>
     </message>
     <message>
         <source>Done</source>
@@ -9281,7 +9233,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Swipe to turn pages</source>
-        <translation>Проведите пальцем, чтобы перелистывать страницы</translation>
+        <translation>Листайте жестом</translation>
     </message>
 </context>
 <context>
@@ -9310,37 +9262,6 @@ Please check your connection and try again.</source>
     <message>
         <source>Loading Webstore...</source>
         <translation>Загрузка интернет-магазина…</translation>
-    </message>
-</context>
-<context>
-    <name>OptionalQT6UpgradeDialog</name>
-    <message>
-        <source>Accessibility features</source>
-        <translation>Специальные возможности</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation>Закрыть</translation>
-    </message>
-    <message>
-        <source>Enable</source>
-        <translation>Включить</translation>
-    </message>
-    <message>
-        <source>Enabling these will require a system update. This will delete all files, documents, and custom settings, and some features may be missing at this stage. Find out more at &lt;b&gt;kobo.com/update&lt;/b&gt;.&lt;br&gt;&lt;br&gt;You can revert back later if you change your mind.</source>
-        <translation>Для активации требуется обновление системы. При этом будут удалены все файлы, документы и пользовательские настройки, а некоторые функции могут быть недоступны на данном этапе. Подробнее на сайте &lt;b&gt;kobo.com/update&lt;/b&gt;.&lt;br&gt;&lt;br&gt;Если вы передумаете, вы сможете позже вернуться к прежней версии.</translation>
-    </message>
-    <message>
-        <source>If you require accessibility support, you now have early access to optional features like Read Aloud (text-to-speech), Display &amp; Text Size (large print), and Screen Reader.&lt;br&gt;&lt;br&gt;Enabling these will require a system update; some features may be missing at this stage. Find out more at &lt;b&gt;kobo.com/update&lt;/b&gt;.&lt;br&gt;&lt;br&gt;You can revert back later if you change your mind.</source>
-        <translation>Если вам требуется поддержка специальных возможностей, у вас теперь есть ранний доступ к дополнительным функциям, таким как Чтение вслух (преобразование текста в речь), Отображение и размер текста (крупный шрифт) и Программа чтения с экрана. Для их включения потребуется обновление системы; на данном этапе некоторые функции могут отсутствовать. Узнайте больше на странице &lt;b&gt;kobo.com/update&lt;/b&gt;.&lt;br&gt;&lt;br&gt;Вы можете вернуться позже, если передумаете.</translation>
-    </message>
-    <message>
-        <source>Optional accessibility features</source>
-        <translation>Дополнительные специальные возможности</translation>
-    </message>
-    <message>
-        <source>Skip</source>
-        <translation>Пропустить</translation>
     </message>
 </context>
 <context>
@@ -9398,7 +9319,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Need to change email?</source>
-        <translation>Нужно изменить электронную почту?</translation>
+        <translation>Изменить адрес почты?</translation>
     </message>
     <message>
         <source>Shop Kobo</source>
@@ -9468,14 +9389,6 @@ Please check your connection and try again.</source>
         <translation>Один каталог. Два отличных способа читать.</translation>
     </message>
     <message>
-        <source>One of your OverDrive books has expired</source>
-        <translation>Срок действия одной из ваших книг по OverDrive истек</translation>
-    </message>
-    <message>
-        <source>One of your OverDrive books is expiring soon</source>
-        <translation>Срок действия одной из ваших книг по OverDrive скоро истечет</translation>
-    </message>
-    <message>
         <source>One of your borrowed books has expired</source>
         <translation>Срок одной из взятых книг истёк</translation>
     </message>
@@ -9492,11 +9405,11 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Edit your email</source>
-        <translation>Отредактируйте вашу электронную почту</translation>
+        <translation>Изменить адрес почты</translation>
     </message>
     <message>
         <source>Please enter a valid email address.</source>
-        <translation>Пожалуйста, введите действительный адрес электронной почты.</translation>
+        <translation>Введите действующий адрес почты.</translation>
     </message>
     <message>
         <source>Save</source>
@@ -9673,7 +9586,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>With OverDrive on your %1, all you need is a library card and a Wi Fi connection to borrow eBooks from your public library. Browse, borrow, and place holds on library books directly from your eReader.</source>
-        <translation>С OverDrive на вашем %1 все, что вам нужно, это читательский билет и подключение к Wi-Fi, чтобы брать электронные книги из вашей публичной библиотеки. Просматривайте, берите и резервируйте библиотечные книги прямо из своего устройства для чтения.</translation>
+        <translation>Чтобы брать электронные книги в публичной библиотеке через OverDrive на %1, нужны только читательский билет и Wi-Fi. Выбирайте книги, берите их на время и вставайте в очередь на выдачу прямо с ридера.</translation>
     </message>
 </context>
 <context>
@@ -9792,7 +9705,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Please try again. If the problem persists, please try using your public library’s website instead, and then sync your eReader.</source>
-        <translation>Пожалуйста, попробуйте еще раз. Если проблема не устранена, попробуйте использовать веб-сайт вашей публичной библиотеки вместо этого, а затем синхронизировать ваше устройство.</translation>
+        <translation>Попробуйте ещё раз. Если не получится, воспользуйтесь сайтом своей библиотеки, а затем синхронизируйте ридер.</translation>
     </message>
     <message>
         <source>Sync now</source>
@@ -9812,7 +9725,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>We&apos;ve noticed that your date and time settings have been changed. If you wish to continue reading your OverDrive items, please sync your eReader over Wi Fi. </source>
-        <translation>Мы заметили, что ваши настройки даты и времени были изменены. Если вы хотите продолжать читать ваши OverDrive книги, то, пожалуйста, синхронизируйте устройство через Wi-Fi. </translation>
+        <translation>Настройки даты и времени изменились. Чтобы продолжить читать книги OverDrive, синхронизируйте ридер по Wi-Fi.</translation>
     </message>
     <message>
         <source>Your lending period has ended. Request this item again or buy a copy to read at your leisure. </source>
@@ -9853,7 +9766,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Don&apos;t forget to keep your PIN safe. Please note, parental controls won&apos;t prevent your eReader from syncing.</source>
-        <translation>Не забудьте сохранить свой PIN-код. Обратите внимание: родительский контроль не помешает синхронизации вашей электронной книги.</translation>
+        <translation>Храните ПИН-код в надёжном месте. Родительский контроль не отключает синхронизацию устройства.</translation>
     </message>
     <message>
         <source>Parental Controls</source>
@@ -10467,7 +10380,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>It&apos;s time to do some reading. If you&apos;d like to learn more about your eReader, please visit us online at &lt;i&gt;%1&lt;/i&gt;</source>
-        <translation>Пришло время немного почитать. Если вы хотите узнать больше о своем устройстве, пожалуйста, посетите наш веб-сайт &lt;i&gt;%1&lt;/i&gt;</translation>
+        <translation>Теперь можно почитать. Больше о возможностях ридера — на сайте &lt;i&gt;%1&lt;/i&gt;.</translation>
     </message>
     <message>
         <source>We&apos;re all done</source>
@@ -10485,7 +10398,7 @@ Please check your connection and try again.</source>
     <name>QuickTurnHelpDialog</name>
     <message>
         <source>Enhanced page-turn speed</source>
-        <translation>Улучшенная скорость листания страницы</translation>
+        <translation>Ускоренное перелистывание</translation>
     </message>
     <message>
         <source>Hold the bottom corner of your screen or a page-turn button to quickly flip through pages in either direction.</source>
@@ -10576,7 +10489,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Why should I set my bedtime?</source>
-        <translation>Почему я должен устанавливать время отхода ко сну?</translation>
+        <translation>Зачем указывать время сна?</translation>
     </message>
     <message>
         <source>With Kobo Aura ONE, we’ll give you the perfect light – any time of day or night.</source>
@@ -10700,7 +10613,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Please try again.</source>
-        <translation>Пожалуйста, попробуйте еще раз.</translation>
+        <translation>Повторите попытку.</translation>
     </message>
 </context>
 <context>
@@ -10780,15 +10693,15 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>If a character cannot be rendered by the main font selected for the book, we try to render it using the supplemental font.&lt;br&gt;&lt;br&gt;If you are seeing some blank characters in your book, try a different font.</source>
-        <translation>Если символ не может быть отображен основным шрифтом, выбранным для книги, мы пытаемся отобразить его с помощью дополнительного шрифта.&lt;br&gt;&lt;br&gt;Если вы видите в своей книге пустые символы, попробуйте другой шрифт.</translation>
+        <translation>Если в основном шрифте книги нет нужного символа, ридер возьмёт его из дополнительного шрифта.&lt;br&gt;&lt;br&gt;Если вместо букв видны пропуски, попробуйте другой шрифт.</translation>
     </message>
     <message>
         <source>KBJ-TsukuMin Pr6N RB</source>
-        <translation>KBJ-TsukuMin Pr6N RB</translation>
+        <translation>Kobo Tsukushi Mincho</translation>
     </message>
     <message>
         <source>KBJ-UDKakugo Pr6N M</source>
-        <translation>KBJ-UDKakugo Pr6N M</translation>
+        <translation>Kobo UD Kakugo</translation>
     </message>
     <message>
         <source>Open Dyslexic</source>
@@ -10909,7 +10822,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Re-added to list</source>
-        <translation>Повторно добавлено в список</translation>
+        <translation>Возвращено в список</translation>
     </message>
     <message>
         <source>Untitled Chapter</source>
@@ -10932,7 +10845,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Re-add to list</source>
-        <translation>Повторно добавить в список</translation>
+        <translation>Вернуть в список</translation>
     </message>
 </context>
 <context>
@@ -11206,7 +11119,7 @@ to read</source>
     </message>
     <message>
         <source>The fonts available on your eReader might not support all characters in this book.&lt;br&gt;&lt;br&gt;Tip: To add your own fonts to your eReader, connect your eReader to your computer with the USB cable, then copy over your font files.</source>
-        <translation>Шрифты, доступные на вашем устройстве, могут не поддерживать все символы из этой книги.&lt;br&gt;&lt;br&gt;Совет: Чтобы добавить собственные шрифты в электронную книгу, подключите ее к компьютеру с помощью USB-кабеля; затем скопируйте файлы шрифтов.</translation>
+        <translation>В шрифтах ридера могут отсутствовать некоторые символы из этой книги.&lt;br&gt;&lt;br&gt;Чтобы добавить свои шрифты, подключите ридер к компьютеру по USB и скопируйте на него файлы шрифтов.</translation>
     </message>
     <message>
         <source>This file format cannot currently be marked up with the %1 Stylus.</source>
@@ -11372,11 +11285,11 @@ to read</source>
     </message>
     <message>
         <source>Remove downloads</source>
-        <translation>Удалить загруженное</translation>
+        <translation>Удалить загруженные копии</translation>
     </message>
     <message>
         <source>Remove from My Books</source>
-        <translation>Удалить из &apos;Мои книги&apos;</translation>
+        <translation>Удалить из раздела «Мои книги»</translation>
     </message>
     <message>
         <source>You can re-download these items any time.</source>
@@ -11398,22 +11311,22 @@ to read</source>
             <numerusform>Вы можете восстановить эти объекты, изменив настройки синхронизации на веб-сайте Rakuten.</numerusform>
         </translation>
     </message>
+    <message>
+        <source>You can restore these items on kobo.com from your Archive.</source>
+        <translation>Эти объекты можно восстановить из архива на kobo.com.</translation>
+    </message>
     <message numerus="yes">
         <source>You can restore these items on kobo.com from your Archive.</source>
+        <comment>Note: use Qt Linguist&apos;s numerus forms. (this item / these items).</comment>
         <translation>
-            <numerusform>Вы можете восстановить этот объект на kobo.com из своего архива.</numerusform>
-            <numerusform>Вы можете восстановить эти объекты на kobo.com из своего архива.</numerusform>
-            <numerusform>Вы можете восстановить эти объекты на kobo.com из своего архива.</numerusform>
+            <numerusform>Этот объект можно восстановить из архива на kobo.com.</numerusform>
+            <numerusform>Эти объекты можно восстановить из архива на kobo.com.</numerusform>
+            <numerusform>Эти объекты можно восстановить из архива на kobo.com.</numerusform>
         </translation>
     </message>
     <message>
-        <source>You can restore these items on kobo.com from your Archive.</source>
-        <comment>Note: use Qt Linguist&apos;s numerus forms. (this item / these items).</comment>
-        <translation>Эти элементы можно восстановить из архива на kobo.com.</translation>
-    </message>
-    <message>
         <source>You&apos;ll need to re-import this item to your eReader to read it again.</source>
-        <translation>Вам нужно будет повторно импортировать этот объект в ваш ридер, чтобы прочитать его снова.</translation>
+        <translation>Чтобы снова прочитать этот материал, ещё раз импортируйте его на ридер.</translation>
     </message>
 </context>
 <context>
@@ -12021,10 +11934,6 @@ to read</source>
         <translation>Найти в Baidu</translation>
     </message>
     <message>
-        <source>Search Google</source>
-        <translation>Найти в Google</translation>
-    </message>
-    <message>
         <source>Search Wikipedia</source>
         <translation>Найти в Wikipedia</translation>
     </message>
@@ -12286,7 +12195,7 @@ to read</source>
     </message>
     <message>
         <source>Sort: Recent</source>
-        <translation>Сортировка: Последние</translation>
+        <translation>Сначала недавние</translation>
     </message>
 </context>
 <context>
@@ -12356,7 +12265,7 @@ to read</source>
     <name>SideLoadingPage</name>
     <message>
         <source>1. Connect the USB cable to your eReader and computer.&lt;br&gt;&lt;br&gt;2. Drag eBooks from your computer into the %1 eReader’ drive. Supported eBook file formats include: EPUB, PDF, MOBI, CBZ, and CBR.&lt;br&gt;&lt;br&gt;3. Eject your eReader.</source>
-        <translation>1. Подключите USB-кабель к вашей электронной книге и компьютеру.&lt;br&gt;&lt;br&gt;2. Перетащите электронные книги со своего компьютера на диск устройства %1. Поддерживаемые форматы файлов электронных книг: EPUB, PDF, MOBI, CBZ и CBR.&lt;br&gt;&lt;br&gt;3. Извлеките свою электронную книгу.</translation>
+        <translation>1. Подключите ридер к компьютеру USB-кабелем.&lt;br&gt;&lt;br&gt;2. Перетащите книги с компьютера на диск %1. Поддерживаемые форматы: EPUB, PDF, MOBI, CBZ и CBR.&lt;br&gt;&lt;br&gt;3. Выполните безопасное извлечение ридера.</translation>
     </message>
     <message>
         <source>Adding eBooks from your computer</source>
@@ -12520,7 +12429,7 @@ to read</source>
     </message>
     <message>
         <source>Get quick tips about reading on your eReader</source>
-        <translation>Получите быстрые советы о чтении на вашем устройстве</translation>
+        <translation>Советы по чтению на ридере</translation>
     </message>
     <message>
         <source>Get recommendations by telling us what you like</source>
@@ -12528,7 +12437,7 @@ to read</source>
     </message>
     <message>
         <source>Get started with Audiobooks on your eReader</source>
-        <translation>Начните работу с аудиокнигами в вашем ридере</translation>
+        <translation>Как слушать аудиокниги на ридере</translation>
     </message>
     <message>
         <source>Get to know your %0</source>
@@ -12588,7 +12497,7 @@ to read</source>
     </message>
     <message>
         <source>Read articles from the web on your eReader</source>
-        <translation>Читайте статьи из интернета на вашем устройстве</translation>
+        <translation>Читайте статьи из интернета на ридере</translation>
     </message>
     <message>
         <source>Read as much as you want with a Kobo Plus subscription</source>
@@ -12820,7 +12729,7 @@ to track progress!</source>
     </message>
     <message>
         <source>Please wait...</source>
-        <translation>Пожалуйста, подождите…</translation>
+        <translation>Подождите…</translation>
     </message>
     <message>
         <source>Shop Kobo</source>
@@ -13233,7 +13142,7 @@ to track progress!</source>
     </message>
     <message>
         <source>We’ve noticed that your date and time settings have been changed. If you wish to continue reading your Kobo Plus items, please sync your eReader over Wi Fi. </source>
-        <translation>Мы заметили, что ваши настройки даты и времени были изменены. Если вы хотите продолжить чтение своих книг Kobo Plus, синхронизируйте свою электронную книгу по Wi-Fi. </translation>
+        <translation>Настройки даты и времени изменились. Чтобы продолжить читать книги Kobo Plus, синхронизируйте ридер по Wi-Fi.</translation>
     </message>
     <message>
         <source>You no longer have a Kobo Plus subscription</source>
@@ -13365,11 +13274,11 @@ to track progress!</source>
     <name>SwipeInstructionPage</name>
     <message>
         <source>Here we&apos;ll show you the basic concepts you&apos;ll need to get the most out of your eReader. To continue, swipe from right to left. Swipe left to right at any time to go back a page.</source>
-        <translation>Здесь мы покажем основы, которые помогут получить максимум от вашего устройства. Чтобы продолжить, проведите по экрану справа налево. Чтобы вернуться на страницу назад, в любой момент проведите слева направо.</translation>
+        <translation>Познакомьтесь с основными возможностями ридера. Чтобы продолжить, проведите по экрану справа налево. Чтобы вернуться на страницу назад, проведите слева направо.</translation>
     </message>
     <message>
         <source>Here we&apos;ll show you the basic concepts you&apos;ll need to get the most out of your eReader. To continue, tap the page turn button or swipe the screen from right to left.</source>
-        <translation>Здесь вы познакомитесь с наиболее важными функциями вашего ридера. Чтобы продолжить, нажмите кнопку перелистывания или проведите по экрану справа налево.</translation>
+        <translation>Познакомьтесь с основными возможностями ридера. Чтобы продолжить, нажмите кнопку перелистывания или проведите по экрану справа налево.</translation>
     </message>
     <message>
         <source>Let&apos;s take a quick tour</source>
@@ -13399,11 +13308,11 @@ to track progress!</source>
     </message>
     <message>
         <source>Something happened to your Wi&amp;nbsp;Fi connection and we couldn&apos;t completely sync your eReader. Please check your Wi&amp;nbsp;Fi and try again.</source>
-        <translation>Что-то случилось с подключением Wi-Fi, и мы не смогли полностью синхронизировать устройство. Проверьте подключение Wi-Fi и повторите попытку.</translation>
+        <translation>Не удалось завершить синхронизацию устройства по Wi-Fi. Проверьте подключение и повторите попытку.</translation>
     </message>
     <message>
         <source>Something went wrong and we couldn&apos;t completely sync your eReader. Please try again.</source>
-        <translation>Что-то пошло не так, и мы не смогли полностью синхронизировать ваше устройство. Пожалуйста, попробуйте еще раз.</translation>
+        <translation>Не удалось завершить синхронизацию устройства. Повторите попытку.</translation>
     </message>
     <message>
         <source>Sync failed</source>
@@ -13415,7 +13324,7 @@ to track progress!</source>
     </message>
     <message>
         <source>Your eReader is Full</source>
-        <translation>Ваше устройство заполнено</translation>
+        <translation>Память устройства заполнена</translation>
     </message>
 </context>
 <context>
@@ -13434,7 +13343,7 @@ to track progress!</source>
     </message>
     <message>
         <source>Your eReader is up to date!</source>
-        <translation>Программное обеспечение вашей электронной книги обновлено!</translation>
+        <translation>Установлена последняя версия ПО.</translation>
     </message>
 </context>
 <context>
@@ -13446,17 +13355,17 @@ to track progress!</source>
     <message numerus="yes">
         <source>%n article(s) added.</source>
         <translation>
-            <numerusform>%n статья добавлена.</numerusform>
-            <numerusform>%n статьи добавлено.</numerusform>
-            <numerusform>%n статей добавлено.</numerusform>
+            <numerusform>Добавлена %n статья.</numerusform>
+            <numerusform>Добавлены %n статьи.</numerusform>
+            <numerusform>Добавлено %n статей.</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n book(s) added.</source>
         <translation>
-            <numerusform>%n книга добавлена.</numerusform>
-            <numerusform>%n книги добавлено.</numerusform>
-            <numerusform>%n книг добавлено.</numerusform>
+            <numerusform>Добавлена %n книга.</numerusform>
+            <numerusform>Добавлены %n книги.</numerusform>
+            <numerusform>Добавлено %n книг.</numerusform>
         </translation>
     </message>
     <message>
@@ -13473,7 +13382,7 @@ to track progress!</source>
     </message>
     <message>
         <source>Repair complete. Hopefully this solved the issue.</source>
-        <translation>Восстановление завершено. Будем надеяться, что это решило проблему.</translation>
+        <translation>Восстановление завершено. Проверьте, решена ли проблема.</translation>
     </message>
     <message>
         <source>Retry sync</source>
@@ -13489,7 +13398,7 @@ to track progress!</source>
     </message>
     <message>
         <source>Sync Failed. Please try again.</source>
-        <translation>Ошибка синхронизации. Пожалуйста, попробуйте еще раз.</translation>
+        <translation>Сбой синхронизации. Повторите попытку.</translation>
     </message>
     <message>
         <source>Sync complete.</source>
@@ -13505,7 +13414,7 @@ to track progress!</source>
     </message>
     <message>
         <source>Sync to download new items and software updates.</source>
-        <translation>&lt;span style=&apos;font-size: 32px;&apos;&gt;Выполните синхронизацию для обновления объектов и микропрограммы.&lt;/span&gt;</translation>
+        <translation>Синхронизируйте ридер, чтобы загрузить новые материалы и обновления ПО.</translation>
     </message>
     <message>
         <source>Unable to connect to Kobo services.&lt;br&gt;&lt;br&gt;Sync may not currently be available in your region</source>
@@ -13819,7 +13728,7 @@ to track progress!</source>
     </message>
     <message>
         <source>Re-add to list</source>
-        <translation>Повторно добавить в список</translation>
+        <translation>Вернуть в список</translation>
     </message>
     <message>
         <source>Reading stats</source>
@@ -13938,11 +13847,11 @@ to track progress!</source>
     <name>UpgradeManager</name>
     <message>
         <source>A new version of your eReader&apos;s software is ready to be installed.</source>
-        <translation>Новая версия ПО для вашего устройства готова к установке.</translation>
+        <translation>Обновление ПО устройства готово к установке.</translation>
     </message>
     <message>
         <source>A new version of your eReader’s software needs to be installed. The update will use up to %1 MB to ensure a successful installation.</source>
-        <translation>Необходимо установить новую версию ПО устройства. Для успешной установки обновлению потребуется до %1 МБ.</translation>
+        <translation>Нужно обновить ПО устройства. Для установки потребуется до %1 МБ.</translation>
     </message>
     <message>
         <source>Additional storage is required to run the update installation.&lt;ul&gt;&lt;li&gt;Available: &lt;b&gt;%1 MB&lt;/b&gt;&lt;/li&gt;&lt;li&gt;Needed: &lt;b&gt;%2 MB more&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;Try clearing some space by deleting large files.</source>
@@ -13957,10 +13866,6 @@ to track progress!</source>
         <translation>Низкий заряд батареи</translation>
     </message>
     <message>
-        <source>Battery too low to install update</source>
-        <translation>Уровень заряда слишком низок для установки обновления</translation>
-    </message>
-    <message>
         <source>Close</source>
         <translation>Закрыть</translation>
     </message>
@@ -13970,15 +13875,11 @@ to track progress!</source>
     </message>
     <message>
         <source>In order to complete this sync, a new version of your eReader&apos;s software must be installed.</source>
-        <translation>Для завершения этой синхронизации на ваше устройство должна быть установлена новая версия ПО.</translation>
+        <translation>Чтобы завершить синхронизацию, установите обновление ПО устройства.</translation>
     </message>
     <message>
         <source>In order to update your software, the battery must be above %1%. Please charge your eReader.</source>
-        <translation>Для обновления ПО заряд батареи должен быть выше %1%. Пожалуйста, зарядите устройство.</translation>
-    </message>
-    <message>
-        <source>In order to update your software, your battery must be above %1%. Please connect your eReader to a power source.</source>
-        <translation>При обновлении ПО уровень заряда должен быть выше %1%. Подключите устройство к источнику питания.</translation>
+        <translation>Для обновления нужен заряд выше %1%. Зарядите устройство.</translation>
     </message>
     <message>
         <source>Manage downloads</source>
@@ -14037,7 +13938,7 @@ to track progress!</source>
     <name>UpgradeRebootWarningView</name>
     <message>
         <source>Do not turn off your eReader.</source>
-        <translation>Не выключайте ридер.</translation>
+        <translation>Не выключайте устройство.</translation>
     </message>
     <message>
         <source>Updating...</source>
@@ -14108,7 +14009,7 @@ to track progress!</source>
     </message>
     <message>
         <source>To make your eReader waterproof, close the port cover firmly. It can then be submerged to depths of up to 1 metre (just over 3 feet), for a maximum of 30 minutes.</source>
-        <translation>Чтобы ваше устройство не пропускало воду, надежно закройте крышку порта. Теперь оно может быть погружено на глубину до 1 метра максимум до 30 минут.</translation>
+        <translation>Плотно закройте крышку разъёма, чтобы внутрь не попала вода. С закрытой крышкой ридер можно погружать в воду на глубину до 1 метра не более чем на 30 минут.</translation>
     </message>
 </context>
 <context>
@@ -14147,7 +14048,7 @@ to track progress!</source>
     </message>
     <message>
         <source>Add books directly to your eReader, sync more easily, and get software updates right away when you add a Wi Fi network.</source>
-        <translation>Добавив сеть Wi-Fi, вы сможете загружать книги прямо на устройство, проще синхронизироваться и сразу получать обновления ПО.</translation>
+        <translation>Подключите ридер к Wi-Fi, чтобы загружать книги, синхронизировать библиотеку и получать обновления ПО.</translation>
     </message>
     <message>
         <source>Close</source>
@@ -14407,7 +14308,7 @@ Would you like to continue?</source>
     </message>
     <message>
         <source>Low Battery</source>
-        <translation>Низкий заряд батареи</translation>
+        <translation>Низкий заряд</translation>
     </message>
     <message>
         <source>Network Error</source>
@@ -14431,7 +14332,7 @@ Would you like to continue?</source>
     </message>
     <message>
         <source>Turning off Wi-Fi will stop your eReader from syncing. Do you want to continue?</source>
-        <translation>Отключение Wi-Fi остановит синхронизацию устройства. Вы хотите продолжить?</translation>
+        <translation>Если отключить Wi-Fi, синхронизация остановится. Продолжить?</translation>
     </message>
     <message>
         <source>Wi Fi is currently disabled</source>
@@ -14447,7 +14348,7 @@ Would you like to continue?</source>
     </message>
     <message>
         <source>Your eReader is low on power and can&apos;t connect to wireless networks at this time. Please recharge your eReader and try again.</source>
-        <translation>Заряд устройства слишком низкий для подключения к беспроводным сетям. Зарядите его и попробуйте снова.</translation>
+        <translation>Заряда недостаточно для подключения к Wi-Fi. Зарядите устройство и повторите попытку.</translation>
     </message>
 </context>
 <context>
@@ -14559,9 +14460,9 @@ Would you like to continue?</source>
     <message numerus="yes">
         <source>There are %n books in your Wishlist that are included with your Kobo Plus subscription. Add them to your books to get full access.</source>
         <translation>
-            <numerusform>Есть %n книга в вашем Списке желаний, которые входят в состав подписки Kobo Plus. Добавьте их в свои книги, чтобы получить полный доступ.</numerusform>
-            <numerusform>Есть %n книги в вашем Списке желаний, которые входят в состав подписки Kobo Plus. Добавьте их в свои книги, чтобы получить полный доступ.</numerusform>
-            <numerusform>Есть %n книг в вашем Списке желаний, которые входят в состав подписки Kobo Plus. Добавьте их в свои книги, чтобы получить полный доступ.</numerusform>
+            <numerusform>В подписку Kobo Plus входит %n книга из вашего списка желаний. Добавьте её в свои книги, чтобы читать целиком.</numerusform>
+            <numerusform>В подписку Kobo Plus входят %n книги из вашего списка желаний. Добавьте их в свои книги, чтобы читать целиком.</numerusform>
+            <numerusform>В подписку Kobo Plus входит %n книг из вашего списка желаний. Добавьте их в свои книги, чтобы читать целиком.</numerusform>
         </translation>
     </message>
     <message>
