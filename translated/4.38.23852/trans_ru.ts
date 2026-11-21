@@ -6173,7 +6173,7 @@ Please check your connection and try again.</source>
     <name>MissingBooksIntroPage</name>
     <message>
         <source>If you think there are purchased books missing from your My Books section, please try the following steps in order. Swipe to the next page to get started.</source>
-        <translation>Если вы считаете, что в разделе &apos;Мои книги&apos; отсутствуют приобретенные книги, попробуйте выполнить следующие шаги. Для начала перейдите на следующую страницу.</translation>
+        <translation>Если в разделе «Мои книги» не хватает купленных книг, выполните следующие шаги по порядку. Для начала перейдите на следующую страницу свайпом.</translation>
     </message>
     <message>
         <source>Troubleshooting missing books</source>
@@ -7648,7 +7648,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Device information</source>
-        <translation>Информация об устройстве</translation>
+        <translation>Об устройстве</translation>
     </message>
     <message>
         <source>Firmware information</source>
@@ -7683,7 +7683,7 @@ Please check your connection and try again.</source>
     <name>N3SettingsDeviceInformationView</name>
     <message>
         <source>%1 GB of %2 GB available</source>
-        <translation>%1 GB из %2 GB доступно</translation>
+        <translation>Доступно %1 ГБ из %2 ГБ</translation>
     </message>
     <message>
         <source>ADVANCED</source>
@@ -7707,11 +7707,11 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>HARDWARE DETAILS</source>
-        <translation>АППАРАТНЫЕ ПОДРОБНОСТИ</translation>
+        <translation>ТЕХНИЧЕСКИЕ ДАННЫЕ</translation>
     </message>
     <message>
         <source>IP address:</source>
-        <translation>IP адрес:</translation>
+        <translation>IP-адрес:</translation>
     </message>
     <message>
         <source>Legal:</source>
@@ -7719,7 +7719,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>MAC address:</source>
-        <translation>MAC адрес:</translation>
+        <translation>MAC-адрес:</translation>
     </message>
     <message>
         <source>Onboard storage:</source>
@@ -8423,15 +8423,15 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Swipe left edge to adjust brightness:</source>
-        <translation>Регулировка яркости проведением по левому краю:</translation>
+        <translation>Регулировать яркость свайпом по левому краю:</translation>
     </message>
     <message>
         <source>Swiping only</source>
-        <translation>Только смахивание</translation>
+        <translation>Только свайпы</translation>
     </message>
     <message>
         <source>Tapping or swiping</source>
-        <translation>Касание или смахивание</translation>
+        <translation>Касания или свайпы</translation>
     </message>
     <message>
         <source>Time remaining in book</source>
@@ -8540,7 +8540,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Device information</source>
-        <translation>Информация об устройстве</translation>
+        <translation>Об устройстве</translation>
     </message>
     <message>
         <source>Language and dictionaries</source>
@@ -9064,15 +9064,15 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Swipe down with the %1 Stylus to create a space between characters or a new line</source>
-        <translation>Проведите вниз с помощью стилуса %1, чтобы создать пробел между символами или новую строку</translation>
+        <translation>Сделайте свайп вниз стилусом %1, чтобы вставить пробел между символами или начать новую строку</translation>
     </message>
     <message>
         <source>Swipe down with the Kobo Stylus to create a space between characters or a new line</source>
-        <translation>Проведите вниз с помощью стилуса Kobo, чтобы создать пробел между символами или новую строку</translation>
+        <translation>Сделайте свайп вниз стилусом Kobo, чтобы вставить пробел между символами или начать новую строку</translation>
     </message>
     <message>
         <source>Swipe up with the Kobo Stylus to join a space between characters or join two separate lines</source>
-        <translation>Проведите вверх стилусом Kobo, чтобы убрать пробел между символами или объединить две строки</translation>
+        <translation>Сделайте свайп вверх стилусом Kobo, чтобы убрать пробел между символами или объединить две строки</translation>
     </message>
     <message>
         <source>Underline to create a heading style</source>
@@ -9229,11 +9229,11 @@ Please check your connection and try again.</source>
     <name>NotebookSwipeInstructionPage</name>
     <message>
         <source>Swipe left to go forward a page, or swipe right to go backward.&lt;br&gt;New pages are created automatically as you write.</source>
-        <translation>Проведите пальцем влево, чтобы перейти на страницу вперед, или проведите пальцем вправо, чтобы вернуться назад.&lt;br&gt;Новые страницы создаются автоматически по мере того, как вы пишете.</translation>
+        <translation>Свайп влево открывает следующую страницу, а вправо — предыдущую.&lt;br&gt;Новые страницы добавляются автоматически по мере письма.</translation>
     </message>
     <message>
         <source>Swipe to turn pages</source>
-        <translation>Листайте жестом</translation>
+        <translation>Листайте страницы свайпами</translation>
     </message>
 </context>
 <context>
@@ -10545,7 +10545,7 @@ Please check your connection and try again.</source>
     <name>ReadABookBrightnessPage</name>
     <message>
         <source>Adjust brightness by swiping up or down along the left edge of the screen.</source>
-        <translation>Отрегулируйте яркость, проводя вверх или вниз вдоль левого края экрана.</translation>
+        <translation>Чтобы изменить яркость, сделайте свайп вверх или вниз вдоль левого края экрана.</translation>
     </message>
     <message>
         <source>Read at night</source>
@@ -10553,7 +10553,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>To turn the light on or off, press the button next to the power slider. Adjust brightness by swiping up or down along the left edge of the screen.</source>
-        <translation>Чтобы включить или выключить подсветку, нажмите кнопку рядом с ползунком питания. Отрегулируйте яркость, проводя вверх или вниз вдоль левого края экрана.</translation>
+        <translation>Чтобы включить или выключить подсветку, нажмите кнопку рядом с ползунком питания. Чтобы изменить яркость, сделайте свайп вверх или вниз вдоль левого края экрана.</translation>
     </message>
 </context>
 <context>
@@ -10575,11 +10575,11 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>To turn pages, tap or swipe the sides of the screen. Tap the center of the screen to bring up the reading menu.</source>
-        <translation>Чтобы перелистывать страницы, коснитесь или проведите пальцем по сторонам экрана. Коснитесь центра экрана, чтобы открыть меню чтения.</translation>
+        <translation>Чтобы перелистнуть страницу, коснитесь бокового края экрана или сделайте свайп у края. Чтобы открыть меню чтения, коснитесь центра экрана.</translation>
     </message>
     <message>
         <source>To turn pages, tap the page turn buttons or swipe the sides of the screen. Tap the center of the screen to bring up the reading menu.</source>
-        <translation>Чтобы перелистывать страницы, нажимайте кнопки перелистывания или проводите пальцем по сторонам экрана. Коснитесь центра экрана, чтобы открыть меню чтения.</translation>
+        <translation>Листайте страницы кнопками перелистывания или свайпами у боковых краёв экрана. Чтобы открыть меню чтения, коснитесь центра экрана.</translation>
     </message>
 </context>
 <context>
@@ -13263,22 +13263,22 @@ to track progress!</source>
     </message>
     <message>
         <source>Swipe to change pages</source>
-        <translation>Свайп для листания страниц</translation>
+        <translation>Перелистывание свайпом</translation>
     </message>
     <message>
         <source>To move to the next or previous page, swipe across the screen with one finger.</source>
-        <translation>Чтобы перейти на следующую или предыдущую страницу, проведите пальцем по экрану.</translation>
+        <translation>Чтобы перейти на следующую или предыдущую страницу, сделайте свайп одним пальцем по экрану.</translation>
     </message>
 </context>
 <context>
     <name>SwipeInstructionPage</name>
     <message>
         <source>Here we&apos;ll show you the basic concepts you&apos;ll need to get the most out of your eReader. To continue, swipe from right to left. Swipe left to right at any time to go back a page.</source>
-        <translation>Познакомьтесь с основными возможностями ридера. Чтобы продолжить, проведите по экрану справа налево. Чтобы вернуться на страницу назад, проведите слева направо.</translation>
+        <translation>Познакомьтесь с основными возможностями ридера. Чтобы продолжить, сделайте свайп справа налево. Чтобы вернуться на предыдущую страницу, сделайте свайп слева направо.</translation>
     </message>
     <message>
         <source>Here we&apos;ll show you the basic concepts you&apos;ll need to get the most out of your eReader. To continue, tap the page turn button or swipe the screen from right to left.</source>
-        <translation>Познакомьтесь с основными возможностями ридера. Чтобы продолжить, нажмите кнопку перелистывания или проведите по экрану справа налево.</translation>
+        <translation>Познакомьтесь с основными возможностями ридера. Чтобы продолжить, нажмите кнопку перелистывания или сделайте свайп справа налево.</translation>
     </message>
     <message>
         <source>Let&apos;s take a quick tour</source>
@@ -13840,7 +13840,7 @@ to track progress!</source>
     <name>UnlockWidget</name>
     <message>
         <source>Swipe to unlock</source>
-        <translation>Проведите, чтобы разблокировать</translation>
+        <translation>Для разблокировки сделайте свайп</translation>
     </message>
 </context>
 <context>
