@@ -8273,7 +8273,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Show info panel on full screen covers:</source>
-        <translation>Инфопанель на полноэкранных обложках:</translation>
+        <translation>Информация на полноэкранных обложках:</translation>
     </message>
     <message>
         <source>Show list of recently viewed ebooks:</source>
@@ -8285,7 +8285,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>The Kobo SleepCover (sold separately) automatically puts your eReader to sleep when you close it and wakes it up when you open it.</source>
-        <translation>Чехол Kobo SleepCover (продаётся отдельно) переводит ридер в спящий режим, когда вы его закрываете. Откройте чехол, чтобы продолжить чтение.</translation>
+        <translation>Kobo SleepCover (продаётся отдельно) переводит ридер в спящий режим при закрытии и пробуждает при открытии.</translation>
     </message>
     <message>
         <source>To access your privacy settings, please visit: %1</source>
