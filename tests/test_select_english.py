@@ -167,7 +167,7 @@ class EnglishSelectionTests(unittest.TestCase):
                              input='3\n1\n1\n4\n1\n5\n1\n0\n', capture_output=True, text=True, check=True)
         self.assertEqual(run.stderr, '')
         reports = self.cwd / 'reports' / self.src.name
-        missing = (reports / 'untranslated.txt').read_text(encoding='utf-8')
+        missing = (self.cwd / 'translated' / self.src.name / 'untranslated.txt').read_text(encoding='utf-8')
         self.assertIn('Home | Done', missing)
         self.assertNotIn('Attributions', missing)
         lengths = (reports / 'lengths.txt').read_text(encoding='utf-8')

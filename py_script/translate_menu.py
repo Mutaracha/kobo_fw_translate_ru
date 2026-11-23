@@ -168,7 +168,8 @@ def action(choice):
             raise ValueError('В src нет исходников в папках версий. Сначала выполните пункт 1.')
         title = 'Исходники прошивок:'
     else:
-        folders = version_folders(Path('translated'), 'trans_ru.ts')
+        required = 'trans_ru.qm' if choice == '6' else 'trans_ru.ts'
+        folders = version_folders(Path('translated'), required)
         if choice == '5':
             folders = [d for d in folders if english_ts(d.name).is_file()]
         if not folders:
@@ -180,7 +181,7 @@ def action(choice):
     version = folder.name
     src = Path('src') / version
     en = src / 'trans_en.qm'
-    reports = Path('reports') / version
+    reports = Path('translated') / version
     ru = Path('translated') / version / 'trans_ru.ts'
     if choice == '2':
         select_english(src, en)
@@ -204,21 +205,27 @@ def action(choice):
         print('После проверки отправьте trans_ru.ts и trans_ru.qm в Git. Патч соберёт Actions.')
     elif choice == '5':
         lines = list(length_report(english_ts(version), ru))
-        reports.mkdir(parents=True, exist_ok=True)
-        report = reports / 'lengths.txt'
+        report_dir = Path('reports') / version
+        report_dir.mkdir(parents=True, exist_ok=True)
+        report = report_dir / 'lengths.txt'
         report.write_text('\n'.join(lines) + '\n', encoding='utf-8')
         print(f'{lines[-1]}\nОтчёт: {report}')
+    elif choice == '6':
+        output = Path('build') / f'KoboRoot-{version}.tgz'
+        subprocess.run([sys.executable, Path('scripts/build_patch.py'),
+                        Path('translated') / version / 'trans_ru.qm', output], check=True)
+        print(f'Локальный патч готов: {output.resolve()}')
 
 
 def main():
     while True:
         print('\n1. Извлечь nickel и .qm из прошивки\n2. Автоматически найти английский .qm → .ts'
-              '\n3. Подготовить русский .ts\n4. Собрать trans_ru.qm\n5. Диагностика длин EN/RU (необязательно)\n0. Выход')
+              '\n3. Подготовить русский .ts\n4. Собрать trans_ru.qm\n5. Диагностика длин EN/RU (необязательно)\n6. Собрать KoboRoot.tgz локально\n0. Выход')
         try:
             choice = read_answer('> ')
             if choice == '0':
                 return
-            if choice in {'1', '2', '3', '4', '5'}:
+            if choice in {'1', '2', '3', '4', '5', '6'}:
                 action(choice)
         except (EOFError, KeyboardInterrupt):
             return
