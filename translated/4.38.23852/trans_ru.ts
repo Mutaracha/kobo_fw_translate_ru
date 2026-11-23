@@ -63,7 +63,7 @@
     </message>
     <message>
         <source>Connect Facebook to your Reading Life to unlock the Facebook award.</source>
-        <translation>Подключите Facebook к «Жизни читателя», чтобы получить награду Facebook.</translation>
+        <translation>Подключите Facebook к Reading Life, чтобы получить награду Facebook.</translation>
     </message>
     <message>
         <source>Consume mass quantities to earn this award.</source>
@@ -139,7 +139,7 @@
     </message>
     <message>
         <source>Make eReading more fun, social and meaningful by building your Reading Life with %1.&lt;br/&gt;&lt;br/&gt;You can track your reading life with interesting statistics and celebrate reading milestones with fun and surprising awards.</source>
-        <translation>Сделайте чтение более увлекательным, социальным и содержательным, создав свою читательскую жизнь с помощью %1.&lt;br/&gt;&lt;br/&gt;Вы можете отслеживать свое прочитанное с помощью интересных статистических данных и отмечать достижения в чтении веселыми и неожиданными наградами.</translation>
+        <translation>Сделайте чтение с помощью %1 интереснее и общайтесь с другими читателями на странице Reading Life.&lt;br/&gt;&lt;br/&gt;Читайте рецензии, находите рекомендации книг разных жанров, следите за статистикой чтения и отмечайте достижения, получая интересные и неожиданные награды.</translation>
     </message>
     <message>
         <source>Night Rider</source>
@@ -171,7 +171,7 @@
     </message>
     <message>
         <source>Press and hold on a book in your library to earn this award.</source>
-        <translation>Нажмите и удерживайте книгу в библиотеке, чтобы получить эту награду.</translation>
+        <translation>Нажмите и удерживайте книгу в библиотеке, чтобы получить награду.</translation>
     </message>
     <message>
         <source>Pressed for Details</source>
@@ -199,7 +199,7 @@
     </message>
     <message>
         <source>That&apos;s 10 new definitions for you. Now, maybe it&apos;s time to go outside?</source>
-        <translation>Это 10 новых определений. Может, пора прогуляться?</translation>
+        <translation>Вот ещё 10 новых определений. Может, пора выйти на прогулку?</translation>
     </message>
     <message>
         <source>Try satisfying two cravings at once.</source>
@@ -211,7 +211,7 @@
     </message>
     <message>
         <source>Want some coffee with that? You read five times during breakfast: 5am - 7am.</source>
-        <translation>Хотите кофе? Вы читали пять раз за завтраком: с 5 до 7 утра.</translation>
+        <translation>Не хотите кофе? Вы читали пять раз за завтраком — с 5 до 7 утра.</translation>
     </message>
     <message>
         <source>Want the Inverted Comma award? Select your favourite passages using our highlighting feature.</source>
@@ -227,7 +227,7 @@
     </message>
     <message>
         <source>Welcome to Reading Life</source>
-        <translation>Добро пожаловать в «Жизнь читателя»</translation>
+        <translation>Добро пожаловать в Reading Life</translation>
     </message>
     <message>
         <source>Well, you&apos;re quite the social butterfly! You&apos;ve shared on Facebook 10 times.</source>
@@ -267,7 +267,7 @@
     </message>
     <message>
         <source>You need 10 %1 Reading Life Awards to earn the honor of Scout Leader!</source>
-        <translation>Вам нужно получить 10 %1 наград за чтение, чтобы заслужить звание лидера скаутов!</translation>
+        <translation>Чтобы заслужить звание лидера скаутов, нужно получить 10 наград Reading Life за %1!</translation>
     </message>
     <message>
         <source>You read all night long - congratulations from KITT - and %1!</source>
@@ -295,7 +295,7 @@
     </message>
     <message>
         <source>You&apos;ve finished a book. Is it true that &quot;the good ended happily, and the bad unhappily&quot;? (Thanks to Oscar Wilde for the quote!)</source>
-        <translation>Вы дочитали книгу. Как там у Оскара Уайльда: «Хорошие кончили хорошо, а плохие — плохо»?</translation>
+        <translation>Вы дочитали книгу. Правда ли, что «Для хороших там всё кончалось хорошо, а для плохих — плохо»? Спасибо Оскару Уайльду за эту цитату!</translation>
     </message>
     <message>
         <source>You&apos;ve mastered the art of the long press - the best way to manage your library and dive into the details of a book.</source>
@@ -1097,7 +1097,7 @@ to go</source>
     </message>
     <message>
         <source>Reading Life Awards</source>
-        <translation>Награды за чтение</translation>
+        <translation>Награды Reading Life</translation>
     </message>
 </context>
 <context>
@@ -2238,7 +2238,7 @@ to go</source>
     </message>
     <message>
         <source>Oops, something happened to your internet connection and we couldn&apos;t finish your update. Please check your connection and try again.</source>
-        <translation>Упс, что-то случилось с подключением к интернету, и мы не смогли завершить обновление. Проверьте подключение и попробуйте ещё раз.</translation>
+        <translation>Не удалось завершить обновление из-за проблем с подключением к интернету. Проверьте подключение и повторите попытку.</translation>
     </message>
     <message>
         <source>Try again</source>
@@ -2298,7 +2298,7 @@ to go</source>
     </message>
     <message>
         <source>Oops! This document couldn&apos;t be opened.</source>
-        <translation>Упс! Этот документ не может быть открыт.</translation>
+        <translation>Не удалось открыть этот документ.</translation>
     </message>
     <message>
         <source>There might be a problem with the file.</source>
@@ -2332,7 +2332,7 @@ to go</source>
     </message>
     <message>
         <source>Don&apos;t forget to keep your PIN safe. If you forget it, you&apos;ll need to sign out, and may lose your recent bookmarks or annotations.</source>
-        <translation>Не забудьте свой ПИН-код. Если вы его забудете, придётся выйти из учётной записи, и вы можете потерять последние закладки и комментарии.</translation>
+        <translation>Храните ПИН-код в надёжном месте. Если забудете его, придётся выйти из учётной записи, и вы можете потерять недавние закладки и пометки.</translation>
     </message>
     <message>
         <source>Enable</source>
@@ -2340,7 +2340,7 @@ to go</source>
     </message>
     <message>
         <source>Get the best natural light throughout the day and enjoy a more comfortable night-time reading experience.</source>
-        <translation>Оптимальное естественное освещение в течение дня и комфортное чтение ночью.</translation>
+        <translation>Наслаждайтесь естественным освещением днём и читайте с ещё большим комфортом вечером.</translation>
     </message>
     <message>
         <source>Got it</source>
@@ -2482,7 +2482,7 @@ to go</source>
     </message>
     <message>
         <source>The slideshow images for demo mode have been removed from the eReader. Please factory reset to restore them. Warning: this will erase your books, documents, and custom settings.</source>
-        <translation>С устройства удалены изображения для демонстрационного слайд-шоу. Чтобы вернуть их, восстановите заводские настройки. Внимание: при сбросе будут удалены книги, документы и пользовательские настройки.</translation>
+        <translation>Изображения для демонстрационного режима удалены с устройства. Чтобы восстановить их, сбросьте устройство до заводских настроек. Внимание: при сбросе будут удалены книги, документы и пользовательские настройки.</translation>
     </message>
 </context>
 <context>
@@ -3770,8 +3770,9 @@ was successful!</source>
 times you can share things on Facebook each
 day, and you&apos;ve reached your daily limit.
 Feel free to share more tomorrow!</source>
-        <translation>Сожалеем, но вы достигли дневного
-ограничения для Facebook. Продолжите завтра!</translation>
+        <translation>К сожалению, число публикаций в Facebook ограничено.
+Вы достигли дневного лимита.
+Завтра вы снова сможете делиться!</translation>
     </message>
     <message>
         <source>Sorry, something is preventing Facebook from
@@ -4387,7 +4388,7 @@ Please check your connection and try again.</source>
     <name>HoldActionProxy</name>
     <message>
         <source>&lt;i&gt;%0&lt;/i&gt; is currently unavailable to borrow from your library. Place a hold to join the waitlist.</source>
-        <translation>&lt;i&gt;%0&lt;/i&gt; сейчас нельзя взять в вашей библиотеке. Зарезервируйте книгу, чтобы встать в очередь.</translation>
+        <translation>&lt;i&gt;%0&lt;/i&gt; сейчас нельзя взять в библиотеке. Забронируйте книгу, чтобы встать в очередь.</translation>
     </message>
     <message>
         <source>No</source>
@@ -4395,15 +4396,15 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Place a hold</source>
-        <translation>Зарезервировать</translation>
+        <translation>Забронировать</translation>
     </message>
     <message>
         <source>Place a hold with OverDrive</source>
-        <translation>Зарезервировать через OverDrive</translation>
+        <translation>Забронировать через OverDrive</translation>
     </message>
     <message>
         <source>Place a hold?</source>
-        <translation>Зарезервировать?</translation>
+        <translation>Забронировать?</translation>
     </message>
     <message>
         <source>Request again</source>
@@ -4422,7 +4423,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Sorry, you can&apos;t place any more holds right now</source>
-        <translation>К сожалению, сейчас вы не можете зарезервировать больше книг</translation>
+        <translation>К сожалению, сейчас нельзя забронировать больше книг.</translation>
     </message>
     <message>
         <source>There seems to be a problem with your library card</source>
@@ -4438,11 +4439,11 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>You&apos;ve already placed a hold on this book</source>
-        <translation>Вы уже зарезервировали эту книгу</translation>
+        <translation>Вы уже забронировали эту книгу.</translation>
     </message>
     <message>
         <source>You&apos;ve reached the maximum number of items that you can place on hold at a time. Please contact %1 directly for more details.</source>
-        <translation>Вы достигли максимального количества книг, которые можно зарезервировать одновременно. Подробности уточните напрямую в %1.</translation>
+        <translation>Вы достигли максимального количества книг, которые можно забронировать одновременно. Подробности уточните в библиотеке %1.</translation>
     </message>
 </context>
 <context>
@@ -4506,7 +4507,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;/&gt;&lt;/head&gt;&lt;body class=&quot;%2 %3&quot;&gt; &lt;div class=&quot;koboLoveImage %2&quot;&gt;&lt;img src=&quot;%1&quot;/&gt;&lt;/div&gt;&lt;div&gt; &lt;h1 class=&quot;%2 %3&quot;&gt;Kobo Super Points - a loyalty program that rewards your love of reading.&lt;/h1&gt; &lt;p class=&quot;%2 %3&quot;&gt;Kobo Super Points is a loyalty program that rewards you for your love of reading. Automatically earn Kobo Super Points with every eBook purchase, and redeem from a catalogue of over 1 million titles in every genre.&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;center %14&quot;&gt; &lt;h2 class=&quot;center header %2&quot;&gt;Upgrade today to earn twice as fast and get all of the Kobo VIP Member benefits.&lt;/h2&gt; &lt;div&gt; &lt;object class=&quot;aboutWidget&quot; type=&quot;application/koboloveaboutwidget&quot;&gt; &lt;param name=&quot;price&quot; value=&quot;%13&quot;/&gt; &lt;param name=&quot;pointPrice&quot; value=&quot;%12&quot;/&gt; &lt;/object&gt; &lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;/&gt;&lt;/head&gt;&lt;body class=&quot;%2 %3&quot;&gt; &lt;div class=&quot;koboLoveImage %2&quot;&gt;&lt;img src=&quot;%1&quot;/&gt;&lt;/div&gt;&lt;div&gt; &lt;h1 class=&quot;%2 %3&quot;&gt;Супер-баллы Kobo – программа лояльности, поощряющая вашу любовь к чтению.&lt;/h1&gt; &lt;p class=&quot;%2 %3&quot;&gt;Супер-баллы Kobo – это программа лояльности, которая вознаграждает вас за вашу любовь к чтению. Автоматически зарабатывайте Супер-баллы Kobo при каждой покупке электронной книги и обменивайте их на книги из каталога, содержащего более 1 миллиона наименований в каждом жанре.&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;center %14&quot;&gt; &lt;h2 class=&quot;center header %2&quot;&gt;Перейдите на VIP уже сегодня, чтобы зарабатывать в два раза быстрее и пользоваться всеми преимуществами VIP-участника Kobo.&lt;/h2&gt; &lt;div&gt; &lt;object class=&quot;aboutWidget&quot; type=&quot;application/koboloveaboutwidget&quot;&gt; &lt;param name=&quot;price&quot; value=&quot;%13&quot;/&gt; &lt;param name=&quot;pointPrice&quot; value=&quot;%12&quot;/&gt; &lt;/object&gt; &lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head&gt; &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/&gt;&lt;/head&gt;&lt;body class="%2 %3"&gt; &lt;div class="koboLoveImage %2"&gt;&lt;img src="%1"/&gt;&lt;/div&gt;&lt;div&gt; &lt;h1 class="%2 %3"&gt;Kobo Super Points — программа лояльности, которая поощряет любовь к чтению.&lt;/h1&gt; &lt;p class="%2 %3"&gt;Kobo Super Points — программа лояльности для тех, кто любит читать. Получайте баллы за каждую покупку электронной книги и обменивайте их на книги из каталога, где более миллиона изданий разных жанров.&lt;/p&gt;&lt;/div&gt;&lt;div class="center %14"&gt; &lt;h2 class="center header %2"&gt;Перейдите на VIP сегодня, чтобы зарабатывать баллы вдвое быстрее и пользоваться всеми преимуществами участника Kobo VIP.&lt;/h2&gt; &lt;div&gt; &lt;object class="aboutWidget" type="application/koboloveaboutwidget"&gt; &lt;param name="price" value="%13"/&gt; &lt;param name="pointPrice" value="%12"/&gt; &lt;/object&gt; &lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -5340,7 +5341,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Oops! This document couldn&apos;t be opened</source>
-        <translation>Упс! Этот документ не может быть открыт</translation>
+        <translation>Не удалось открыть этот документ.</translation>
     </message>
 </context>
 <context>
@@ -5760,7 +5761,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Oops! This document couldn&apos;t be opened.</source>
-        <translation>Упс! Этот документ не может быть открыт.</translation>
+        <translation>Не удалось открыть этот документ.</translation>
     </message>
     <message>
         <source>There might be a problem with the file.</source>
@@ -7336,7 +7337,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Turn on Bluetooth to connect to nearby devices.</source>
-        <translation>Для подключения включите Bluetooth.</translation>
+        <translation>Включите Bluetooth, чтобы подключаться к устройствам поблизости.</translation>
     </message>
 </context>
 <context>
@@ -7829,7 +7830,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Play classic solitaire games like Klondike, Spider, and Freecell.</source>
-        <translation>Играйте в классические пасьянсы: «Косынка», «Паук» и «Свободная ячейка».</translation>
+        <translation>Играйте в классические пасьянсы: «Косынка», «Паук» и «Солитер».</translation>
     </message>
     <message>
         <source>Please note that these bonus features are not officially supported by %1</source>
@@ -8327,7 +8328,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Choose where you prefer to tap your screen in order to page forward, page back, and bring up the Reading Menu.</source>
-        <translation>Выберите, где касаться экрана, чтобы листать страницы и открывать меню чтения.</translation>
+        <translation>Выберите зоны экрана, к которым будете прикасаться, чтобы перейти к следующей странице, вернуться к предыдущей или открыть меню чтения.</translation>
     </message>
     <message>
         <source>Dark Mode:</source>
@@ -9282,7 +9283,7 @@ Please check your connection and try again.</source>
     <name>OverDriveAboutView</name>
     <message>
         <source>&lt;html&gt;&lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;/&gt;&lt;/head&gt;&lt;body class=&quot;overDriveAboutBody %2 %3 center&quot;&gt;&lt;div class=&quot;%2&quot;&gt;&lt;img class=&quot;overDriveAboutImage %2&quot; src=&quot;%1&quot;/&gt;&lt;/div&gt;&lt;div&gt; &lt;h1 class=&quot;overDriveHeader %2&quot;&gt;Access your public library&amp;rsquo;s digital catalogue directly from your %4 &amp;mdash; any time.&lt;/h1&gt; &lt;/div&gt; &lt;div&gt; &lt;p class=&quot;header %2&quot;&gt;To get started, you&apos;ll need these:&lt;/p&gt;&lt;/div&gt; &lt;center class=&quot;OverDriveAboutItems %2&quot;&gt;&lt;table&gt;&lt;tr&gt; &lt;td class=&quot;%2&quot;&gt;&lt;img class=&quot;%2&quot; src=&quot;%5&quot; /&gt;&lt;/td&gt; &lt;td class=&quot;%2&quot;&gt;&lt;img class=&quot;%2&quot; src=&quot;%6&quot; /&gt;&lt;/td&gt; &lt;/tr&gt;&lt;tr&gt; &lt;td class=&quot;%2&quot;&gt;&lt;div class=&quot;%2&quot;&gt;Wi Fi connection&lt;/div&gt;&lt;/td&gt; &lt;td class=&quot;%2&quot;&gt;&lt;div class=&quot;%2&quot;&gt;Library card&lt;/div&gt;&lt;/td&gt; &lt;/tr&gt;&lt;/table&gt;&lt;/center&gt; &lt;object class=&quot;aboutWidget&quot; type=&quot;application/overdriveaboutwidget&quot;&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;/&gt;&lt;/head&gt;&lt;body class=&quot;overDriveAboutBody %2 %3 center&quot;&gt;&lt;div class=&quot;%2&quot;&gt;&lt;img class=&quot;overDriveAboutImage %2&quot; src=&quot;%1&quot;/&gt;&lt;/div&gt;&lt;div&gt; &lt;h1 class=&quot;overDriveHeader %2&quot;&gt;Получите доступ к цифровому каталогу своей публичной библиотеки прямо из %4 &amp;mdash; в любое время.&lt;/h1&gt; &lt;/div&gt; &lt;div&gt; &lt;p class=&quot;header %2&quot;&gt;Для начала работы вам понадобится следующее:&lt;/p&gt;&lt;/div&gt; &lt;center class=&quot;OverDriveAboutItems %2&quot;&gt;&lt;table&gt;&lt;tr&gt; &lt;td class=&quot;%2&quot;&gt;&lt;img class=&quot;%2&quot; src=&quot;%5&quot; /&gt;&lt;/td&gt; &lt;td class=&quot;%2&quot;&gt;&lt;img class=&quot;%2&quot; src=&quot;%6&quot; /&gt;&lt;/td&gt; &lt;/tr&gt;&lt;tr&gt; &lt;td class=&quot;%2&quot;&gt;&lt;div class=&quot;%2&quot;&gt;Подключение Wi-Fi&lt;/div&gt;&lt;/td&gt; &lt;td class=&quot;%2&quot;&gt;&lt;div class=&quot;%2&quot;&gt;Читательский билет&lt;/div&gt;&lt;/td&gt; &lt;/tr&gt;&lt;/table&gt;&lt;/center&gt; &lt;object class=&quot;aboutWidget&quot; type=&quot;application/overdriveaboutwidget&quot;&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head&gt; &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/&gt;&lt;/head&gt;&lt;body class="overDriveAboutBody %2 %3 center"&gt;&lt;div class="%2"&gt;&lt;img class="overDriveAboutImage %2" src="%1"/&gt;&lt;/div&gt;&lt;div&gt; &lt;h1 class="overDriveHeader %2"&gt;Электронный каталог вашей библиотеки доступен прямо на %4 &amp;mdash; в любое время.&lt;/h1&gt; &lt;/div&gt; &lt;div&gt; &lt;p class="header %2"&gt;Для начала работы вам понадобится следующее:&lt;/p&gt;&lt;/div&gt; &lt;center class="OverDriveAboutItems %2"&gt;&lt;table&gt;&lt;tr&gt; &lt;td class="%2"&gt;&lt;img class="%2" src="%5" /&gt;&lt;/td&gt; &lt;td class="%2"&gt;&lt;img class="%2" src="%6" /&gt;&lt;/td&gt; &lt;/tr&gt;&lt;tr&gt; &lt;td class="%2"&gt;&lt;div class="%2"&gt;Подключение Wi-Fi&lt;/div&gt;&lt;/td&gt; &lt;td class="%2"&gt;&lt;div class="%2"&gt;Читательский билет&lt;/div&gt;&lt;/td&gt; &lt;/tr&gt;&lt;/table&gt;&lt;/center&gt; &lt;object class="aboutWidget" type="application/overdriveaboutwidget"&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -9315,7 +9316,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Go to Holds</source>
-        <translation>Перейти к резервам</translation>
+        <translation>Перейти к забронированным книгам</translation>
     </message>
     <message>
         <source>Need to change email?</source>
@@ -9331,11 +9332,11 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>You&apos;ve placed &lt;i&gt;%0&lt;/i&gt; on hold with your library. We&apos;ll send an email to &lt;b&gt;%1&lt;/b&gt; when it becomes available.</source>
-        <translation>Вы зарезервировали &lt;i&gt;%0&lt;/i&gt; в своей библиотеке. Мы отправим электронное письмо на адрес &lt;b&gt;%1&lt;/b&gt;, когда она станет доступна.</translation>
+        <translation>Вы забронировали в библиотеке &lt;i&gt;%0&lt;/i&gt;. Мы отправим письмо на адрес &lt;b&gt;%1&lt;/b&gt;, когда книга станет доступна.</translation>
     </message>
     <message>
         <source>You&apos;ve placed an item on hold</source>
-        <translation>Вы зарезервировали книгу</translation>
+        <translation>Вы забронировали книгу</translation>
     </message>
 </context>
 <context>
@@ -9442,7 +9443,7 @@ Please check your connection and try again.</source>
     <name>OverDriveFaqView</name>
     <message>
         <source>&lt;html&gt;&lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;/&gt;&lt;/head&gt;&lt;body class=&quot;%2 %3&quot;&gt;&lt;div class=&quot;center %2&quot;&gt;&lt;img class=&quot;overDriveFaqImage %2&quot; src=&quot;%1&quot;/&gt;&lt;/div&gt;&lt;div&gt; &lt;h1 class=&quot;header %2&quot;&gt;Access your public library&amp;rsquo;s digital catalogue directly from your %4 &amp;mdash; any time.&lt;/h1&gt; &lt;p style=&quot;display:none&quot;&gt;&lt;/p&gt; &lt;p class=&quot;%2&quot;&gt;All you need is a Wi Fi connection and a library card.&lt;/p&gt;&lt;/div&gt;&lt;hr class=&quot;%2&quot;/&gt; &lt;div&gt; &lt;h2 class=&quot;header %2&quot;&gt;What&amp;rsquo;s OverDrive and how does it work?&lt;/h2&gt; &lt;p class=&quot;%2&quot;&gt;OverDrive is a free service offered by public libraries that lets you borrow eBooks from their digital collections. Sign in with a valid library card on your %4. When you search or browse the Kobo catalogue, you&amp;rsquo;ll see the added options to borrow or place a hold on items that are also available from your public library.&lt;/p&gt; &lt;/div&gt;&lt;div&gt; &lt;h2 class=&quot;header %2&quot;&gt;How do I borrow an eBook?&lt;/h2&gt; &lt;p class=&quot;%2&quot;&gt;Search Kobo and filter your results to show books available with OverDrive. You&amp;rsquo;ll find the options to borrow or place a hold on your book&amp;rsquo;s item details page.&lt;/p&gt;&lt;/div&gt;&lt;div&gt; &lt;h2 class=&quot;header %2&quot;&gt;What does &amp;ldquo;place a hold&amp;rdquo; mean?&lt;/h2&gt; &lt;p class=&quot;%2&quot;&gt;Just like with print books, libraries purchase limited numbers of digital copies from book publishers, so only one person can check out an eBook at a time. By placing a hold on an item that is currently checked out, you are joining the waitlist to borrow it when it becomes available.&lt;/p&gt;&lt;/div&gt;&lt;div&gt; &lt;h2 class=&quot;header %2&quot;&gt;How do I borrow an available hold?&lt;/h2&gt; &lt;p class=&quot;%2&quot;&gt;When a hold is available for you to borrow, you&apos;ll get a notification via email or alert on your device. You&apos;ll have three days to borrow the item before your hold lapses.&lt;/p&gt;&lt;/div&gt;&lt;div&gt; &lt;h2 class=&quot;header %2&quot;&gt;How long can I borrow an eBook for?&lt;/h2&gt; &lt;p class=&quot;%2&quot;&gt;Lending periods vary by library and may differ for individual items. For specific information on your library&amp;rsquo;s lending policies, please visit their website.&lt;/p&gt;&lt;/div&gt;&lt;div&gt; &lt;h2 class=&quot;header %2&quot;&gt;How do I return an eBook I borrowed?&lt;/h2&gt; &lt;p class=&quot;%2&quot;&gt;No need to worry about late fees! Items you&amp;rsquo;ve borrowed are automatically returned at the end of their lending period. We&amp;rsquo;ll save any bookmarks or annotations you&amp;rsquo;ve made, so if you&amp;rsquo;d like to continue reading an expired item, you can purchase a copy or borrow it again to pick up where you left off.&lt;/p&gt;&lt;/div&gt;&lt;div&gt; &lt;h2 class=&quot;header %2&quot;&gt;Can I renew eBooks?&lt;/h2&gt; &lt;p class=&quot;%2&quot;&gt;Once an item is expired you can borrow it again. You may have to wait to borrow the item again if other readers have placed a hold on it.&lt;/p&gt;&lt;/div&gt;&lt;div&gt; &lt;h2 class=&quot;header %2&quot;&gt;Can I use OverDrive on other devices?&lt;/h2&gt; &lt;p class=&quot;%2&quot;&gt;You can borrow and read library books from a variety of other devices by downloading the Libby app.&lt;/p&gt;&lt;/div&gt;&lt;div&gt; &lt;h2 class=&quot;header %2&quot;&gt;What if I&amp;rsquo;ve forgotten my card number or PIN?&lt;/h2&gt; &lt;p class=&quot;%2&quot;&gt;If you can&amp;rsquo;t remember your card number or PIN, or you&amp;rsquo;re having trouble signing in, please contact your library directly for support.&lt;/p&gt;&lt;/div&gt;&lt;hr class=&quot;%5 %2&quot;/&gt; &lt;div class=&quot;center %5 %2&quot;&gt; &lt;object class=&quot;aboutWidget&quot; type=&quot;application/overdrivefaqwidget&quot;&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;/&gt;&lt;/head&gt;&lt;body class=&quot;%2 %3&quot;&gt;&lt;div class=&quot;center %2&quot;&gt;&lt;img class=&quot;overDriveFaqImage %2&quot; src=&quot;%1&quot;/&gt;&lt;/div&gt;&lt;div&gt; &lt;h1 class=&quot;header %2&quot;&gt;Получите доступ к цифровому каталогу вашей публичной библиотеки непосредственно с вашего %4 – в любое время.&lt;/h1&gt; &lt;p style=&quot;display:none&quot;&gt;&lt;/p&gt; &lt;p class=&quot;%2&quot;&gt;Все, что вам нужно, это подключение к Wi-Fi и читательский билет.&lt;/p&gt;&lt;/div&gt;&lt;hr class=&quot;%2&quot;/&gt; &lt;div&gt; &lt;h2 class=&quot;header %2&quot;&gt;Что такое OverDrive и как он работает?&lt;/h2&gt; &lt;p class=&quot;%2&quot;&gt;OverDrive – это бесплатный сервис, предлагаемый публичными библиотеками, который позволяет вам брать электронные книги из их цифровых коллекций. Войдите в систему, предъявив действительный читательский билет на своём %4. При поиске или просмотре каталога Kobo вы увидите дополнительные возможности взять или зарезервировать книги, которые также доступны в вашей публичной библиотеке.&lt;/p&gt; &lt;/div&gt;&lt;div&gt; &lt;h2 class=&quot;header %2&quot;&gt;Как мне получить электронную книгу?&lt;/h2&gt; &lt;p class=&quot;%2&quot;&gt;Выполните поиск по Kobo и отфильтруйте результаты, чтобы отобразить книги, доступные с помощью OverDrive. На странице сведений о товаре, посвященной вашей книге, вы найдете варианты того, как получить ее напрокат или приостановить покупку.&lt;/p&gt;&lt;/div&gt;&lt;div&gt; &lt;h2 class=&quot;header %2&quot;&gt;Что означает &apos;приостановить покупку&apos;?&lt;/h2&gt; &lt;p class=&quot;%2&quot;&gt;Как и в случае с печатными книгами, библиотеки приобретают ограниченное количество цифровых копий у книгоиздателей, поэтому только один человек может ознакомиться с электронной книгой за один раз. Удерживая материал, который в данный момент выдан, вы присоединяетесь к списку ожидания, чтобы получить его, когда он станет доступен.&lt;/p&gt;&lt;/div&gt;&lt;div&gt; &lt;h2 class=&quot;header %2&quot;&gt;Как мне получить доступный материал?&lt;/h2&gt; &lt;p class=&quot;%2&quot;&gt;Когда у вас появится возможность его получить, вам придет уведомление по электронной почте или на ваше устройство. У вас будет три дня, чтобы забрать этот материал, прежде чем срок действия уведомления истечет.&lt;/p&gt;&lt;/div&gt;&lt;div&gt; &lt;h2 class=&quot;header %2&quot;&gt;На какой срок можно взять электронную книгу?&lt;/h2&gt; &lt;p class=&quot;%2&quot;&gt;Сроки предоставления зависят от библиотеки и могут отличаться для отдельных материалов. Для получения более подробной информации о правилах получения в вашей библиотеке, пожалуйста, посетите их веб-сайт.&lt;/p&gt;&lt;/div&gt;&lt;div&gt; &lt;h2 class=&quot;header %2&quot;&gt;Как мне вернуть электронную книгу, которую я получил?&lt;/h2&gt; &lt;p class=&quot;%2&quot;&gt;Не нужно беспокоиться о просроченных платежах! Материалы, которые вы получили, автоматически возвращаются по истечении срока доступа. Мы сохраним все сделанные вами закладки или примечания, поэтому, если вы захотите продолжить чтение статьи с истекшим сроком доступа, вы можете приобрести копию или взять ее еще раз, чтобы продолжить с того места, на котором остановились.&lt;/p&gt;&lt;/div&gt;&lt;div&gt; &lt;h2 class=&quot;header %2&quot;&gt;Могу ли я продлить срок доступа электронных книг?&lt;/h2&gt; &lt;p class=&quot;%2&quot;&gt;Как только срок доступа материала истечет, вы сможете взять его снова. Возможно, вам придется подождать, чтобы снова получить доступ к материалу, если другие читатели уже получили его.&lt;/p&gt;&lt;/div&gt;&lt;div&gt; &lt;h2 class=&quot;header %2&quot;&gt;Могу ли я использовать OverDrive на других устройствах?&lt;/h2&gt; &lt;p class=&quot;%2&quot;&gt;Вы можете брать библиотечные книги и читать их с различных других устройств, загрузив приложение Libby.&lt;/p&gt;&lt;/div&gt;&lt;div&gt; &lt;h2 class=&quot;header %2&quot;&gt;Что, если я забыл номер своего билета или PIN-код?&lt;/h2&gt; &lt;p class=&quot;%2&quot;&gt;Если вы не можете вспомнить номер своего билета или PIN-код, или у вас возникли проблемы со входом в систему, пожалуйста, обратитесь за поддержкой непосредственно в свою библиотеку.&lt;/p&gt;&lt;/div&gt;&lt;hr class=&quot;%5 %2&quot;/&gt; &lt;div class=&quot;center %5 %2&quot;&gt; &lt;object class=&quot;aboutWidget&quot; type=&quot;application/overdrivefaqwidget&quot;&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head&gt; &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/&gt;&lt;/head&gt;&lt;body class="%2 %3"&gt;&lt;div class="center %2"&gt;&lt;img class="overDriveFaqImage %2" src="%1"/&gt;&lt;/div&gt;&lt;div&gt; &lt;h1 class="header %2"&gt;Получите доступ к цифровому каталогу вашей публичной библиотеки непосредственно с вашего %4 – в любое время.&lt;/h1&gt; &lt;p style="display:none"&gt;&lt;/p&gt; &lt;p class="%2"&gt;Вам понадобятся только подключение к Wi-Fi и читательский билет.&lt;/p&gt;&lt;/div&gt;&lt;hr class="%2"/&gt; &lt;div&gt; &lt;h2 class="header %2"&gt;Что такое OverDrive и как он работает?&lt;/h2&gt; &lt;p class="%2"&gt;OverDrive — бесплатный сервис публичных библиотек, с помощью которого можно брать электронные книги из их цифровых коллекций. Войдите на %4, используя читательский билет. При поиске в каталоге Kobo можно будет взять книгу или забронировать её в своей библиотеке.&lt;/p&gt; &lt;/div&gt;&lt;div&gt; &lt;h2 class="header %2"&gt;Как взять электронную книгу?&lt;/h2&gt; &lt;p class="%2"&gt;Найдите в Kobo книги, доступные через OverDrive. На странице книги можно взять её или забронировать.&lt;/p&gt;&lt;/div&gt;&lt;div&gt; &lt;h2 class="header %2"&gt;Что значит «забронировать книгу»?&lt;/h2&gt; &lt;p class="%2"&gt;Как и печатные книги, цифровые издания приобретаются библиотеками в ограниченном количестве, поэтому одновременно книгу может взять только один читатель. Забронировав уже выданную книгу, вы встанете в очередь и сможете взять её, когда она освободится.&lt;/p&gt;&lt;/div&gt;&lt;div&gt; &lt;h2 class="header %2"&gt;Как получить забронированную книгу, когда она станет доступна?&lt;/h2&gt; &lt;p class="%2"&gt;Когда забронированную книгу можно будет взять, вы получите уведомление по электронной почте или на устройство. На то, чтобы взять книгу, будет три дня, после чего бронирование отменится.&lt;/p&gt;&lt;/div&gt;&lt;div&gt; &lt;h2 class="header %2"&gt;На какой срок можно взять электронную книгу?&lt;/h2&gt; &lt;p class="%2"&gt;Сроки предоставления зависят от библиотеки и могут отличаться для отдельных материалов. Для получения более подробной информации о правилах получения в вашей библиотеке, пожалуйста, посетите их веб-сайт.&lt;/p&gt;&lt;/div&gt;&lt;div&gt; &lt;h2 class="header %2"&gt;Как мне вернуть электронную книгу, которую я получил?&lt;/h2&gt; &lt;p class="%2"&gt;Не нужно беспокоиться о просроченных платежах! Материалы, которые вы получили, автоматически возвращаются по истечении срока доступа. Мы сохраним все сделанные вами закладки или примечания, поэтому, если вы захотите продолжить чтение статьи с истекшим сроком доступа, вы можете приобрести копию или взять ее еще раз, чтобы продолжить с того места, на котором остановились.&lt;/p&gt;&lt;/div&gt;&lt;div&gt; &lt;h2 class="header %2"&gt;Могу ли я продлить срок доступа электронных книг?&lt;/h2&gt; &lt;p class="%2"&gt;Как только срок доступа материала истечет, вы сможете взять его снова. Если книгу уже забронировали другие читатели, возможно, придётся подождать.&lt;/p&gt;&lt;/div&gt;&lt;div&gt; &lt;h2 class="header %2"&gt;Могу ли я использовать OverDrive на других устройствах?&lt;/h2&gt; &lt;p class="%2"&gt;Вы можете брать библиотечные книги и читать их с различных других устройств, загрузив приложение Libby.&lt;/p&gt;&lt;/div&gt;&lt;div&gt; &lt;h2 class="header %2"&gt;Что, если я забыл номер своего билета или PIN-код?&lt;/h2&gt; &lt;p class="%2"&gt;Если вы не можете вспомнить номер своего билета или PIN-код, или у вас возникли проблемы со входом в систему, пожалуйста, обратитесь за поддержкой непосредственно в свою библиотеку.&lt;/p&gt;&lt;/div&gt;&lt;hr class="%5 %2"/&gt; &lt;div class="center %5 %2"&gt; &lt;object class="aboutWidget" type="application/overdrivefaqwidget"&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -9471,11 +9472,11 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>You don&apos;t have any holds.</source>
-        <translation>У вас нет резервов.</translation>
+        <translation>У вас нет забронированных книг.</translation>
     </message>
     <message>
         <source>Your Holds</source>
-        <translation>Ваши резервы</translation>
+        <translation>Забронированные книги</translation>
     </message>
 </context>
 <context>
@@ -9538,7 +9539,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Remove hold</source>
-        <translation>Снять резерв</translation>
+        <translation>Отменить бронирование</translation>
     </message>
 </context>
 <context>
@@ -9549,7 +9550,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>Your holds</source>
-        <translation>Ваши резервы</translation>
+        <translation>Ваши бронирования</translation>
     </message>
 </context>
 <context>
@@ -9586,7 +9587,7 @@ Please check your connection and try again.</source>
     </message>
     <message>
         <source>With OverDrive on your %1, all you need is a library card and a Wi Fi connection to borrow eBooks from your public library. Browse, borrow, and place holds on library books directly from your eReader.</source>
-        <translation>Чтобы брать электронные книги в публичной библиотеке через OverDrive на %1, нужны только читательский билет и Wi-Fi. Выбирайте книги, берите их на время и вставайте в очередь на выдачу прямо с ридера.</translation>
+        <translation>Чтобы брать электронные книги в библиотеке через OverDrive на %1, нужны только читательский билет и подключение к Wi-Fi. Ищите книги, берите их или бронируйте прямо на ридере.</translation>
     </message>
 </context>
 <context>
@@ -11233,9 +11234,9 @@ to read</source>
     <message numerus="yes">
         <source>Kobo Audiobooks subscribers can save by using credits to purchase. Visit kobo.com on your desktop, tablet, or smartphone to get this title for %n credit(s), or start your free trial.&lt;br/&gt;&lt;br/&gt;Once it&apos;s yours, sync your eReader to download.</source>
         <translation>
-            <numerusform>Подписчики аудиокниг Kobo могут сэкономить, используя кредиты для покупки. Посетите kobo.com с компьютера, планшета или смартфона, чтобы получить эту книгу за %n кредит, или запустите бесплатную пробную версию.&lt;br/&gt;&lt;br/&gt; Когда она станет вашей, синхронизируйте свой ридер для загрузки.</numerusform>
-            <numerusform>Подписчики аудиокниг Kobo могут сэкономить, используя кредиты для покупки. Посетите kobo.com с компьютера, планшета или смартфона, чтобы получить эту книгу за %n кредита, или запустите бесплатную пробную версию.&lt;br/&gt;&lt;br/&gt; Когда она станет вашей, синхронизируйте свой ридер для загрузки.</numerusform>
-            <numerusform>Подписчики аудиокниг Kobo могут сэкономить, используя кредиты для покупки. Посетите kobo.com с компьютера, планшета или смартфона, чтобы получить эту книгу за %n кредитов, или запустите бесплатную пробную версию.&lt;br/&gt;&lt;br/&gt; Когда она станет вашей, синхронизируйте свой ридер для загрузки.</numerusform>
+            <numerusform>Подписчики Kobo Audiobooks могут сэкономить, оплачивая покупку кредитами. Откройте kobo.com на компьютере, планшете или смартфоне: эту аудиокнигу можно получить за %n кредит или начать бесплатный пробный период.&lt;br/&gt;&lt;br/&gt;После покупки синхронизируйте ридер, чтобы загрузить её.</numerusform>
+            <numerusform>Подписчики Kobo Audiobooks могут сэкономить, оплачивая покупку кредитами. Откройте kobo.com на компьютере, планшете или смартфоне: эту аудиокнигу можно получить за %n кредита или начать бесплатный пробный период.&lt;br/&gt;&lt;br/&gt;После покупки синхронизируйте ридер, чтобы загрузить её.</numerusform>
+            <numerusform>Подписчики Kobo Audiobooks могут сэкономить, оплачивая покупку кредитами. Откройте kobo.com на компьютере, планшете или смартфоне: эту аудиокнигу можно получить за %n кредитов или начать бесплатный пробный период.&lt;br/&gt;&lt;br/&gt;После покупки синхронизируйте ридер, чтобы загрузить её.</numerusform>
         </translation>
     </message>
     <message>
@@ -11333,7 +11334,7 @@ to read</source>
     <name>RemoveHoldActionProxy</name>
     <message>
         <source>Are you sure you want to remove this hold &lt;i&gt;%0&lt;/i&gt;?</source>
-        <translation>Вы уверены, что хотите снять резерв &lt;i&gt;%0&lt;/i&gt;?</translation>
+        <translation>Отменить бронирование книги &lt;i&gt;%0&lt;/i&gt;?</translation>
     </message>
     <message>
         <source>No</source>
@@ -11341,15 +11342,15 @@ to read</source>
     </message>
     <message>
         <source>Remove hold</source>
-        <translation>Снять резерв</translation>
+        <translation>Отменить бронирование</translation>
     </message>
     <message>
         <source>Remove hold with OverDrive</source>
-        <translation>Снять резерв в OverDrive</translation>
+        <translation>Отменить бронирование в OverDrive</translation>
     </message>
     <message>
         <source>Remove hold?</source>
-        <translation>Снять резерв?</translation>
+        <translation>Отменить бронирование?</translation>
     </message>
     <message>
         <source>Yes</source>
@@ -12521,7 +12522,7 @@ to read</source>
     </message>
     <message>
         <source>View your public library holds</source>
-        <translation>Посмотрите свои резервы в публичной библиотеке</translation>
+        <translation>Посмотреть свои бронирования в библиотеке</translation>
     </message>
     <message>
         <source>WISHLIST</source>
@@ -13304,7 +13305,7 @@ to track progress!</source>
     </message>
     <message>
         <source>Oops, you don&apos;t have enough space left to finish your update. Try deleting some books to make more room.</source>
-        <translation>Упс, недостаточно свободного места для обновления. Попробуйте удалить некоторые книги.</translation>
+        <translation>Недостаточно свободного места для завершения обновления. Удалите несколько книг и попробуйте снова.</translation>
     </message>
     <message>
         <source>Something happened to your Wi&amp;nbsp;Fi connection and we couldn&apos;t completely sync your eReader. Please check your Wi&amp;nbsp;Fi and try again.</source>
@@ -13553,7 +13554,7 @@ to track progress!</source>
     </message>
     <message>
         <source>Your holds at %1 are ready to borrow. Get them while you&apos;re still first on the list.</source>
-        <translation>Ваши резервы в %1 можно взять. Успейте, пока вы первый в очереди.</translation>
+        <translation>Забронированные вами книги в %1 уже можно взять. Успейте, пока ваша очередь не прошла.</translation>
     </message>
 </context>
 <context>
@@ -14324,7 +14325,7 @@ Would you like to continue?</source>
     </message>
     <message>
         <source>Oops, something happened to your internet connection. Please check your connection and try again.</source>
-        <translation>Упс, что-то случилось с вашим интернет-соединением. Проверьте и попробуйте снова.</translation>
+        <translation>Произошла ошибка подключения к интернету. Проверьте подключение и повторите попытку.</translation>
     </message>
     <message>
         <source>Retry</source>
